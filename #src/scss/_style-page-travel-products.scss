@@ -1,0 +1,179 @@
+.travel-products {
+	&__wrap {
+		padding: 100px 0 85px 0;
+		position: relative;
+	}
+
+	&__group {
+		position: relative;
+		display: flex;
+		margin-bottom: 450px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__image {
+		position: relative;
+		z-index: 10;
+	}
+
+	&__text {
+		max-width: 400px;
+		font-weight: 450;
+		font-size: 24px;
+		line-height: 31px;
+		color: #2f2f2f;
+		& span {
+			color: #faa53c;
+		}
+	}
+
+	&__icon {
+		position: absolute;
+		top: 100%;
+		right: 0;
+	}
+
+	&__image-card {
+		position: absolute;
+		bottom: -8px;
+		right: 19%;
+	}
+
+	&__block-text {
+		position: absolute;
+		bottom: -30%;
+		right: 30%;
+		padding: 15px;
+		border-radius: 10px;
+		background: #f9f9f9;
+		font-weight: 450;
+		font-size: 24px;
+		line-height: 31px;
+		color: #5fad56;
+	}
+
+	&__image-card-small {
+		position: absolute;
+		bottom: -90%;
+		right: 35%;
+		transform: rotateY(180deg) rotateZ(17deg);
+		& img {
+			width: 150px;
+			height: 60px;
+			object-fit: contain;
+		}
+	}
+}
+
+@media (max-width: 1500px) {
+	.travel-products {
+		&__group {
+			margin-bottom: 400px;
+		}
+
+		&__icon {
+			max-width: 70%;
+		}
+
+		&__image-card {
+			right: 13%;
+		}
+	}
+}
+
+@media (max-width: 1300px) {
+	.travel-products {
+		&__image-card {
+			& img {
+				max-height: 100px;
+			}
+		}
+
+		&__image {
+			& img {
+				max-height: 300px;
+			}
+		}
+
+		&__group {
+			margin-bottom: 350px;
+		}
+	}
+}
+
+@media (max-width: 1170px) {
+	.travel-products {
+		&__group {
+			margin-bottom: 300px;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.travel-products {
+		&__group {
+			align-items: center;
+			margin-bottom: 150px;
+
+			&:last-child {
+				&::before {
+					content: none;
+				}
+			}
+		}
+
+		&__block-text {
+			bottom: -100px;
+			right: initial;
+			left: 50%;
+			transform: translate(-50%, 0);
+			&::before {
+				content: "";
+				position: absolute;
+				top: 50%;
+				left: -60px;
+				transform: translate(0, -50%);
+				width: 44px;
+				height: 66px;
+				background: url("../img/icon-step-arrow.png") no-repeat 0 0 / contain;
+			}
+		}
+
+		&__image {
+			margin-right: 20px;
+		}
+
+		&__icon {
+			display: none;
+		}
+
+		&__image-card {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.travel-products {
+		&__wrap {
+			padding: 50px 0 50px 0;
+		}
+
+		&__group {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		&__image {
+			margin-right: 0;
+			margin-bottom: 20px;
+		}
+
+		&__text {
+			font-size: 16px;
+			line-height: 25px;
+		}
+	}
+}

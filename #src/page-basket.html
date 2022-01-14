@@ -1,0 +1,1485 @@
+@@include("components/_header-auth.html")
+
+<section class="breadcrumbs">
+    <div class="container">
+        <div class="breadcrumbs__wrap">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+                <li class="breadcrumbs__item"><span>Корзина</span></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<div class="block-title">
+    <div class="container">
+        <div class="block-title__wrap">
+            <div class="block-title__title title-h2">Корзина</div>
+        </div>
+    </div>
+</div>
+
+<section class="basket">
+    <div class="container">
+        <div class="basket__wrap">
+            <div class="basket__row-one">
+                <div class="basket__wrap-title">
+                    <div class="basket__title title-h4">Ваши продуктовые коробки</div>
+                </div>
+
+                <div class="basket__list">
+                    <div class="basket__item basket-box-card">
+
+                        <div class="basket-box-card__group-one">
+                            <div class="basket-box-card__image"><img src="./img/image-box-card.png" alt=""></div>
+                        </div>
+
+                        <div class="basket-box-card__group-two">
+                            <div class="basket-box-card__name">Коробка "Шалость"</div>
+
+                            <div class="basket-box-card__price">
+                                <div class="basket-box-card__price-current">3 500 Р</div>
+
+                                <div class="basket-box-card__group-discount">
+                                    <div class="basket-box-card__discount">
+                                        Вы сэкономили: <span> 2 000 ₽</span>.
+                                    </div>
+
+                                    <div class="basket-box-card__hint hint">
+                                        <div class="hint__icon">!</div>
+
+                                        <div class="hint__popup">
+                                            <div class="hint__popup-text">
+                                                При подсчете экономии мы
+                                                ориентируемся на цены
+                                                сервиса edadeal.ru
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <a href="#" class="basket-box-card__link">Изменить содержимое коробки</a>
+                        </div>
+
+                        <div class="basket-box-card__group-three">
+                            <div class="basket-box-card__group-title">
+                                <div class="basket-box-card__text">Состав заказа:</div>
+                                <div class="basket-box-card__delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <g clip-path="url(#clip0)">
+                                            <path
+                                                d="M15.3101 8.69519C14.9997 8.69519 14.748 8.9468 14.748 9.25725V19.8802C14.748 20.1904 14.9997 20.4423 15.3101 20.4423C15.6206 20.4423 15.8722 20.1904 15.8722 19.8802V9.25725C15.8722 8.9468 15.6206 8.69519 15.3101 8.69519Z"
+                                                fill="#1F7240" />
+                                            <path
+                                                d="M8.6773 8.69519C8.36684 8.69519 8.11523 8.9468 8.11523 9.25725V19.8802C8.11523 20.1904 8.36684 20.4423 8.6773 20.4423C8.98775 20.4423 9.23936 20.1904 9.23936 19.8802V9.25725C9.23936 8.9468 8.98775 8.69519 8.6773 8.69519Z"
+                                                fill="#1F7240" />
+                                            <path
+                                                d="M3.84439 7.14479V20.9927C3.84439 21.8112 4.14452 22.5799 4.66881 23.1314C5.19069 23.6845 5.91698 23.9984 6.67707 23.9998H17.3114C18.0717 23.9984 18.798 23.6845 19.3197 23.1314C19.844 22.5799 20.1441 21.8112 20.1441 20.9927V7.14479C21.1863 6.86815 21.8617 5.86127 21.7222 4.79182C21.5826 3.72259 20.6717 2.92276 19.5932 2.92254H16.7155V2.21996C16.7188 1.62914 16.4852 1.06181 16.067 0.644441C15.6487 0.227288 15.0805 -0.00500049 14.4897 -0.000170291H9.49878C8.90796 -0.00500049 8.33976 0.227288 7.92151 0.644441C7.50326 1.06181 7.26965 1.62914 7.27294 2.21996V2.92254H4.39525C3.3168 2.92276 2.40587 3.72259 2.26623 4.79182C2.12681 5.86127 2.80216 6.86815 3.84439 7.14479ZM17.3114 22.8756H6.67707C5.71609 22.8756 4.9685 22.0501 4.9685 20.9927V7.19419H19.02V20.9927C19.02 22.0501 18.2724 22.8756 17.3114 22.8756ZM8.39706 2.21996C8.39333 1.9273 8.50838 1.64561 8.71607 1.43901C8.92355 1.23241 9.2059 1.1189 9.49878 1.12395H14.4897C14.7826 1.1189 15.0649 1.23241 15.2724 1.43901C15.4801 1.64539 15.5951 1.9273 15.5914 2.21996V2.92254H8.39706V2.21996ZM4.39525 4.04666H19.5932C20.152 4.04666 20.6049 4.4996 20.6049 5.05836C20.6049 5.61713 20.152 6.07007 19.5932 6.07007H4.39525C3.83648 6.07007 3.38354 5.61713 3.38354 5.05836C3.38354 4.4996 3.83648 4.04666 4.39525 4.04666Z"
+                                                fill="#1F7240" />
+                                            <path
+                                                d="M11.9937 8.69519C11.6833 8.69519 11.4316 8.9468 11.4316 9.25725V19.8802C11.4316 20.1904 11.6833 20.4423 11.9937 20.4423C12.3042 20.4423 12.5558 20.1904 12.5558 19.8802V9.25725C12.5558 8.9468 12.3042 8.69519 11.9937 8.69519Z"
+                                                fill="#1F7240" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="basket-box-card__list">
+                                <div class="basket-box-card__item box-color --green">
+                                    <div class="box-color__image"><img src="./img/image-basket-box-card-1.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="basket-box-card__item box-color --green">
+                                    <div class="box-color__image"><img src="./img/image-basket-box-card-2.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="basket-box-card__item box-color --green">
+                                    <div class="box-color__image"><img src="./img/image-basket-box-card-3.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="basket-box-card__item box-color --green">
+                                    <div class="box-color__image"><img src="./img/image-basket-box-card-4.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="basket-box-card__item box-color --green">
+                                    <div class="box-color__image"><img src="./img/image-basket-box-card-5.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="basket-box-card__item box-color --green">
+                                    <div class="box-color__image"><img src="./img/image-basket-box-card-6.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="basket-box-card__item box-color --yellow">
+                                    <div class="box-color__image"><img src="./img/image-basket-box-card-7.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="basket-box-card__item box-color --yellow">
+                                    <div class="box-color__image"><img src="./img/image-basket-box-card-8.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="basket-box-card__item box-color --orange">
+                                    <div class="box-color__image"><img src="./img/image-basket-box-card-9.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="basket-box-card__item box-color --orange">
+                                    <div class="box-color__image"><img src="./img/image-basket-box-card-10.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="basket-box-card__item box-color --purple">
+                                    <div class="box-color__image"><img src="./img/image-basket-box-card-11.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="basket-box-card__item box-color --purple">
+                                    <div class="box-color__image"><img src="./img/image-basket-box-card-12.png" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="basket__item basket-box-card">
+
+                        <div class="basket-box-card__group-one">
+                            <div class="basket-box-card__image"><img src="./img/image-box-card.png" alt=""></div>
+                        </div>
+
+                        <div class="basket-box-card__group-two">
+                            <div class="basket-box-card__name">Коробка "Шалость"</div>
+
+                            <div class="basket-box-card__price">
+                                <div class="basket-box-card__price-current">3 500 Р</div>
+
+                                <div class="basket-box-card__group-discount">
+                                    <div class="basket-box-card__discount">
+                                        Вы сэкономили: <span> 2 000 ₽</span>.
+                                    </div>
+
+                                    <div class="basket-box-card__hint hint">
+                                        <div class="hint__icon">!</div>
+
+                                        <div class="hint__popup">
+                                            <div class="hint__popup-text">
+                                                При подсчете экономии мы
+                                                ориентируемся на цены
+                                                сервиса edadeal.ru
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <a href="#" class="basket-box-card__link">Изменить содержимое коробки</a>
+                        </div>
+
+                        <div class="basket-box-card__group-three">
+                            <div class="basket-box-card__group-title">
+                                <div class="basket-box-card__text">Состав заказа:</div>
+                                <div class="basket-box-card__delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <g clip-path="url(#clip0)">
+                                            <path
+                                                d="M15.3101 8.69519C14.9997 8.69519 14.748 8.9468 14.748 9.25725V19.8802C14.748 20.1904 14.9997 20.4423 15.3101 20.4423C15.6206 20.4423 15.8722 20.1904 15.8722 19.8802V9.25725C15.8722 8.9468 15.6206 8.69519 15.3101 8.69519Z"
+                                                fill="#1F7240" />
+                                            <path
+                                                d="M8.6773 8.69519C8.36684 8.69519 8.11523 8.9468 8.11523 9.25725V19.8802C8.11523 20.1904 8.36684 20.4423 8.6773 20.4423C8.98775 20.4423 9.23936 20.1904 9.23936 19.8802V9.25725C9.23936 8.9468 8.98775 8.69519 8.6773 8.69519Z"
+                                                fill="#1F7240" />
+                                            <path
+                                                d="M3.84439 7.14479V20.9927C3.84439 21.8112 4.14452 22.5799 4.66881 23.1314C5.19069 23.6845 5.91698 23.9984 6.67707 23.9998H17.3114C18.0717 23.9984 18.798 23.6845 19.3197 23.1314C19.844 22.5799 20.1441 21.8112 20.1441 20.9927V7.14479C21.1863 6.86815 21.8617 5.86127 21.7222 4.79182C21.5826 3.72259 20.6717 2.92276 19.5932 2.92254H16.7155V2.21996C16.7188 1.62914 16.4852 1.06181 16.067 0.644441C15.6487 0.227288 15.0805 -0.00500049 14.4897 -0.000170291H9.49878C8.90796 -0.00500049 8.33976 0.227288 7.92151 0.644441C7.50326 1.06181 7.26965 1.62914 7.27294 2.21996V2.92254H4.39525C3.3168 2.92276 2.40587 3.72259 2.26623 4.79182C2.12681 5.86127 2.80216 6.86815 3.84439 7.14479ZM17.3114 22.8756H6.67707C5.71609 22.8756 4.9685 22.0501 4.9685 20.9927V7.19419H19.02V20.9927C19.02 22.0501 18.2724 22.8756 17.3114 22.8756ZM8.39706 2.21996C8.39333 1.9273 8.50838 1.64561 8.71607 1.43901C8.92355 1.23241 9.2059 1.1189 9.49878 1.12395H14.4897C14.7826 1.1189 15.0649 1.23241 15.2724 1.43901C15.4801 1.64539 15.5951 1.9273 15.5914 2.21996V2.92254H8.39706V2.21996ZM4.39525 4.04666H19.5932C20.152 4.04666 20.6049 4.4996 20.6049 5.05836C20.6049 5.61713 20.152 6.07007 19.5932 6.07007H4.39525C3.83648 6.07007 3.38354 5.61713 3.38354 5.05836C3.38354 4.4996 3.83648 4.04666 4.39525 4.04666Z"
+                                                fill="#1F7240" />
+                                            <path
+                                                d="M11.9937 8.69519C11.6833 8.69519 11.4316 8.9468 11.4316 9.25725V19.8802C11.4316 20.1904 11.6833 20.4423 11.9937 20.4423C12.3042 20.4423 12.5558 20.1904 12.5558 19.8802V9.25725C12.5558 8.9468 12.3042 8.69519 11.9937 8.69519Z"
+                                                fill="#1F7240" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="basket-box-card__list">
+                                <div class="basket-box-card__item box-color --green">
+                                    <div class="box-color__image"><img src="./img/image-basket-box-card-1.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="basket-box-card__item box-color --green">
+                                    <div class="box-color__image"><img src="./img/image-basket-box-card-2.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="basket-box-card__item box-color --green">
+                                    <div class="box-color__image"><img src="./img/image-basket-box-card-3.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="basket-box-card__item box-color --green">
+                                    <div class="box-color__image"><img src="./img/image-basket-box-card-4.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="basket-box-card__item box-color --green">
+                                    <div class="box-color__image"><img src="./img/image-basket-box-card-5.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="basket-box-card__item box-color --green">
+                                    <div class="box-color__image"><img src="./img/image-basket-box-card-6.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="basket-box-card__item box-color --yellow">
+                                    <div class="box-color__image"><img src="./img/image-basket-box-card-7.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="basket-box-card__item box-color --yellow">
+                                    <div class="box-color__image"><img src="./img/image-basket-box-card-8.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="basket-box-card__item box-color --orange">
+                                    <div class="box-color__image"><img src="./img/image-basket-box-card-9.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="basket-box-card__item box-color --orange">
+                                    <div class="box-color__image"><img src="./img/image-basket-box-card-10.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="basket-box-card__item box-color --purple">
+                                    <div class="box-color__image"><img src="./img/image-basket-box-card-11.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="basket-box-card__item box-color --purple">
+                                    <div class="box-color__image"><img src="./img/image-basket-box-card-12.png" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="basket__item basket-box-card --big">
+
+                        <div class="basket-box-card__group-one">
+                            <div class="basket-box-card__image"><img src="./img/image-box-card.png" alt=""></div>
+                        </div>
+
+                        <div class="basket-box-card__group-two">
+                            <div class="basket-box-card__name">Коробка "Шалость"</div>
+
+                            <div class="basket-box-card__price">
+                                <div class="basket-box-card__price-current">7 500 Р</div>
+
+                                <div class="basket-box-card__group-discount">
+                                    <div class="basket-box-card__discount">
+                                        Вы сэкономили: <span> 4 000 ₽</span>.
+                                    </div>
+
+                                    <div class="basket-box-card__hint hint">
+                                        <div class="hint__icon">!</div>
+
+                                        <div class="hint__popup">
+                                            <div class="hint__popup-text">
+                                                При подсчете экономии мы
+                                                ориентируемся на цены
+                                                сервиса edadeal.ru
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <a href="#" class="basket-box-card__link">Изменить содержимое коробки</a>
+                        </div>
+
+                        <div class="basket-box-card__group-three">
+                            <div class="basket-box-card__group-title">
+                                <div class="basket-box-card__text">Состав заказа:</div>
+                                <div class="basket-box-card__delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <g clip-path="url(#clip0)">
+                                            <path
+                                                d="M15.3101 8.69519C14.9997 8.69519 14.748 8.9468 14.748 9.25725V19.8802C14.748 20.1904 14.9997 20.4423 15.3101 20.4423C15.6206 20.4423 15.8722 20.1904 15.8722 19.8802V9.25725C15.8722 8.9468 15.6206 8.69519 15.3101 8.69519Z"
+                                                fill="#1F7240" />
+                                            <path
+                                                d="M8.6773 8.69519C8.36684 8.69519 8.11523 8.9468 8.11523 9.25725V19.8802C8.11523 20.1904 8.36684 20.4423 8.6773 20.4423C8.98775 20.4423 9.23936 20.1904 9.23936 19.8802V9.25725C9.23936 8.9468 8.98775 8.69519 8.6773 8.69519Z"
+                                                fill="#1F7240" />
+                                            <path
+                                                d="M3.84439 7.14479V20.9927C3.84439 21.8112 4.14452 22.5799 4.66881 23.1314C5.19069 23.6845 5.91698 23.9984 6.67707 23.9998H17.3114C18.0717 23.9984 18.798 23.6845 19.3197 23.1314C19.844 22.5799 20.1441 21.8112 20.1441 20.9927V7.14479C21.1863 6.86815 21.8617 5.86127 21.7222 4.79182C21.5826 3.72259 20.6717 2.92276 19.5932 2.92254H16.7155V2.21996C16.7188 1.62914 16.4852 1.06181 16.067 0.644441C15.6487 0.227288 15.0805 -0.00500049 14.4897 -0.000170291H9.49878C8.90796 -0.00500049 8.33976 0.227288 7.92151 0.644441C7.50326 1.06181 7.26965 1.62914 7.27294 2.21996V2.92254H4.39525C3.3168 2.92276 2.40587 3.72259 2.26623 4.79182C2.12681 5.86127 2.80216 6.86815 3.84439 7.14479ZM17.3114 22.8756H6.67707C5.71609 22.8756 4.9685 22.0501 4.9685 20.9927V7.19419H19.02V20.9927C19.02 22.0501 18.2724 22.8756 17.3114 22.8756ZM8.39706 2.21996C8.39333 1.9273 8.50838 1.64561 8.71607 1.43901C8.92355 1.23241 9.2059 1.1189 9.49878 1.12395H14.4897C14.7826 1.1189 15.0649 1.23241 15.2724 1.43901C15.4801 1.64539 15.5951 1.9273 15.5914 2.21996V2.92254H8.39706V2.21996ZM4.39525 4.04666H19.5932C20.152 4.04666 20.6049 4.4996 20.6049 5.05836C20.6049 5.61713 20.152 6.07007 19.5932 6.07007H4.39525C3.83648 6.07007 3.38354 5.61713 3.38354 5.05836C3.38354 4.4996 3.83648 4.04666 4.39525 4.04666Z"
+                                                fill="#1F7240" />
+                                            <path
+                                                d="M11.9937 8.69519C11.6833 8.69519 11.4316 8.9468 11.4316 9.25725V19.8802C11.4316 20.1904 11.6833 20.4423 11.9937 20.4423C12.3042 20.4423 12.5558 20.1904 12.5558 19.8802V9.25725C12.5558 8.9468 12.3042 8.69519 11.9937 8.69519Z"
+                                                fill="#1F7240" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="basket-box-card__list">
+                                <div class="basket-box-card__item box-color --green">
+                                    <div class="box-color__image"><img src="./img/image-basket-box-card-1.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="basket-box-card__item box-color --green">
+                                    <div class="box-color__image"><img src="./img/image-basket-box-card-2.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="basket-box-card__item box-color --green">
+                                    <div class="box-color__image"><img src="./img/image-basket-box-card-3.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="basket-box-card__item box-color --green">
+                                    <div class="box-color__image"><img src="./img/image-basket-box-card-4.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="basket-box-card__item box-color --green">
+                                    <div class="box-color__image"><img src="./img/image-basket-box-card-5.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="basket-box-card__item box-color --green">
+                                    <div class="box-color__image"><img src="./img/image-basket-box-card-6.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="basket-box-card__item box-color --yellow">
+                                    <div class="box-color__image"><img src="./img/image-basket-box-card-7.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="basket-box-card__item box-color --yellow">
+                                    <div class="box-color__image"><img src="./img/image-basket-box-card-8.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="basket-box-card__item box-color --orange">
+                                    <div class="box-color__image"><img src="./img/image-basket-box-card-9.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="basket-box-card__item box-color --orange">
+                                    <div class="box-color__image"><img src="./img/image-basket-box-card-10.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="basket-box-card__item box-color --purple">
+                                    <div class="box-color__image"><img src="./img/image-basket-box-card-11.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="basket-box-card__item box-color --purple">
+                                    <div class="box-color__image"><img src="./img/image-basket-box-card-12.png" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="basket__button-wrap">
+                    <a href="#" class="basket__button-add main-btn">Добавить еще коробку</a>
+                </div>
+            </div>
+
+            <div class="basket__row-two">
+                <div class="basket__wrap-title">
+                    <div class="basket__title title-h4">Дополнительные продукты</div>
+
+                    <a href="#" class="basket__back-catalog"><span>Вернуться в каталог</span></a>
+                </div>
+
+                <div class="basket__product">
+                    <div class="basket__table table-basket">
+                        <div class="table-basket__caption">
+                            <div class="table-basket__title">Товар</div>
+                            <div class="table-basket__title">Цена за ед.</div>
+                            <div class="table-basket__title">Количество</div>
+                            <div class="table-basket__title">Стоимость</div>
+                        </div>
+
+                        <div class="table-basket__list">
+                            <div class="table-basket__item card-product-basket">
+                                <div class="card-product-basket__group-one">
+                                    <a href="#" class="card-product-basket__image"><img
+                                            src="./img/image-card-product-basket-1.png" alt=""></a>
+                                    <div class="card-product-basket__group-name">
+                                        <a href="#" class="card-product-basket__name">Масло оливковое Borges E.V.Extra
+                                            Virgin
+                                            Original</a>
+                                        <div class="card-product-basket__volume">Объем: 1 л</div>
+                                    </div>
+                                </div>
+
+                                <div class="card-product-basket__group-two">
+                                    <div class="card-product-basket__price" data-name="Цена за ед.">
+                                        <span class="card-product-basket__current">1 000 Р</span>
+                                        <span class="card-product-basket__old">2 000 Р</span>
+                                    </div>
+                                </div>
+
+                                <div class="card-product-basket__group-three">
+                                    <div class="card-product-basket__quantity quantity" data-name="Количество">
+                                        <div class="quantity__sub"></div>
+                                        <input type="number" class="quantity__value" value="1">
+                                        <div class="quantity__add"></div>
+                                    </div>
+                                </div>
+
+                                <div class="card-product-basket__group-four">
+                                    <div class="card-product-basket__price-all" data-name="Стоимость"><span>2 000
+                                            Р</span></div>
+                                </div>
+
+                                <div class="card-product-basket__delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <g clip-path="url(#clip0)">
+                                            <path
+                                                d="M15.3101 8.69519C14.9997 8.69519 14.748 8.9468 14.748 9.25725V19.8802C14.748 20.1904 14.9997 20.4423 15.3101 20.4423C15.6206 20.4423 15.8722 20.1904 15.8722 19.8802V9.25725C15.8722 8.9468 15.6206 8.69519 15.3101 8.69519Z"
+                                                fill="#1F7240" />
+                                            <path
+                                                d="M8.6773 8.69519C8.36684 8.69519 8.11523 8.9468 8.11523 9.25725V19.8802C8.11523 20.1904 8.36684 20.4423 8.6773 20.4423C8.98775 20.4423 9.23936 20.1904 9.23936 19.8802V9.25725C9.23936 8.9468 8.98775 8.69519 8.6773 8.69519Z"
+                                                fill="#1F7240" />
+                                            <path
+                                                d="M3.84439 7.14479V20.9927C3.84439 21.8112 4.14452 22.5799 4.66881 23.1314C5.19069 23.6845 5.91698 23.9984 6.67707 23.9998H17.3114C18.0717 23.9984 18.798 23.6845 19.3197 23.1314C19.844 22.5799 20.1441 21.8112 20.1441 20.9927V7.14479C21.1863 6.86815 21.8617 5.86127 21.7222 4.79182C21.5826 3.72259 20.6717 2.92276 19.5932 2.92254H16.7155V2.21996C16.7188 1.62914 16.4852 1.06181 16.067 0.644441C15.6487 0.227288 15.0805 -0.00500049 14.4897 -0.000170291H9.49878C8.90796 -0.00500049 8.33976 0.227288 7.92151 0.644441C7.50326 1.06181 7.26965 1.62914 7.27294 2.21996V2.92254H4.39525C3.3168 2.92276 2.40587 3.72259 2.26623 4.79182C2.12681 5.86127 2.80216 6.86815 3.84439 7.14479ZM17.3114 22.8756H6.67707C5.71609 22.8756 4.9685 22.0501 4.9685 20.9927V7.19419H19.02V20.9927C19.02 22.0501 18.2724 22.8756 17.3114 22.8756ZM8.39706 2.21996C8.39333 1.9273 8.50838 1.64561 8.71607 1.43901C8.92355 1.23241 9.2059 1.1189 9.49878 1.12395H14.4897C14.7826 1.1189 15.0649 1.23241 15.2724 1.43901C15.4801 1.64539 15.5951 1.9273 15.5914 2.21996V2.92254H8.39706V2.21996ZM4.39525 4.04666H19.5932C20.152 4.04666 20.6049 4.4996 20.6049 5.05836C20.6049 5.61713 20.152 6.07007 19.5932 6.07007H4.39525C3.83648 6.07007 3.38354 5.61713 3.38354 5.05836C3.38354 4.4996 3.83648 4.04666 4.39525 4.04666Z"
+                                                fill="#1F7240" />
+                                            <path
+                                                d="M11.9937 8.69519C11.6833 8.69519 11.4316 8.9468 11.4316 9.25725V19.8802C11.4316 20.1904 11.6833 20.4423 11.9937 20.4423C12.3042 20.4423 12.5558 20.1904 12.5558 19.8802V9.25725C12.5558 8.9468 12.3042 8.69519 11.9937 8.69519Z"
+                                                fill="#1F7240" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+
+                            </div>
+
+                            <div class="table-basket__item card-product-basket">
+                                <div class="card-product-basket__group-one">
+                                    <a href="#" class="card-product-basket__image"><img
+                                            src="./img/image-card-product-basket-2.png" alt=""></a>
+                                    <div class="card-product-basket__group-name">
+                                        <a href="#" class="card-product-basket__name">Масло оливковое Borges E.V.Extra
+                                            Virgin
+                                            Original</a>
+                                        <div class="card-product-basket__volume">Объем: 1 л</div>
+                                    </div>
+                                </div>
+
+                                <div class="card-product-basket__group-two">
+                                    <div class="card-product-basket__price" data-name="Цена за ед.">
+                                        <span class="card-product-basket__current">15 Р</span>
+                                    </div>
+                                </div>
+
+                                <div class="card-product-basket__group-three">
+                                    <div class="card-product-basket__quantity quantity" data-name="Количество">
+                                        <div class="quantity__sub"></div>
+                                        <input type="number" class="quantity__value" value="1">
+                                        <div class="quantity__add"></div>
+                                    </div>
+                                </div>
+
+                                <div class="card-product-basket__group-four">
+                                    <div class="card-product-basket__price-all" data-name="Стоимость"><span>30 Р</span>
+                                    </div>
+                                </div>
+
+                                <div class="card-product-basket__delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <g clip-path="url(#clip0)">
+                                            <path
+                                                d="M15.3101 8.69519C14.9997 8.69519 14.748 8.9468 14.748 9.25725V19.8802C14.748 20.1904 14.9997 20.4423 15.3101 20.4423C15.6206 20.4423 15.8722 20.1904 15.8722 19.8802V9.25725C15.8722 8.9468 15.6206 8.69519 15.3101 8.69519Z"
+                                                fill="#1F7240" />
+                                            <path
+                                                d="M8.6773 8.69519C8.36684 8.69519 8.11523 8.9468 8.11523 9.25725V19.8802C8.11523 20.1904 8.36684 20.4423 8.6773 20.4423C8.98775 20.4423 9.23936 20.1904 9.23936 19.8802V9.25725C9.23936 8.9468 8.98775 8.69519 8.6773 8.69519Z"
+                                                fill="#1F7240" />
+                                            <path
+                                                d="M3.84439 7.14479V20.9927C3.84439 21.8112 4.14452 22.5799 4.66881 23.1314C5.19069 23.6845 5.91698 23.9984 6.67707 23.9998H17.3114C18.0717 23.9984 18.798 23.6845 19.3197 23.1314C19.844 22.5799 20.1441 21.8112 20.1441 20.9927V7.14479C21.1863 6.86815 21.8617 5.86127 21.7222 4.79182C21.5826 3.72259 20.6717 2.92276 19.5932 2.92254H16.7155V2.21996C16.7188 1.62914 16.4852 1.06181 16.067 0.644441C15.6487 0.227288 15.0805 -0.00500049 14.4897 -0.000170291H9.49878C8.90796 -0.00500049 8.33976 0.227288 7.92151 0.644441C7.50326 1.06181 7.26965 1.62914 7.27294 2.21996V2.92254H4.39525C3.3168 2.92276 2.40587 3.72259 2.26623 4.79182C2.12681 5.86127 2.80216 6.86815 3.84439 7.14479ZM17.3114 22.8756H6.67707C5.71609 22.8756 4.9685 22.0501 4.9685 20.9927V7.19419H19.02V20.9927C19.02 22.0501 18.2724 22.8756 17.3114 22.8756ZM8.39706 2.21996C8.39333 1.9273 8.50838 1.64561 8.71607 1.43901C8.92355 1.23241 9.2059 1.1189 9.49878 1.12395H14.4897C14.7826 1.1189 15.0649 1.23241 15.2724 1.43901C15.4801 1.64539 15.5951 1.9273 15.5914 2.21996V2.92254H8.39706V2.21996ZM4.39525 4.04666H19.5932C20.152 4.04666 20.6049 4.4996 20.6049 5.05836C20.6049 5.61713 20.152 6.07007 19.5932 6.07007H4.39525C3.83648 6.07007 3.38354 5.61713 3.38354 5.05836C3.38354 4.4996 3.83648 4.04666 4.39525 4.04666Z"
+                                                fill="#1F7240" />
+                                            <path
+                                                d="M11.9937 8.69519C11.6833 8.69519 11.4316 8.9468 11.4316 9.25725V19.8802C11.4316 20.1904 11.6833 20.4423 11.9937 20.4423C12.3042 20.4423 12.5558 20.1904 12.5558 19.8802V9.25725C12.5558 8.9468 12.3042 8.69519 11.9937 8.69519Z"
+                                                fill="#1F7240" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+
+                            </div>
+
+                            <div class="table-basket__item card-product-basket">
+                                <div class="card-product-basket__group-one">
+                                    <a href="#" class="card-product-basket__image"><img
+                                            src="./img/image-card-product-basket-1.png" alt=""></a>
+                                    <div class="card-product-basket__group-name">
+                                        <a href="#" class="card-product-basket__name">Масло оливковое Borges E.V.Extra
+                                            Virgin
+                                            Original</a>
+                                    </div>
+                                </div>
+
+                                <div class="card-product-basket__group-two">
+                                    <div class="card-product-basket__price" data-name="Цена за ед.">
+                                        <span class="card-product-basket__current">100 000 Р</span>
+                                        <span class="card-product-basket__old">200 000 Р</span>
+                                    </div>
+                                </div>
+
+                                <div class="card-product-basket__group-three">
+                                    <div class="card-product-basket__quantity quantity" data-name="Количество">
+                                        <div class="quantity__sub"></div>
+                                        <input type="number" class="quantity__value" value="1">
+                                        <div class="quantity__add"></div>
+                                    </div>
+                                </div>
+
+                                <div class="card-product-basket__group-four">
+                                    <div class="card-product-basket__price-all" data-name="Стоимость"><span>200 000
+                                            Р</span></div>
+                                </div>
+
+                                <div class="card-product-basket__delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <g clip-path="url(#clip0)">
+                                            <path
+                                                d="M15.3101 8.69519C14.9997 8.69519 14.748 8.9468 14.748 9.25725V19.8802C14.748 20.1904 14.9997 20.4423 15.3101 20.4423C15.6206 20.4423 15.8722 20.1904 15.8722 19.8802V9.25725C15.8722 8.9468 15.6206 8.69519 15.3101 8.69519Z"
+                                                fill="#1F7240" />
+                                            <path
+                                                d="M8.6773 8.69519C8.36684 8.69519 8.11523 8.9468 8.11523 9.25725V19.8802C8.11523 20.1904 8.36684 20.4423 8.6773 20.4423C8.98775 20.4423 9.23936 20.1904 9.23936 19.8802V9.25725C9.23936 8.9468 8.98775 8.69519 8.6773 8.69519Z"
+                                                fill="#1F7240" />
+                                            <path
+                                                d="M3.84439 7.14479V20.9927C3.84439 21.8112 4.14452 22.5799 4.66881 23.1314C5.19069 23.6845 5.91698 23.9984 6.67707 23.9998H17.3114C18.0717 23.9984 18.798 23.6845 19.3197 23.1314C19.844 22.5799 20.1441 21.8112 20.1441 20.9927V7.14479C21.1863 6.86815 21.8617 5.86127 21.7222 4.79182C21.5826 3.72259 20.6717 2.92276 19.5932 2.92254H16.7155V2.21996C16.7188 1.62914 16.4852 1.06181 16.067 0.644441C15.6487 0.227288 15.0805 -0.00500049 14.4897 -0.000170291H9.49878C8.90796 -0.00500049 8.33976 0.227288 7.92151 0.644441C7.50326 1.06181 7.26965 1.62914 7.27294 2.21996V2.92254H4.39525C3.3168 2.92276 2.40587 3.72259 2.26623 4.79182C2.12681 5.86127 2.80216 6.86815 3.84439 7.14479ZM17.3114 22.8756H6.67707C5.71609 22.8756 4.9685 22.0501 4.9685 20.9927V7.19419H19.02V20.9927C19.02 22.0501 18.2724 22.8756 17.3114 22.8756ZM8.39706 2.21996C8.39333 1.9273 8.50838 1.64561 8.71607 1.43901C8.92355 1.23241 9.2059 1.1189 9.49878 1.12395H14.4897C14.7826 1.1189 15.0649 1.23241 15.2724 1.43901C15.4801 1.64539 15.5951 1.9273 15.5914 2.21996V2.92254H8.39706V2.21996ZM4.39525 4.04666H19.5932C20.152 4.04666 20.6049 4.4996 20.6049 5.05836C20.6049 5.61713 20.152 6.07007 19.5932 6.07007H4.39525C3.83648 6.07007 3.38354 5.61713 3.38354 5.05836C3.38354 4.4996 3.83648 4.04666 4.39525 4.04666Z"
+                                                fill="#1F7240" />
+                                            <path
+                                                d="M11.9937 8.69519C11.6833 8.69519 11.4316 8.9468 11.4316 9.25725V19.8802C11.4316 20.1904 11.6833 20.4423 11.9937 20.4423C12.3042 20.4423 12.5558 20.1904 12.5558 19.8802V9.25725C12.5558 8.9468 12.3042 8.69519 11.9937 8.69519Z"
+                                                fill="#1F7240" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+
+                            </div>
+
+                            <div class="table-basket__item card-product-basket">
+                                <div class="card-product-basket__group-one">
+                                    <a href="#" class="card-product-basket__image"><img
+                                            src="./img/image-card-product-basket-1.png" alt=""></a>
+                                    <div class="card-product-basket__group-name">
+                                        <a href="#" class="card-product-basket__name">Масло оливковое Borges E.V.Extra
+                                            Virgin
+                                            Original</a>
+                                        <div class="card-product-basket__volume">Объем: 1 л</div>
+                                    </div>
+                                </div>
+
+                                <div class="card-product-basket__group-two">
+                                    <div class="card-product-basket__price" data-name="Цена за ед.">
+                                        <span class="card-product-basket__current">1 000 Р</span>
+                                        <span class="card-product-basket__old">2 000 Р</span>
+                                    </div>
+                                </div>
+
+                                <div class="card-product-basket__group-three">
+                                    <div class="card-product-basket__quantity quantity" data-name="Количество">
+                                        <div class="quantity__sub"></div>
+                                        <input type="number" class="quantity__value" value="1">
+                                        <div class="quantity__add"></div>
+                                    </div>
+                                </div>
+
+                                <div class="card-product-basket__group-four">
+                                    <div class="card-product-basket__price-all" data-name="Стоимость"><span>2 000
+                                            Р</span></div>
+                                </div>
+
+                                <div class="card-product-basket__delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <g clip-path="url(#clip0)">
+                                            <path
+                                                d="M15.3101 8.69519C14.9997 8.69519 14.748 8.9468 14.748 9.25725V19.8802C14.748 20.1904 14.9997 20.4423 15.3101 20.4423C15.6206 20.4423 15.8722 20.1904 15.8722 19.8802V9.25725C15.8722 8.9468 15.6206 8.69519 15.3101 8.69519Z"
+                                                fill="#1F7240" />
+                                            <path
+                                                d="M8.6773 8.69519C8.36684 8.69519 8.11523 8.9468 8.11523 9.25725V19.8802C8.11523 20.1904 8.36684 20.4423 8.6773 20.4423C8.98775 20.4423 9.23936 20.1904 9.23936 19.8802V9.25725C9.23936 8.9468 8.98775 8.69519 8.6773 8.69519Z"
+                                                fill="#1F7240" />
+                                            <path
+                                                d="M3.84439 7.14479V20.9927C3.84439 21.8112 4.14452 22.5799 4.66881 23.1314C5.19069 23.6845 5.91698 23.9984 6.67707 23.9998H17.3114C18.0717 23.9984 18.798 23.6845 19.3197 23.1314C19.844 22.5799 20.1441 21.8112 20.1441 20.9927V7.14479C21.1863 6.86815 21.8617 5.86127 21.7222 4.79182C21.5826 3.72259 20.6717 2.92276 19.5932 2.92254H16.7155V2.21996C16.7188 1.62914 16.4852 1.06181 16.067 0.644441C15.6487 0.227288 15.0805 -0.00500049 14.4897 -0.000170291H9.49878C8.90796 -0.00500049 8.33976 0.227288 7.92151 0.644441C7.50326 1.06181 7.26965 1.62914 7.27294 2.21996V2.92254H4.39525C3.3168 2.92276 2.40587 3.72259 2.26623 4.79182C2.12681 5.86127 2.80216 6.86815 3.84439 7.14479ZM17.3114 22.8756H6.67707C5.71609 22.8756 4.9685 22.0501 4.9685 20.9927V7.19419H19.02V20.9927C19.02 22.0501 18.2724 22.8756 17.3114 22.8756ZM8.39706 2.21996C8.39333 1.9273 8.50838 1.64561 8.71607 1.43901C8.92355 1.23241 9.2059 1.1189 9.49878 1.12395H14.4897C14.7826 1.1189 15.0649 1.23241 15.2724 1.43901C15.4801 1.64539 15.5951 1.9273 15.5914 2.21996V2.92254H8.39706V2.21996ZM4.39525 4.04666H19.5932C20.152 4.04666 20.6049 4.4996 20.6049 5.05836C20.6049 5.61713 20.152 6.07007 19.5932 6.07007H4.39525C3.83648 6.07007 3.38354 5.61713 3.38354 5.05836C3.38354 4.4996 3.83648 4.04666 4.39525 4.04666Z"
+                                                fill="#1F7240" />
+                                            <path
+                                                d="M11.9937 8.69519C11.6833 8.69519 11.4316 8.9468 11.4316 9.25725V19.8802C11.4316 20.1904 11.6833 20.4423 11.9937 20.4423C12.3042 20.4423 12.5558 20.1904 12.5558 19.8802V9.25725C12.5558 8.9468 12.3042 8.69519 11.9937 8.69519Z"
+                                                fill="#1F7240" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+
+                            </div>
+
+                            <div class="table-basket__item card-product-basket">
+                                <div class="card-product-basket__group-one">
+                                    <a href="#" class="card-product-basket__image"><img
+                                            src="./img/image-card-product-basket-1.png" alt=""></a>
+                                    <div class="card-product-basket__group-name">
+                                        <a href="#" class="card-product-basket__name">Масло оливковое Borges E.V.Extra
+                                            Virgin
+                                            Original</a>
+                                        <div class="card-product-basket__volume">Объем: 1 л</div>
+                                    </div>
+                                </div>
+
+                                <div class="card-product-basket__group-two">
+                                    <div class="card-product-basket__price" data-name="Цена за ед.">
+                                        <span class="card-product-basket__current">1 000 Р</span>
+                                        <span class="card-product-basket__old">2 000 Р</span>
+                                    </div>
+                                </div>
+
+                                <div class="card-product-basket__group-three">
+                                    <div class="card-product-basket__quantity quantity" data-name="Количество">
+                                        <div class="quantity__sub"></div>
+                                        <input type="number" class="quantity__value" value="1">
+                                        <div class="quantity__add"></div>
+                                    </div>
+                                </div>
+
+                                <div class="card-product-basket__group-four">
+                                    <div class="card-product-basket__price-all" data-name="Стоимость"><span>2 000
+                                            Р</span></div>
+                                </div>
+
+                                <div class="card-product-basket__delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <g clip-path="url(#clip0)">
+                                            <path
+                                                d="M15.3101 8.69519C14.9997 8.69519 14.748 8.9468 14.748 9.25725V19.8802C14.748 20.1904 14.9997 20.4423 15.3101 20.4423C15.6206 20.4423 15.8722 20.1904 15.8722 19.8802V9.25725C15.8722 8.9468 15.6206 8.69519 15.3101 8.69519Z"
+                                                fill="#1F7240" />
+                                            <path
+                                                d="M8.6773 8.69519C8.36684 8.69519 8.11523 8.9468 8.11523 9.25725V19.8802C8.11523 20.1904 8.36684 20.4423 8.6773 20.4423C8.98775 20.4423 9.23936 20.1904 9.23936 19.8802V9.25725C9.23936 8.9468 8.98775 8.69519 8.6773 8.69519Z"
+                                                fill="#1F7240" />
+                                            <path
+                                                d="M3.84439 7.14479V20.9927C3.84439 21.8112 4.14452 22.5799 4.66881 23.1314C5.19069 23.6845 5.91698 23.9984 6.67707 23.9998H17.3114C18.0717 23.9984 18.798 23.6845 19.3197 23.1314C19.844 22.5799 20.1441 21.8112 20.1441 20.9927V7.14479C21.1863 6.86815 21.8617 5.86127 21.7222 4.79182C21.5826 3.72259 20.6717 2.92276 19.5932 2.92254H16.7155V2.21996C16.7188 1.62914 16.4852 1.06181 16.067 0.644441C15.6487 0.227288 15.0805 -0.00500049 14.4897 -0.000170291H9.49878C8.90796 -0.00500049 8.33976 0.227288 7.92151 0.644441C7.50326 1.06181 7.26965 1.62914 7.27294 2.21996V2.92254H4.39525C3.3168 2.92276 2.40587 3.72259 2.26623 4.79182C2.12681 5.86127 2.80216 6.86815 3.84439 7.14479ZM17.3114 22.8756H6.67707C5.71609 22.8756 4.9685 22.0501 4.9685 20.9927V7.19419H19.02V20.9927C19.02 22.0501 18.2724 22.8756 17.3114 22.8756ZM8.39706 2.21996C8.39333 1.9273 8.50838 1.64561 8.71607 1.43901C8.92355 1.23241 9.2059 1.1189 9.49878 1.12395H14.4897C14.7826 1.1189 15.0649 1.23241 15.2724 1.43901C15.4801 1.64539 15.5951 1.9273 15.5914 2.21996V2.92254H8.39706V2.21996ZM4.39525 4.04666H19.5932C20.152 4.04666 20.6049 4.4996 20.6049 5.05836C20.6049 5.61713 20.152 6.07007 19.5932 6.07007H4.39525C3.83648 6.07007 3.38354 5.61713 3.38354 5.05836C3.38354 4.4996 3.83648 4.04666 4.39525 4.04666Z"
+                                                fill="#1F7240" />
+                                            <path
+                                                d="M11.9937 8.69519C11.6833 8.69519 11.4316 8.9468 11.4316 9.25725V19.8802C11.4316 20.1904 11.6833 20.4423 11.9937 20.4423C12.3042 20.4423 12.5558 20.1904 12.5558 19.8802V9.25725C12.5558 8.9468 12.3042 8.69519 11.9937 8.69519Z"
+                                                fill="#1F7240" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+
+                            </div>
+
+                            <div class="table-basket__item card-product-basket">
+                                <div class="card-product-basket__group-one">
+                                    <a href="#" class="card-product-basket__image"><img
+                                            src="./img/image-card-product-basket-1.png" alt=""></a>
+                                    <div class="card-product-basket__group-name">
+                                        <a href="#" class="card-product-basket__name">Масло оливковое Borges E.V.Extra
+                                            Virgin
+                                            Original</a>
+                                        <div class="card-product-basket__volume">Объем: 1 л</div>
+                                    </div>
+                                </div>
+
+                                <div class="card-product-basket__group-two">
+                                    <div class="card-product-basket__price" data-name="Цена за ед.">
+                                        <span class="card-product-basket__current">1 000 Р</span>
+                                        <span class="card-product-basket__old">2 000 Р</span>
+                                    </div>
+                                </div>
+
+                                <div class="card-product-basket__group-three">
+                                    <div class="card-product-basket__quantity quantity" data-name="Количество">
+                                        <div class="quantity__sub"></div>
+                                        <input type="number" class="quantity__value" value="1">
+                                        <div class="quantity__add"></div>
+                                    </div>
+                                </div>
+
+                                <div class="card-product-basket__group-four">
+                                    <div class="card-product-basket__price-all" data-name="Стоимость"><span>2 000
+                                            Р</span></div>
+                                </div>
+
+                                <div class="card-product-basket__delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <g clip-path="url(#clip0)">
+                                            <path
+                                                d="M15.3101 8.69519C14.9997 8.69519 14.748 8.9468 14.748 9.25725V19.8802C14.748 20.1904 14.9997 20.4423 15.3101 20.4423C15.6206 20.4423 15.8722 20.1904 15.8722 19.8802V9.25725C15.8722 8.9468 15.6206 8.69519 15.3101 8.69519Z"
+                                                fill="#1F7240" />
+                                            <path
+                                                d="M8.6773 8.69519C8.36684 8.69519 8.11523 8.9468 8.11523 9.25725V19.8802C8.11523 20.1904 8.36684 20.4423 8.6773 20.4423C8.98775 20.4423 9.23936 20.1904 9.23936 19.8802V9.25725C9.23936 8.9468 8.98775 8.69519 8.6773 8.69519Z"
+                                                fill="#1F7240" />
+                                            <path
+                                                d="M3.84439 7.14479V20.9927C3.84439 21.8112 4.14452 22.5799 4.66881 23.1314C5.19069 23.6845 5.91698 23.9984 6.67707 23.9998H17.3114C18.0717 23.9984 18.798 23.6845 19.3197 23.1314C19.844 22.5799 20.1441 21.8112 20.1441 20.9927V7.14479C21.1863 6.86815 21.8617 5.86127 21.7222 4.79182C21.5826 3.72259 20.6717 2.92276 19.5932 2.92254H16.7155V2.21996C16.7188 1.62914 16.4852 1.06181 16.067 0.644441C15.6487 0.227288 15.0805 -0.00500049 14.4897 -0.000170291H9.49878C8.90796 -0.00500049 8.33976 0.227288 7.92151 0.644441C7.50326 1.06181 7.26965 1.62914 7.27294 2.21996V2.92254H4.39525C3.3168 2.92276 2.40587 3.72259 2.26623 4.79182C2.12681 5.86127 2.80216 6.86815 3.84439 7.14479ZM17.3114 22.8756H6.67707C5.71609 22.8756 4.9685 22.0501 4.9685 20.9927V7.19419H19.02V20.9927C19.02 22.0501 18.2724 22.8756 17.3114 22.8756ZM8.39706 2.21996C8.39333 1.9273 8.50838 1.64561 8.71607 1.43901C8.92355 1.23241 9.2059 1.1189 9.49878 1.12395H14.4897C14.7826 1.1189 15.0649 1.23241 15.2724 1.43901C15.4801 1.64539 15.5951 1.9273 15.5914 2.21996V2.92254H8.39706V2.21996ZM4.39525 4.04666H19.5932C20.152 4.04666 20.6049 4.4996 20.6049 5.05836C20.6049 5.61713 20.152 6.07007 19.5932 6.07007H4.39525C3.83648 6.07007 3.38354 5.61713 3.38354 5.05836C3.38354 4.4996 3.83648 4.04666 4.39525 4.04666Z"
+                                                fill="#1F7240" />
+                                            <path
+                                                d="M11.9937 8.69519C11.6833 8.69519 11.4316 8.9468 11.4316 9.25725V19.8802C11.4316 20.1904 11.6833 20.4423 11.9937 20.4423C12.3042 20.4423 12.5558 20.1904 12.5558 19.8802V9.25725C12.5558 8.9468 12.3042 8.69519 11.9937 8.69519Z"
+                                                fill="#1F7240" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="basket__result result-basket">
+                        <div class="result-basket__group-one">
+                            <div class="result-basket__text">Есть промокод?</div>
+                        </div>
+
+                        <div class="result-basket__group-two">
+                            <form action="#" class="result-basket__form-promocode form-promocode">
+                                <div class="form-promocode__wrap-input wrap-input">
+                                    <input type="text" placeholder="Введите промокод">
+                                </div>
+                                <div class="form-promocode__list">
+                                    <div class="form-promocode__item added">
+                                        <div class="form-promocode__code">HAPPY</div>
+                                        <div class="form-promocode__text">- купон применен</div>
+                                        <div class="form-promocode__del"></div>
+                                    </div>
+
+                                    <div class="form-promocode__item added">
+                                        <div class="form-promocode__code">HAPPY2021</div>
+                                        <div class="form-promocode__text">- купон применен</div>
+                                        <div class="form-promocode__del"></div>
+                                    </div>
+
+                                    <div class="form-promocode__item not-found">
+                                        <div class="form-promocode__code">HAPPY1</div>
+                                        <div class="form-promocode__text">- купон не найден</div>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <div class="result-basket__group-price">
+                                <div class="result-basket__price">
+                                    <span class="result-basket__name">Скидка:</span>
+                                    <span class="result-basket__value">500 Р</span>
+                                </div>
+                                <div class="result-basket__price">
+                                    <span class="result-basket__name">Итого:</span>
+                                    <span class="result-basket__value">100 000 Р</span>
+                                </div>
+                            </div>
+
+                            <div class="result-basket__group-button">
+                                <a href="#" class="result-basket__button-clean main-btn">Очистить корзину</a>
+                                <a href="#" class="result-basket__button-order main-btn">Оформить заказ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="common-slider">
+    <div class="container">
+        <div class="common-slider__wrap">
+
+            <div class="common-slider__group">
+                <div class="common-slider__title-group">
+                    <div class="common-slider__title title-h2 --circle"><span>Вы просматривали</span></div>
+
+                    <a href="#" class="common-slider__button-all">Посмотреть все</a>
+                </div>
+
+                <div class="common-slider__arrows">
+
+                </div>
+            </div>
+
+            <div class="common-slider__container swiper-container">
+                <div class="common-slider__slide-wrap swiper-wrapper">
+                    <div class="common-slider__slide swiper-slide">
+                        <div class="common-slider__product-card card-product-main authorized">
+                            <div class="card-product-main__favorites favorites">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18"
+                                    fill="none">
+                                    <path
+                                        d="M5.6709 0.721273C7.33929 0.712357 8.92534 1.44508 10 2.72125C11.068 1.43636 12.6584 0.701551 14.3291 0.721273C17.4611 0.721273 20 3.26019 20 6.39213C20 11.7593 10.6329 16.9997 10.2532 17.2023C10.0999 17.3047 9.90011 17.3047 9.74684 17.2023C9.36708 16.9997 0 11.8352 0 6.39213C0 3.26019 2.53897 0.721273 5.6709 0.721273ZM10 16.1896C11.4684 15.3289 18.9873 10.7466 18.9873 6.39213C18.9873 3.81948 16.9018 1.73388 14.3291 1.73388C12.7537 1.71319 11.2793 2.50784 10.4304 3.83514C10.258 4.07282 9.92554 4.12578 9.68786 3.95337C9.64246 3.92042 9.60253 3.88054 9.56963 3.83514C8.1617 1.68194 5.27481 1.07777 3.12162 2.4857C1.80348 3.34761 1.01009 4.81717 1.01271 6.39208C1.01266 10.7972 8.53167 15.3542 10 16.1896Z"
+                                        fill="#5FAD56" />
+                                    <path
+                                        d="M0.500288 7C0.00028801 5.5 2.50039 2 5 1.5C6.66361 1.16723 8.15484 2.02137 8.88846 2.86637C8.92564 3.07758 9.20058 3.1 10.0004 3.5C11.0002 4 10.5004 3 11.5004 2C12.5004 1 14.0004 1 15.5004 1C17.0004 1 19.0004 4.5 19.5004 5.5C20.0004 6.5 17.5004 10.5 17.0004 11C16.5004 11.5 13.4992 14.0006 12.4992 15.0006C11.4994 16.0004 10.4999 16.9999 9.00039 16.5C7.50062 16 5.49976 13 3.99976 12C2.49976 11 1.00029 8.5 0.500288 7Z"
+                                        fill="#5FAD56" />
+                                </svg>
+                            </div>
+
+                            <div class="card-product-main__banner banner">
+                                <div class="banner__item --recommend"><span>Рекомендуем</span></div>
+                            </div>
+
+                            <a href="#" class="card-product-main__image"><img src="./img/image-card-product-main-2.png"
+                                    alt="">
+                            </a>
+
+                            <a href="#" class="card-product-main__name">Чипсы Lays картофельные Сметана и лук
+                                150 г
+                            </a>
+
+                            <div class="card-product-main__volume volume">
+                                <div class="volume__item added">1 л</div>
+                                <div class="volume__item">2 л</div>
+                                <div class="volume__item">3 л</div>
+                            </div>
+
+                            <a href="#" class="card-product-main__rating rating">
+                                <div class="rating__wrap">
+
+                                    <div class="rating__item added">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                                                stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                    <div class="rating__item added">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                                                stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                    <div class="rating__item added">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                                                stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                    <div class="rating__item added">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                                                stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                    <div class="rating__item">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                                                stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="card-product-main__group-price">
+
+                                <div class="card-product-main__price-wrap">
+                                    <div class="card-product-main__price">
+                                        <span class="card-product-main__price-current">210 р</span>
+                                        <span class="card-product-main__price-old">2100 р</span>
+                                    </div>
+
+                                    <a href="#" class="card-product-main__button-add btn-2 --small">добавить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="common-slider__slide swiper-slide">
+                        <div class="common-slider__product-card card-product-main authorized">
+                            <div class="card-product-main__favorites favorites">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18"
+                                    fill="none">
+                                    <path
+                                        d="M5.6709 0.721273C7.33929 0.712357 8.92534 1.44508 10 2.72125C11.068 1.43636 12.6584 0.701551 14.3291 0.721273C17.4611 0.721273 20 3.26019 20 6.39213C20 11.7593 10.6329 16.9997 10.2532 17.2023C10.0999 17.3047 9.90011 17.3047 9.74684 17.2023C9.36708 16.9997 0 11.8352 0 6.39213C0 3.26019 2.53897 0.721273 5.6709 0.721273ZM10 16.1896C11.4684 15.3289 18.9873 10.7466 18.9873 6.39213C18.9873 3.81948 16.9018 1.73388 14.3291 1.73388C12.7537 1.71319 11.2793 2.50784 10.4304 3.83514C10.258 4.07282 9.92554 4.12578 9.68786 3.95337C9.64246 3.92042 9.60253 3.88054 9.56963 3.83514C8.1617 1.68194 5.27481 1.07777 3.12162 2.4857C1.80348 3.34761 1.01009 4.81717 1.01271 6.39208C1.01266 10.7972 8.53167 15.3542 10 16.1896Z"
+                                        fill="#5FAD56" />
+                                    <path
+                                        d="M0.500288 7C0.00028801 5.5 2.50039 2 5 1.5C6.66361 1.16723 8.15484 2.02137 8.88846 2.86637C8.92564 3.07758 9.20058 3.1 10.0004 3.5C11.0002 4 10.5004 3 11.5004 2C12.5004 1 14.0004 1 15.5004 1C17.0004 1 19.0004 4.5 19.5004 5.5C20.0004 6.5 17.5004 10.5 17.0004 11C16.5004 11.5 13.4992 14.0006 12.4992 15.0006C11.4994 16.0004 10.4999 16.9999 9.00039 16.5C7.50062 16 5.49976 13 3.99976 12C2.49976 11 1.00029 8.5 0.500288 7Z"
+                                        fill="#5FAD56" />
+                                </svg>
+                            </div>
+
+                            <div class="card-product-main__banner banner">
+                                <div class="banner__item --recommend"><span>Рекомендуем</span></div>
+                            </div>
+
+                            <a href="#" class="card-product-main__image"><img src="./img/image-card-product-main-2.png"
+                                    alt="">
+                            </a>
+
+                            <a href="#" class="card-product-main__name">Чипсы Lays картофельные Сметана и лук
+                                150 г
+                            </a>
+
+                            <div class="card-product-main__volume volume">
+                                <div class="volume__item added">1 л</div>
+                                <div class="volume__item">2 л</div>
+                                <div class="volume__item">3 л</div>
+                            </div>
+
+                            <a href="#" class="card-product-main__rating rating">
+                                <div class="rating__wrap">
+
+                                    <div class="rating__item added">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                                                stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                    <div class="rating__item added">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                                                stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                    <div class="rating__item added">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                                                stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                    <div class="rating__item added">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                                                stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                    <div class="rating__item">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                                                stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="card-product-main__group-price">
+
+                                <div class="card-product-main__price-wrap">
+                                    <div class="card-product-main__price">
+                                        <span class="card-product-main__price-current">210 р</span>
+                                        <span class="card-product-main__price-old">2100 р</span>
+                                    </div>
+
+                                    <a href="#" class="card-product-main__button-add btn-2 --small">добавить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="common-slider__slide swiper-slide">
+                        <div class="common-slider__product-card card-product-main authorized">
+                            <div class="card-product-main__favorites favorites">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18"
+                                    fill="none">
+                                    <path
+                                        d="M5.6709 0.721273C7.33929 0.712357 8.92534 1.44508 10 2.72125C11.068 1.43636 12.6584 0.701551 14.3291 0.721273C17.4611 0.721273 20 3.26019 20 6.39213C20 11.7593 10.6329 16.9997 10.2532 17.2023C10.0999 17.3047 9.90011 17.3047 9.74684 17.2023C9.36708 16.9997 0 11.8352 0 6.39213C0 3.26019 2.53897 0.721273 5.6709 0.721273ZM10 16.1896C11.4684 15.3289 18.9873 10.7466 18.9873 6.39213C18.9873 3.81948 16.9018 1.73388 14.3291 1.73388C12.7537 1.71319 11.2793 2.50784 10.4304 3.83514C10.258 4.07282 9.92554 4.12578 9.68786 3.95337C9.64246 3.92042 9.60253 3.88054 9.56963 3.83514C8.1617 1.68194 5.27481 1.07777 3.12162 2.4857C1.80348 3.34761 1.01009 4.81717 1.01271 6.39208C1.01266 10.7972 8.53167 15.3542 10 16.1896Z"
+                                        fill="#5FAD56" />
+                                    <path
+                                        d="M0.500288 7C0.00028801 5.5 2.50039 2 5 1.5C6.66361 1.16723 8.15484 2.02137 8.88846 2.86637C8.92564 3.07758 9.20058 3.1 10.0004 3.5C11.0002 4 10.5004 3 11.5004 2C12.5004 1 14.0004 1 15.5004 1C17.0004 1 19.0004 4.5 19.5004 5.5C20.0004 6.5 17.5004 10.5 17.0004 11C16.5004 11.5 13.4992 14.0006 12.4992 15.0006C11.4994 16.0004 10.4999 16.9999 9.00039 16.5C7.50062 16 5.49976 13 3.99976 12C2.49976 11 1.00029 8.5 0.500288 7Z"
+                                        fill="#5FAD56" />
+                                </svg>
+                            </div>
+
+                            <div class="card-product-main__banner banner">
+                                <div class="banner__item --recommend"><span>Рекомендуем</span></div>
+                            </div>
+
+                            <a href="#" class="card-product-main__image"><img src="./img/image-card-product-main-2.png"
+                                    alt="">
+                            </a>
+
+                            <a href="#" class="card-product-main__name">Чипсы Lays картофельные Сметана и лук
+                                150 г
+                            </a>
+
+                            <div class="card-product-main__volume volume">
+                                <div class="volume__item added">1 л</div>
+                                <div class="volume__item">2 л</div>
+                                <div class="volume__item">3 л</div>
+                            </div>
+
+                            <a href="#" class="card-product-main__rating rating">
+                                <div class="rating__wrap">
+
+                                    <div class="rating__item added">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                                                stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                    <div class="rating__item added">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                                                stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                    <div class="rating__item added">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                                                stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                    <div class="rating__item added">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                                                stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                    <div class="rating__item">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                                                stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="card-product-main__group-price">
+
+                                <div class="card-product-main__price-wrap">
+                                    <div class="card-product-main__price">
+                                        <span class="card-product-main__price-current">210 р</span>
+                                        <span class="card-product-main__price-old">2100 р</span>
+                                    </div>
+
+                                    <a href="#" class="card-product-main__button-add btn-2 --small">добавить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="common-slider__slide swiper-slide">
+                        <div class="common-slider__product-card card-product-main authorized">
+                            <div class="card-product-main__favorites favorites">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18"
+                                    fill="none">
+                                    <path
+                                        d="M5.6709 0.721273C7.33929 0.712357 8.92534 1.44508 10 2.72125C11.068 1.43636 12.6584 0.701551 14.3291 0.721273C17.4611 0.721273 20 3.26019 20 6.39213C20 11.7593 10.6329 16.9997 10.2532 17.2023C10.0999 17.3047 9.90011 17.3047 9.74684 17.2023C9.36708 16.9997 0 11.8352 0 6.39213C0 3.26019 2.53897 0.721273 5.6709 0.721273ZM10 16.1896C11.4684 15.3289 18.9873 10.7466 18.9873 6.39213C18.9873 3.81948 16.9018 1.73388 14.3291 1.73388C12.7537 1.71319 11.2793 2.50784 10.4304 3.83514C10.258 4.07282 9.92554 4.12578 9.68786 3.95337C9.64246 3.92042 9.60253 3.88054 9.56963 3.83514C8.1617 1.68194 5.27481 1.07777 3.12162 2.4857C1.80348 3.34761 1.01009 4.81717 1.01271 6.39208C1.01266 10.7972 8.53167 15.3542 10 16.1896Z"
+                                        fill="#5FAD56" />
+                                    <path
+                                        d="M0.500288 7C0.00028801 5.5 2.50039 2 5 1.5C6.66361 1.16723 8.15484 2.02137 8.88846 2.86637C8.92564 3.07758 9.20058 3.1 10.0004 3.5C11.0002 4 10.5004 3 11.5004 2C12.5004 1 14.0004 1 15.5004 1C17.0004 1 19.0004 4.5 19.5004 5.5C20.0004 6.5 17.5004 10.5 17.0004 11C16.5004 11.5 13.4992 14.0006 12.4992 15.0006C11.4994 16.0004 10.4999 16.9999 9.00039 16.5C7.50062 16 5.49976 13 3.99976 12C2.49976 11 1.00029 8.5 0.500288 7Z"
+                                        fill="#5FAD56" />
+                                </svg>
+                            </div>
+
+                            <div class="card-product-main__banner banner">
+                                <div class="banner__item --recommend"><span>Рекомендуем</span></div>
+                            </div>
+
+                            <a href="#" class="card-product-main__image"><img src="./img/image-card-product-main-2.png"
+                                    alt="">
+                            </a>
+
+                            <a href="#" class="card-product-main__name">Чипсы Lays картофельные Сметана и лук
+                                150 г
+                            </a>
+
+                            <div class="card-product-main__volume volume">
+                                <div class="volume__item added">1 л</div>
+                                <div class="volume__item">2 л</div>
+                                <div class="volume__item">3 л</div>
+                            </div>
+
+                            <a href="#" class="card-product-main__rating rating">
+                                <div class="rating__wrap">
+
+                                    <div class="rating__item added">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                                                stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                    <div class="rating__item added">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                                                stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                    <div class="rating__item added">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                                                stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                    <div class="rating__item added">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                                                stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                    <div class="rating__item">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                                                stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="card-product-main__group-price">
+
+                                <div class="card-product-main__price-wrap">
+                                    <div class="card-product-main__price">
+                                        <span class="card-product-main__price-current">210 р</span>
+                                        <span class="card-product-main__price-old">2100 р</span>
+                                    </div>
+
+                                    <a href="#" class="card-product-main__button-add btn-2 --small">добавить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="common-slider__slide swiper-slide">
+                        <div class="common-slider__product-card card-product-main authorized">
+                            <div class="card-product-main__favorites favorites">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18"
+                                    fill="none">
+                                    <path
+                                        d="M5.6709 0.721273C7.33929 0.712357 8.92534 1.44508 10 2.72125C11.068 1.43636 12.6584 0.701551 14.3291 0.721273C17.4611 0.721273 20 3.26019 20 6.39213C20 11.7593 10.6329 16.9997 10.2532 17.2023C10.0999 17.3047 9.90011 17.3047 9.74684 17.2023C9.36708 16.9997 0 11.8352 0 6.39213C0 3.26019 2.53897 0.721273 5.6709 0.721273ZM10 16.1896C11.4684 15.3289 18.9873 10.7466 18.9873 6.39213C18.9873 3.81948 16.9018 1.73388 14.3291 1.73388C12.7537 1.71319 11.2793 2.50784 10.4304 3.83514C10.258 4.07282 9.92554 4.12578 9.68786 3.95337C9.64246 3.92042 9.60253 3.88054 9.56963 3.83514C8.1617 1.68194 5.27481 1.07777 3.12162 2.4857C1.80348 3.34761 1.01009 4.81717 1.01271 6.39208C1.01266 10.7972 8.53167 15.3542 10 16.1896Z"
+                                        fill="#5FAD56" />
+                                    <path
+                                        d="M0.500288 7C0.00028801 5.5 2.50039 2 5 1.5C6.66361 1.16723 8.15484 2.02137 8.88846 2.86637C8.92564 3.07758 9.20058 3.1 10.0004 3.5C11.0002 4 10.5004 3 11.5004 2C12.5004 1 14.0004 1 15.5004 1C17.0004 1 19.0004 4.5 19.5004 5.5C20.0004 6.5 17.5004 10.5 17.0004 11C16.5004 11.5 13.4992 14.0006 12.4992 15.0006C11.4994 16.0004 10.4999 16.9999 9.00039 16.5C7.50062 16 5.49976 13 3.99976 12C2.49976 11 1.00029 8.5 0.500288 7Z"
+                                        fill="#5FAD56" />
+                                </svg>
+                            </div>
+
+                            <div class="card-product-main__banner banner">
+                                <div class="banner__item --recommend"><span>Рекомендуем</span></div>
+                            </div>
+
+                            <a href="#" class="card-product-main__image"><img src="./img/image-card-product-main-2.png"
+                                    alt="">
+                            </a>
+
+                            <a href="#" class="card-product-main__name">Чипсы Lays картофельные Сметана и лук
+                                150 г
+                            </a>
+
+                            <div class="card-product-main__volume volume">
+                                <div class="volume__item added">1 л</div>
+                                <div class="volume__item">2 л</div>
+                                <div class="volume__item">3 л</div>
+                            </div>
+
+                            <a href="#" class="card-product-main__rating rating">
+                                <div class="rating__wrap">
+
+                                    <div class="rating__item added">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                                                stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                    <div class="rating__item added">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                                                stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                    <div class="rating__item added">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                                                stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                    <div class="rating__item added">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                                                stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                    <div class="rating__item">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                                                stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="card-product-main__group-price">
+
+                                <div class="card-product-main__price-wrap">
+                                    <div class="card-product-main__price">
+                                        <span class="card-product-main__price-current">210 р</span>
+                                        <span class="card-product-main__price-old">2100 р</span>
+                                    </div>
+
+                                    <a href="#" class="card-product-main__button-add btn-2 --small">добавить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="common-slider__slide swiper-slide">
+                        <div class="common-slider__product-card card-product-main authorized">
+                            <div class="card-product-main__favorites favorites">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18"
+                                    fill="none">
+                                    <path
+                                        d="M5.6709 0.721273C7.33929 0.712357 8.92534 1.44508 10 2.72125C11.068 1.43636 12.6584 0.701551 14.3291 0.721273C17.4611 0.721273 20 3.26019 20 6.39213C20 11.7593 10.6329 16.9997 10.2532 17.2023C10.0999 17.3047 9.90011 17.3047 9.74684 17.2023C9.36708 16.9997 0 11.8352 0 6.39213C0 3.26019 2.53897 0.721273 5.6709 0.721273ZM10 16.1896C11.4684 15.3289 18.9873 10.7466 18.9873 6.39213C18.9873 3.81948 16.9018 1.73388 14.3291 1.73388C12.7537 1.71319 11.2793 2.50784 10.4304 3.83514C10.258 4.07282 9.92554 4.12578 9.68786 3.95337C9.64246 3.92042 9.60253 3.88054 9.56963 3.83514C8.1617 1.68194 5.27481 1.07777 3.12162 2.4857C1.80348 3.34761 1.01009 4.81717 1.01271 6.39208C1.01266 10.7972 8.53167 15.3542 10 16.1896Z"
+                                        fill="#5FAD56" />
+                                    <path
+                                        d="M0.500288 7C0.00028801 5.5 2.50039 2 5 1.5C6.66361 1.16723 8.15484 2.02137 8.88846 2.86637C8.92564 3.07758 9.20058 3.1 10.0004 3.5C11.0002 4 10.5004 3 11.5004 2C12.5004 1 14.0004 1 15.5004 1C17.0004 1 19.0004 4.5 19.5004 5.5C20.0004 6.5 17.5004 10.5 17.0004 11C16.5004 11.5 13.4992 14.0006 12.4992 15.0006C11.4994 16.0004 10.4999 16.9999 9.00039 16.5C7.50062 16 5.49976 13 3.99976 12C2.49976 11 1.00029 8.5 0.500288 7Z"
+                                        fill="#5FAD56" />
+                                </svg>
+                            </div>
+
+                            <div class="card-product-main__banner banner">
+                                <div class="banner__item --recommend"><span>Рекомендуем</span></div>
+                            </div>
+
+                            <a href="#" class="card-product-main__image"><img src="./img/image-card-product-main-2.png"
+                                    alt="">
+                            </a>
+
+                            <a href="#" class="card-product-main__name">Чипсы Lays картофельные Сметана и лук
+                                150 г
+                            </a>
+
+                            <div class="card-product-main__volume volume">
+                                <div class="volume__item added">1 л</div>
+                                <div class="volume__item">2 л</div>
+                                <div class="volume__item">3 л</div>
+                            </div>
+
+                            <a href="#" class="card-product-main__rating rating">
+                                <div class="rating__wrap">
+
+                                    <div class="rating__item added">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                                                stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                    <div class="rating__item added">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                                                stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                    <div class="rating__item added">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                                                stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                    <div class="rating__item added">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                                                stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                    <div class="rating__item">
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                                                stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="card-product-main__group-price">
+
+                                <div class="card-product-main__price-wrap">
+                                    <div class="card-product-main__price">
+                                        <span class="card-product-main__price-current">210 р</span>
+                                        <span class="card-product-main__price-old">2100 р</span>
+                                    </div>
+
+                                    <a href="#" class="card-product-main__button-add btn-2 --small">добавить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="common-slider__button-wrap">
+                    <div class="common-slider__prev swiper-button-prev slider-button-prev"></div>
+                    <div class="common-slider__next swiper-button-next slider-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@@include("components/_footer.html")

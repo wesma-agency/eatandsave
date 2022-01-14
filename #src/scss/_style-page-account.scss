@@ -1,0 +1,193 @@
+.account {
+	&__wrap {
+		padding: 100px 0 90px 0;
+	}
+
+	&__title-wrap {
+		margin-bottom: 100px;
+		text-align: center;
+	}
+
+	&__title {
+		display: inline-block;
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 30px;
+	}
+
+	&__item {
+	}
+}
+
+.card-account {
+	display: grid;
+	grid-template-columns: 80px 1fr;
+	grid-gap: 30px;
+
+	padding: 45px 30px 40px 30px;
+
+	background: #fffaf3;
+	border-radius: 3px;
+	border: 1px solid transparent;
+
+	transition: all 0.3s ease;
+
+	&:hover {
+		border-color: #faa53c;
+	}
+
+	&__icon {
+		display: flex;
+		align-items: center;
+		& img {
+		}
+	}
+
+	&__group {
+	}
+
+	&__name {
+		margin-bottom: 10px;
+		font-weight: 450;
+		font-size: 24px;
+		line-height: 31px;
+		color: #2f2f2f;
+	}
+
+	&__text {
+		font-size: 18px;
+		line-height: 137.5%;
+		color: #2f2f2f;
+	}
+
+	&__subtext {
+		margin-top: 30px;
+		font-size: 18px;
+		line-height: 137.5%;
+		color: #2f2f2f;
+	}
+}
+
+@media (max-width: 1170px) {
+	.account {
+		&__title-wrap {
+			margin-bottom: 50px;
+		}
+
+		&__list {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	.card-account {
+		padding: 15px;
+	}
+}
+
+@media (max-width: 768px) {
+	.account {
+		&__wrap {
+			padding: 50px 0 40px 0;
+		}
+
+		&__list {
+			grid-template-columns: 1fr;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.card-account {
+		grid-template-columns: 1fr;
+	}
+}
+
+.support {
+	background: #f9f9f9;
+	&__wrap {
+		padding: 100px 0 90px 0;
+	}
+
+	&__title-wrap {
+		text-align: center;
+		margin-bottom: 110px;
+	}
+
+	&__title {
+		display: inline-block;
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 45px;
+	}
+
+	&__item {
+	}
+}
+
+.card-support {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-gap: 30px;
+	&__icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-width: 91px;
+		min-height: 91px;
+		max-width: 91px;
+		max-height: 91px;
+		background: #ffc05a;
+		border-radius: 3px;
+	}
+
+	&__group {
+	}
+
+	&__name {
+		margin-bottom: 20px;
+		font-weight: 450;
+		font-size: 24px;
+		line-height: 31px;
+		color: #2f2f2f;
+	}
+
+	&__text {
+		color: #8d8d8d;
+	}
+}
+
+@media (max-width: 1170px) {
+	.support {
+		&__title-wrap {
+			margin-bottom: 50px;
+		}
+
+		&__list {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.support {
+		&__wrap {
+			padding: 50px 0 40px 0;
+		}
+
+		&__list {
+			grid-template-columns: 1fr;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.card-support {
+		grid-template-columns: 1fr;
+	}
+}

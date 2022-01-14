@@ -1,0 +1,65 @@
+.profile-personal-data {
+	&__form {
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 35px;
+		grid-row-gap: 20px;
+	}
+
+	&__wrap-input {
+	}
+
+	&__title {
+		margin: 40px 0;
+	}
+
+	&__group {
+		margin-top: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__text {
+		margin-right: 20px;
+		font-weight: 450;
+		font-size: 12px;
+		line-height: 120%;
+	}
+
+	&__button-save {
+		background: #fab35a;
+		&:hover {
+			border-color: #fab35a;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.profile-personal-data {
+		&__list {
+			grid-template-columns: 1fr;
+		}
+
+		&__title {
+			margin: 20px 0;
+		}
+
+		&__group {
+			margin-top: 20px;
+			display: block;
+		}
+
+		&__button-save {
+			font-size: 12px;
+		}
+
+		&__text {
+			margin-bottom: 20px;
+			margin-right: 0;
+		}
+	}
+}

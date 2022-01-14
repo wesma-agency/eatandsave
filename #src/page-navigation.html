@@ -1,0 +1,136 @@
+@@include("components/_header.html")
+
+<section class="page-navigation">
+    <div class="container">
+        <div class="page-navigation__wrap">
+            <div class="page-navigation__column">
+                <div class="page-navigation__name title-h2">Основные страницы</div>
+
+                <div class="page-navigation__lsit">
+                    <div class="page-navigation__item"><a href="./index.html">Главная пользователь неавторизован</a>
+                    </div>
+                    <div class="page-navigation__item"><a href="./index-auth.html">Главная пользователь авторизован</a>
+                    </div>
+
+                    <div class="page-navigation__item"><a href="./page-create-box-1.html">Сбор коробки шаг 1</a>
+                    </div>
+
+                    <div class="page-navigation__item"><a href="./page-create-box-2.html">Сбор коробки шаг 2</a>
+                    </div>
+
+                    <div class="page-navigation__item"><a href="./page-catalog.html">Каталог</a></div>
+
+                    <div class="page-navigation__item"><a href="./page-card-product.html">Карточка</a>
+                    </div>
+
+                    <div class="page-navigation__item"><a href="./page-card-product-2.html">Карточка нет
+                            отзыва</a>
+                    </div>
+
+                    <div class="page-navigation__item"><a href="./page-card-product-3.html">Карточка нет
+                            правого блока</a>
+                    </div>
+
+                    <div class="page-navigation__item"><a href="./page-basket.html">Корзина</a>
+                    </div>
+
+                    <div class="page-navigation__item"><a href="./page-order.html">Оформление заказа</a>
+                    </div>
+
+                    <div class="page-navigation__item"><a href="./page-account.html">Личный кабинет</a>
+                    </div>
+
+                    <div class="page-navigation__item"><a href="./page-profile-personal.html">Профиль Персональные
+                            данные</a>
+                    </div>
+
+                    <div class="page-navigation__item"><a href="./page-profile-order.html">Мои заказы</a>
+                    </div>
+
+                    <div class="page-navigation__item"><a href="./page-profile-order-current.html">Информация о
+                            заказе</a>
+                    </div>
+
+                    <div class="page-navigation__item"><a href="./page-order-cancell.html">Отмена заказа</a>
+                    </div>
+
+                    <div class="page-navigation__item"><a href="./page-profile-favorites.html">Избранное</a>
+                    </div>
+
+                    <div class="page-navigation__item"><a href="./page-recipes.html">Рецепты</a>
+                    </div>
+
+                    <div class="page-navigation__item"><a href="./page-faq.html">faq</a>
+                    </div>
+
+                    <div class="page-navigation__item"><a href="./page-who-we.html">Кто мы</a>
+                    </div>
+
+                    <div class="page-navigation__item"><a href="./page-contents-box.html">Что в твоей коробке</a>
+                    </div>
+
+                    <div class="page-navigation__item"><a href="./page-support.html">Помощь</a>
+                    </div>
+
+                    <div class="page-navigation__item"><a href="./page-travel-products.html">Путешествие продуктов</a>
+                    </div>
+
+                    <div class="page-navigation__item"><a href="./page-eco-friendly.html">Экологически чистая
+                            упаковка</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-navigation__column">
+                <div class="page-navigation__name title-h2">Попапы</div>
+                <div class="page-navigation__lsit">
+                    <div class="page-navigation__item js-show-popup"><a href="#popup-entry">Войти в личный кабинет</a>
+                    </div>
+                    <div class="page-navigation__item js-show-popup"><a href="#popup-password-rec">Восстановление
+                            пароля</a></div>
+                    <div class="page-navigation__item js-show-popup"><a href="#popup-regist">Регистрация</a></div>
+                    <div class="page-navigation__item js-show-popup"><a href="#popup-review">Написать отзыв</a></div>
+                    <div class="page-navigation__item js-show-popup"><a href="#popup-add-basket">Товар добавлен в
+                            корзину</a></div>
+                    <div class="page-navigation__item js-show-popup"><a href="#popup-notify">Уведомить о поступлении
+                            товара</a>
+                    </div>
+                    <div class="page-navigation__item js-show-popup"><a href="#popup-review-product">Написать отзыв</a>
+                    </div>
+
+                    <div class="page-navigation__item js-show-popup"><a href="#popup-result-one">Спасибо за Ваш
+                            отзыв</a>
+                    </div>
+
+                    <div class="page-navigation__item js-show-popup"><a href="#popup-result-two">Вы успешно
+                            подписались</a>
+                    </div>
+
+                    <div class="page-navigation__item js-show-popup"><a href="#popup-not-register">Для оформления заказа
+                            необходимо зарегистрироваться</a>
+                    </div>
+                </div>
+            </div>
+</section>
+
+<style>
+    .page-navigation__wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 50px 0;
+    }
+
+    .page-navigation__name {
+        margin-bottom: 20px;
+    }
+
+    .page-navigation__item {
+        margin-bottom: 20px;
+    }
+
+    .page-navigation__item a {
+        color: #000;
+    }
+</style>
+
+@@include("components/_footer.html")

@@ -1,0 +1,271 @@
+@@include("components/_header-auth.html")
+<section class="breadcrumbs">
+    <div class="container">
+        <div class="breadcrumbs__wrap">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+                <li class="breadcrumbs__item"><span>Оформление заказа </span></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<div class="block-title">
+    <div class="container">
+        <div class="block-title__wrap">
+            <div class="block-title__title title-h2">Оформление заказа</div>
+        </div>
+    </div>
+</div>
+
+<section class="order">
+    <div class="container">
+        <div class="order__wrap">
+            <div class="order__title title-h4">Выберите способ доставки</div>
+            <div class="order__row">
+                <div class="order__column">
+
+                    <div class="order__group-one">
+
+
+                        <div class="order__delivery delivery-order">
+                            <div class="delivery-order__list">
+                                <div class="delivery-order__item delivery-order-card">
+                                    <input type="radio" name="delivery">
+                                    <div class="delivery-order-card__row">
+                                        <div class="delivery-order-card__check">
+                                            <div class="delivery-order-card__checkmarck"></div>
+                                        </div>
+
+                                        <div class="delivery-order-card__group">
+                                            <div class="delivery-order-card__icon">
+                                                <img src="./img/icon-order-delivery-1.png" alt="">
+                                            </div>
+
+                                            <div class="delivery-order-card__group-name">
+                                                <div class="delivery-order-card__name">Самовывоз</div>
+
+                                                <div class="delivery-order-card__select">
+                                                    <select name="">
+                                                        <option value="Выберите точку самовывоза">Выберите точку
+                                                            самовывоза</option>
+
+                                                        <option value="Выберите точку самовывоза">Склад 1</option>
+
+                                                        <option value="Выберите точку самовывоза">Склад 2</option>
+
+                                                        <option value="Выберите точку самовывоза">Склад 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="delivery-order-card__vaule">Бесплатно</div>
+                                    </div>
+                                </div>
+
+                                <div class="delivery-order__item delivery-order-card">
+                                    <input type="radio" name="delivery">
+
+                                    <div class="delivery-order-card__row">
+                                        <div class="delivery-order-card__check">
+                                            <div class="delivery-order-card__checkmarck"></div>
+                                        </div>
+
+                                        <div class="delivery-order-card__group">
+                                            <div class="delivery-order-card__icon">
+                                                <img src="./img/icon-order-delivery-2.png" alt="">
+                                            </div>
+
+                                            <div class="delivery-order-card__group-name">
+                                                <div class="delivery-order-card__name">Доставка по Москве</div>
+
+                                                <div class="delivery-order-card__text">Заказ доставляется до адреса
+                                                    покупателя в Москве, в пределах МКАД.</div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="delivery-order-card__vaule">600 Р</div>
+                                    </div>
+                                </div>
+
+                                <div class="delivery-order__item delivery-order-card">
+                                    <input type="radio" name="delivery">
+
+                                    <div class="delivery-order-card__row">
+                                        <div class="delivery-order-card__check">
+                                            <div class="delivery-order-card__checkmarck"></div>
+                                        </div>
+
+                                        <div class="delivery-order-card__group">
+                                            <div class="delivery-order-card__icon">
+                                                <img src="./img/icon-order-delivery-3.png" alt="">
+                                            </div>
+
+                                            <div class="delivery-order-card__group-name">
+                                                <div class="delivery-order-card__name">Доставка по Московской области
+                                                </div>
+
+                                                <div class="delivery-order-card__text">Заказ доставляется до адреса
+                                                    покупателя в МО, не более .... км от МКАД.</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="delivery-order-card__vaule">1 200 Р</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order__group-two">
+                        <div class="order__title title-h4">Выберите способ оплаты</div>
+                        <div class="order__payment payment-order">
+                            <div class="payment-order__list">
+                                <label class="payment-order__item payment-order-card">
+                                    <input type="radio" name="payment">
+                                    <div class="payment-order-card__row">
+                                        <div class="payment-order-card__icon"><img src="./img/icon-payment-1.png"
+                                                alt=""></div>
+                                        <div class="payment-order-card__group">
+                                            <div class="payment-order-card__name">Наличными при получении</div>
+                                            <div class="payment-order-card__text">При получении, после проверки
+                                                товара.</div>
+                                        </div>
+                                    </div>
+                                </label>
+
+                                <label class="payment-order__item payment-order-card">
+                                    <input type="radio" name="payment">
+                                    <div class="payment-order-card__row">
+                                        <div class="payment-order-card__icon"><img src="./img/icon-payment-2.png"
+                                                alt=""></div>
+                                        <div class="payment-order-card__group">
+                                            <div class="payment-order-card__name">Банковской картой при получении
+                                            </div>
+                                            <div class="payment-order-card__text">Принимаем любые карты: VISA,
+                                                MasterCard, МИР</div>
+                                        </div>
+                                    </div>
+                                </label>
+
+                                <label class="payment-order__item payment-order-card">
+                                    <input type="radio" name="payment">
+                                    <div class="payment-order-card__row">
+                                        <div class="payment-order-card__icon"><img src="./img/icon-payment-3.png"
+                                                alt=""></div>
+                                        <div class="payment-order-card__group">
+                                            <div class="payment-order-card__name">Онлайн через сайт</div>
+                                            <div class="payment-order-card__text">Оплата онлайн через платёжный
+                                                шлюзкрупнейшего банка России</div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order__group-three">
+                        <div class="order__title title-h4">Контактные данные</div>
+
+                        <div class="order__contact-details contact-details">
+                            <form action="#" class="contact-details__from">
+                                <div class="contact-details__list">
+                                    <div class="contact-details__wrap-input wrap-input --small --w-33">
+                                        <div class="wrap-input__name">ФИО*</div>
+                                        <input type="text" placeholder="Виктория Иванова">
+                                    </div>
+
+                                    <div class="contact-details__wrap-input wrap-input --small --w-33">
+                                        <div class="wrap-input__name">Телефон*</div>
+                                        <input type="text" placeholder="+7 (000) 000-00-00">
+                                    </div>
+
+                                    <div class="contact-details__wrap-input wrap-input --small --w-33">
+                                        <div class="wrap-input__name">E-mail*</div>
+                                        <input type="text" placeholder="eatandsave.ru@gmail.com">
+                                    </div>
+
+                                    <div class="contact-details__wrap-input wrap-input --small --w-50">
+                                        <div class="wrap-input__name">Город*</div>
+                                        <input type="text" placeholder="Москва">
+                                    </div>
+
+                                    <div class="contact-details__wrap-input wrap-input --small --w-50">
+                                        <div class="wrap-input__name">Улица, дом, квартира*</div>
+                                        <input type="text" placeholder="ул. Коптевская, д. 18, кв. 44">
+                                    </div>
+
+                                    <div class="contact-details__wrap-input wrap-input --small">
+                                        <div class="wrap-input__name">Комментарий к заказу</div>
+                                        <textarea placeholder="Прошу доставить заказ 30.03.21 к 12.00 дня."></textarea>
+                                    </div>
+                                </div>
+
+                                <label class="main-check">
+                                    <input type="checkbox" class="main-check__checkbox" checked>
+                                    <span class="main-check__checkmark"></span>
+                                    <span class="main-check__text">Хочу получать <a href="#">новости и
+                                            спецпредложения</a></span>
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order__column">
+                    <div class="order__result order-result">
+                        <div class="order-result__group-one">
+                            <div class="order-result__title">Ваш заказ</div>
+                            <a href="#" class="order-result__change">Изменить заказ</a>
+                        </div>
+
+                        <div class="order-result__group-two">
+                            <div class="order-result__item">
+                                <div class="order-result__group-name">
+                                    <div class="order-result__name">Товары</div>
+                                    <div class="order-result__value">11 шт</div>
+                                </div>
+
+                                <div class="order-result__price-delivery">100 000 Р</div>
+                            </div>
+
+                            <div class="order-result__item">
+                                <div class="order-result__group-name">
+                                    <div class="order-result__name">Доставка по Москве</div>
+                                </div>
+
+                                <div class="order-result__price-delivery">600 Р</div>
+                            </div>
+
+                            <div class="order-result__item">
+                                <div class="order-result__group-name">
+                                    <div class="order-result__name">Оплата при получении</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-result__group-three">
+                            <div class="order-result__group-price">
+                                <div class="order-result__text">Итого к оплате:</div>
+                                <div class="order-result__price">100 000 Р</div>
+                            </div>
+
+                            <a href="#" class="order-result__button-add">Заказ подтверждаю</a>
+
+                            <div class="order-result__subtext">Нажимая кнопку подтверждения заказа я даю своё согласие
+                                на обработку моих персональных
+                                данных на условиях <a href="#">Соглашения об обработке персональных данных</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+@@include("components/_footer-order.html")

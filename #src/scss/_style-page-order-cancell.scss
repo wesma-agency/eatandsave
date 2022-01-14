@@ -1,0 +1,49 @@
+.cancel-profile-order {
+	max-width: 1030px;
+	&__back {
+		margin: 25px 0;
+	}
+
+	&__form {
+	}
+
+	&__name {
+		margin-bottom: 15px;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 129%;
+		color: #2f2f2f;
+	}
+
+	&__text {
+		margin-bottom: 25px;
+		color: #2f2f2f;
+	}
+
+	&__wrap-input {
+		margin-bottom: 55px;
+		& textarea {
+			min-height: 120px;
+		}
+	}
+
+	&__button {
+		background: #fab35a;
+		border-radius: 3px;
+		&:hover {
+			border-color: #fab35a;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.cancel-profile-order {
+		&__back {
+			margin: 15px 0;
+		}
+
+		&__wrap-input {
+			margin-bottom: 20px;
+		}
+	}
+}

@@ -1,0 +1,769 @@
+@@include("components/_header-auth.html")
+
+<section class="breadcrumbs">
+    <div class="container">
+        <div class="breadcrumbs__wrap">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+                <li class="breadcrumbs__item"><a href="#">Личный кабинет</a></li>
+                <li class="breadcrumbs__item"><span>Мои заказы</span></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<div class="block-title">
+    <div class="container">
+        <div class="block-title__wrap">
+            <div class="block-title__title title-h2">Мои заказы</div>
+        </div>
+    </div>
+</div>
+
+<section class="profile">
+    <div class="container">
+        <div class="profile__wrap">
+            <div class="profile__row">
+                <div class="profile__column">
+                    <div class="profile__menu menu-profile">
+                        <div class="menu-profile__list">
+                            <a href="#" class="menu-profile__item">
+                                <div class="menu-profile__icon"><img src="./img/icon-profile-1.png" alt=""></div>
+                                <div class="menu-profile__name">Мои заказы</div>
+                            </a>
+
+                            <a href="#" class="menu-profile__item">
+                                <div class="menu-profile__icon"><img src="./img/icon-profile-2.png" alt=""></div>
+                                <div class="menu-profile__name">Избранное</div>
+                            </a>
+
+                            <a href="#" class="menu-profile__item">
+                                <div class="menu-profile__icon"><img src="./img/icon-profile-3.png" alt=""></div>
+                                <div class="menu-profile__name">Собрать продуктовую коробку</div>
+                            </a>
+
+                            <a href="#" class="menu-profile__item active">
+                                <div class="menu-profile__icon"><img src="./img/icon-profile-4.png" alt=""></div>
+                                <div class="menu-profile__name">Персональные данные</div>
+                            </a>
+
+                            <a href="#" class="menu-profile__item">
+                                <div class="menu-profile__icon"><img src="./img/icon-profile-5.png" alt=""></div>
+                                <div class="menu-profile__name">Выйти</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile__column">
+                    <div class="profile__order order-profile">
+                        <div class="order-profile__tab">
+                            <div class="order-profile__control">
+                                <a href="#current-order" class="order-profile__button active js-tab">Текущие заказы</a>
+                                <a href="#completed-orders" class="order-profile__button js-tab">Выполненые заказы</a>
+                                <a href="#cancelled-orders" class="order-profile__button js-tab">Отмененные заказы</a>
+                            </div>
+
+                            <div class="order-profile__content">
+                                <div class="order-profile__tab-item active js-tab-item" id="current-order">
+
+                                    <div class="order-profile__tab-list">
+
+                                        <div class="order-profile__card card-order-profile">
+                                            <div class="card-order-profile__number">№ 1</div>
+
+                                            <div class="card-order-profile__list">
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__status"><span
+                                                                style="background-color: #5FAD56;"></span> Новый</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Дата создания</div>
+                                                        <div class="card-order-profile__date">26.03.2021</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Способ доставки</div>
+                                                        <div class="card-order-profile__text">Доставка по Московской
+                                                            области
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Способ оплаты</div>
+                                                        <div class="card-order-profile__text">Наличными при получении
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Сумма</div>
+                                                        <div class="card-order-profile__price">3 500 Р</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-order-profile__group-button card-order-profile-button">
+                                                <a href="#"
+                                                    class="card-order-profile-button__item --cancel"><span>Отменить
+                                                        заказ</span></a>
+                                                <a href="#"
+                                                    class="card-order-profile-button__item --repeat"><span>Повторить
+                                                        заказ</span></a>
+                                                <a href="#"
+                                                    class="card-order-profile-button__item --view"><span>Посмотреть
+                                                        заказ</span></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="order-profile__card card-order-profile">
+                                            <div class="card-order-profile__number">№ 2</div>
+
+                                            <div class="card-order-profile__list">
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__status"><span
+                                                                style="background-color: #285AE3;"></span> Подтвержден
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Дата создания</div>
+                                                        <div class="card-order-profile__date">26.03.2021</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Способ доставки</div>
+                                                        <div class="card-order-profile__text">Доставка по Московской
+                                                            области
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Способ оплаты</div>
+                                                        <div class="card-order-profile__text">Наличными при получении
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Сумма</div>
+                                                        <div class="card-order-profile__price">100 500 Р</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-order-profile__group-button card-order-profile-button">
+                                                <a href="#"
+                                                    class="card-order-profile-button__item --cancel"><span>Отменить
+                                                        заказ</span></a>
+                                                <a href="#"
+                                                    class="card-order-profile-button__item --repeat"><span>Повторить
+                                                        заказ</span></a>
+                                                <a href="#"
+                                                    class="card-order-profile-button__item --view"><span>Посмотреть
+                                                        заказ</span></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="order-profile__card card-order-profile">
+                                            <div class="card-order-profile__number">№ 112</div>
+
+                                            <div class="card-order-profile__list">
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__status"><span
+                                                                style="background-color: #FD78F6;"></span> Оплачен</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Дата создания</div>
+                                                        <div class="card-order-profile__date">26.03.2021</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Способ доставки</div>
+                                                        <div class="card-order-profile__text">Доставка по Московской
+                                                            области
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Способ оплаты</div>
+                                                        <div class="card-order-profile__text">Наличными при получении
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Сумма</div>
+                                                        <div class="card-order-profile__price">100 500 Р</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-order-profile__group-button card-order-profile-button">
+                                                <a href="#"
+                                                    class="card-order-profile-button__item --repeat"><span>Повторить
+                                                        заказ</span></a>
+                                                <a href="#"
+                                                    class="card-order-profile-button__item --view"><span>Посмотреть
+                                                        заказ</span></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="order-profile__card card-order-profile">
+                                            <div class="card-order-profile__number">№ 1232</div>
+
+                                            <div class="card-order-profile__list">
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__status"><span
+                                                                style="background-color: #FAB35A;"></span> Доставляется
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Дата создания</div>
+                                                        <div class="card-order-profile__date">26.03.2021</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Способ доставки</div>
+                                                        <div class="card-order-profile__text">Доставка по Московской
+                                                            области
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Способ оплаты</div>
+                                                        <div class="card-order-profile__text">Наличными при получении
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Сумма</div>
+                                                        <div class="card-order-profile__price">100 500 Р</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-order-profile__group-button card-order-profile-button">
+                                                <a href="#"
+                                                    class="card-order-profile-button__item --repeat"><span>Повторить
+                                                        заказ</span></a>
+                                                <a href="#"
+                                                    class="card-order-profile-button__item --view"><span>Посмотреть
+                                                        заказ</span></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="order-profile__card card-order-profile">
+                                            <div class="card-order-profile__number">№ 223332</div>
+
+                                            <div class="card-order-profile__list">
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__status"><span
+                                                                style="background-color: #D6DEFB;"></span> Выполнен
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Дата создания</div>
+                                                        <div class="card-order-profile__date">26.03.2021</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Способ доставки</div>
+                                                        <div class="card-order-profile__text">Доставка по Московской
+                                                            области
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Способ оплаты</div>
+                                                        <div class="card-order-profile__text">Наличными при получении
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Сумма</div>
+                                                        <div class="card-order-profile__price">100 500 Р</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-order-profile__group-button card-order-profile-button">
+                                                <a href="#"
+                                                    class="card-order-profile-button__item --repeat"><span>Повторить
+                                                        заказ</span></a>
+                                                <a href="#"
+                                                    class="card-order-profile-button__item --view"><span>Посмотреть
+                                                        заказ</span></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="order-profile__card card-order-profile">
+                                            <div class="card-order-profile__number">№ 2</div>
+
+                                            <div class="card-order-profile__list">
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__status"><span
+                                                                style="background-color: #FF0A0A;"></span> Отменен</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Дата создания</div>
+                                                        <div class="card-order-profile__date">26.03.2021</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Способ доставки</div>
+                                                        <div class="card-order-profile__text">Доставка по Московской
+                                                            области
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Способ оплаты</div>
+                                                        <div class="card-order-profile__text">Наличными при получении
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Сумма</div>
+                                                        <div class="card-order-profile__price">100 500 Р</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-order-profile__group-button card-order-profile-button">
+                                                <a href="#"
+                                                    class="card-order-profile-button__item --repeat"><span>Повторить
+                                                        заказ</span></a>
+                                                <a href="#"
+                                                    class="card-order-profile-button__item --view"><span>Посмотреть
+                                                        заказ</span></a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="order-profile__pagination pagination">
+                                        <ul class="pagination__list">
+                                            <li class="pagination__item --prev"><a href="#"></a></li>
+                                            <li class="pagination__item --number "><a href="#">1</a></li>
+                                            <li class="pagination__item --number"><a href="#">2</a></li>
+                                            <li class="pagination__item --number selected"><a href="#">3</a></li>
+                                            <li class="pagination__item --number"><a href="#">4</a></li>
+                                            <li class="pagination__item --dots"><span>...</span></li>
+                                            <li class="pagination__item --number"><a href="#">100</a></li>
+                                            <li class="pagination__item --next"><a href="#"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="order-profile__tab-item js-tab-item" id="completed-orders">
+
+                                    <div class="order-profile__tab-list">
+
+                                        <div class="order-profile__card card-order-profile">
+                                            <div class="card-order-profile__number">№ 1</div>
+
+                                            <div class="card-order-profile__list">
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__status"><span
+                                                                style="background-color: #5FAD56;"></span> Новый</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Дата создания</div>
+                                                        <div class="card-order-profile__date">26.03.2021</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Способ доставки</div>
+                                                        <div class="card-order-profile__text">Доставка по Московской
+                                                            области
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Способ оплаты</div>
+                                                        <div class="card-order-profile__text">Наличными при получении
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Сумма</div>
+                                                        <div class="card-order-profile__price">3 500 Р</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-order-profile__group-button card-order-profile-button">
+                                                <a href="#"
+                                                    class="card-order-profile-button__item --cancel"><span>Отменить
+                                                        заказ</span></a>
+                                                <a href="#"
+                                                    class="card-order-profile-button__item --repeat"><span>Повторить
+                                                        заказ</span></a>
+                                                <a href="#"
+                                                    class="card-order-profile-button__item --view"><span>Посмотреть
+                                                        заказ</span></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="order-profile__card card-order-profile">
+                                            <div class="card-order-profile__number">№ 2</div>
+
+                                            <div class="card-order-profile__list">
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__status"><span
+                                                                style="background-color: #285AE3;"></span> Подтвержден
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Дата создания</div>
+                                                        <div class="card-order-profile__date">26.03.2021</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Способ доставки</div>
+                                                        <div class="card-order-profile__text">Доставка по Московской
+                                                            области
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Способ оплаты</div>
+                                                        <div class="card-order-profile__text">Наличными при получении
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Сумма</div>
+                                                        <div class="card-order-profile__price">100 500 Р</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-order-profile__group-button card-order-profile-button">
+                                                <a href="#"
+                                                    class="card-order-profile-button__item --cancel"><span>Отменить
+                                                        заказ</span></a>
+                                                <a href="#"
+                                                    class="card-order-profile-button__item --repeat"><span>Повторить
+                                                        заказ</span></a>
+                                                <a href="#"
+                                                    class="card-order-profile-button__item --view"><span>Посмотреть
+                                                        заказ</span></a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="order-profile__tab-item js-tab-item" id="cancelled-orders">
+
+                                    <div class="order-profile__tab-list">
+
+                                        <div class="order-profile__card card-order-profile">
+                                            <div class="card-order-profile__number">№ 112</div>
+
+                                            <div class="card-order-profile__list">
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__status"><span
+                                                                style="background-color: #FD78F6;"></span> Оплачен</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Дата создания</div>
+                                                        <div class="card-order-profile__date">26.03.2021</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Способ доставки</div>
+                                                        <div class="card-order-profile__text">Доставка по Московской
+                                                            области
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Способ оплаты</div>
+                                                        <div class="card-order-profile__text">Наличными при получении
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Сумма</div>
+                                                        <div class="card-order-profile__price">100 500 Р</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-order-profile__group-button card-order-profile-button">
+                                                <a href="#"
+                                                    class="card-order-profile-button__item --repeat"><span>Повторить
+                                                        заказ</span></a>
+                                                <a href="#"
+                                                    class="card-order-profile-button__item --view"><span>Посмотреть
+                                                        заказ</span></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="order-profile__card card-order-profile">
+                                            <div class="card-order-profile__number">№ 1232</div>
+
+                                            <div class="card-order-profile__list">
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__status"><span
+                                                                style="background-color: #FAB35A;"></span> Доставляется
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Дата создания</div>
+                                                        <div class="card-order-profile__date">26.03.2021</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Способ доставки</div>
+                                                        <div class="card-order-profile__text">Доставка по Московской
+                                                            области
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Способ оплаты</div>
+                                                        <div class="card-order-profile__text">Наличными при получении
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Сумма</div>
+                                                        <div class="card-order-profile__price">100 500 Р</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-order-profile__group-button card-order-profile-button">
+                                                <a href="#"
+                                                    class="card-order-profile-button__item --repeat"><span>Повторить
+                                                        заказ</span></a>
+                                                <a href="#"
+                                                    class="card-order-profile-button__item --view"><span>Посмотреть
+                                                        заказ</span></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="order-profile__card card-order-profile">
+                                            <div class="card-order-profile__number">№ 223332</div>
+
+                                            <div class="card-order-profile__list">
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__status"><span
+                                                                style="background-color: #D6DEFB;"></span> Выполнен
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Дата создания</div>
+                                                        <div class="card-order-profile__date">26.03.2021</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Способ доставки</div>
+                                                        <div class="card-order-profile__text">Доставка по Московской
+                                                            области
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Способ оплаты</div>
+                                                        <div class="card-order-profile__text">Наличными при получении
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Сумма</div>
+                                                        <div class="card-order-profile__price">100 500 Р</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-order-profile__group-button card-order-profile-button">
+                                                <a href="#"
+                                                    class="card-order-profile-button__item --repeat"><span>Повторить
+                                                        заказ</span></a>
+                                                <a href="#"
+                                                    class="card-order-profile-button__item --view"><span>Посмотреть
+                                                        заказ</span></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="order-profile__card card-order-profile">
+                                            <div class="card-order-profile__number">№ 2</div>
+
+                                            <div class="card-order-profile__list">
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__status"><span
+                                                                style="background-color: #FF0A0A;"></span> Отменен</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Дата создания</div>
+                                                        <div class="card-order-profile__date">26.03.2021</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Способ доставки</div>
+                                                        <div class="card-order-profile__text">Доставка по Московской
+                                                            области
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Способ оплаты</div>
+                                                        <div class="card-order-profile__text">Наличными при получении
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-order-profile__group">
+                                                    <div class="card-order-profile__wrap">
+                                                        <div class="card-order-profile__name">Сумма</div>
+                                                        <div class="card-order-profile__price">100 500 Р</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-order-profile__group-button card-order-profile-button">
+                                                <a href="#"
+                                                    class="card-order-profile-button__item --repeat"><span>Повторить
+                                                        заказ</span></a>
+                                                <a href="#"
+                                                    class="card-order-profile-button__item --view"><span>Посмотреть
+                                                        заказ</span></a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+@@include("components/_footer.html")

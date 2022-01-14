@@ -1,0 +1,194 @@
+.faq {
+	&__wrap {
+		padding: 50px 0 165px 0;
+	}
+
+	&__lsit {
+		display: grid;
+		grid-gap: 40px;
+	}
+
+	&__item {
+	}
+}
+
+.card-faq {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 110px;
+	align-items: center;
+	padding: 33px 0;
+	&__left {
+	}
+
+	&__title {
+	}
+
+	&__right {
+	}
+
+	&__text {
+		color: #2f2f2f;
+	}
+}
+
+@media (max-width: 1300px) {
+	.card-faq {
+		grid-gap: 50px;
+	}
+}
+
+@media (max-width: 992px) {
+	.faq {
+		&__lsit {
+			grid-gap: 20px;
+		}
+	}
+
+	.card-faq {
+		padding: 15px 0;
+		grid-template-columns: 1fr;
+		grid-gap: 30px;
+	}
+}
+
+@media (max-width: 768px) {
+	.faq {
+		&__wrap {
+			padding: 50px 0 50px 0;
+		}
+	}
+}
+
+.ask-question {
+	background: url("../img/image-bg-ask-question.png") no-repeat 100% 100% / 20%, #f7f7f7;
+	&__wrap {
+		padding: 30px 0 40px 0;
+	}
+
+	&__row {
+		display: grid;
+		grid-template-columns: 0.4fr 1fr;
+		align-items: center;
+		grid-gap: 100px;
+	}
+
+	&__column {
+	}
+
+	&__title {
+		margin-bottom: 25px;
+	}
+
+	&__subtitle {
+		font-weight: 450;
+		font-size: 24px;
+		line-height: 31px;
+		color: #fab35a;
+	}
+
+	&__from {
+	}
+}
+
+.from-ask-question {
+	&__row {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 30px;
+	}
+
+	&__column {
+	}
+
+	&__wrap-input {
+		& textarea {
+			min-height: 160px;
+		}
+	}
+
+	&__name {
+	}
+
+	&__group {
+	}
+
+	&__button {
+		display: block;
+
+		margin-top: 20px;
+		margin-left: auto;
+
+		max-width: 235px;
+		width: 100%;
+		padding: 30px 15px;
+		font-weight: 450;
+		font-size: 14px;
+		line-height: 18px;
+		text-transform: uppercase;
+		text-align: center;
+		color: #f0f0f0;
+		background: #5fad56;
+		border-radius: 3px;
+	}
+
+	&__subtext {
+		font-size: 13px;
+		line-height: 17px;
+		color: #8d8d8d;
+		& a {
+			color: #5fad56;
+			border-bottom: 1px solid transparent;
+			transition: all 0.3s ease;
+			&:hover {
+				border-color: #5fad56;
+			}
+		}
+	}
+}
+
+@media (max-width: 1170px) {
+	.ask-question {
+		&__row {
+			grid-template-columns: 0.5fr 1fr;
+			grid-gap: 20px;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.ask-question {
+		&__row {
+			grid-template-columns: 1fr;
+			grid-gap: 35px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.ask-question {
+		background: #f7f7f7;
+
+		&__subtitle {
+			font-size: 18px;
+		}
+	}
+
+	.from-ask-question {
+		&__row {
+			grid-template-columns: 1fr;
+		}
+
+		&__wrap-input {
+			& textarea {
+				min-height: 100px;
+			}
+		}
+
+		&__button {
+			max-width: 180px;
+			padding: 15px;
+			font-size: 14px;
+		}
+	}
+}
