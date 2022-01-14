@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/mmenu.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
+    <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="./css/nice-select.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav id="menu" class="mm-menu_offcanvas">
+        <ul>
+
+        </ul>
+    </nav>
+
+    <!-- HEADER -->
+    <div class="wrapper">
+        <!-- authorized -->
+        <header class="header authorized">
+
+            <div class="header__top">
+                <div class="container">
+                    <div class="header__top-wrap">
+                        <div class="header__logo logo">
+                            <div class="logo__image"><img src="./img/logo.svg" alt=""></div>
+                            <div class="logo__text">
+                                <span class="logo__text-word">СОХРАНИМ</span>
+                                <span class="logo__text-word --big">ПЛАНЕТУ</span>
+                                <span class="logo__text-word">ВМЕСТЕ!</span>
+                            </div>
+                        </div>
+
+                        <div class="header__contact main-contact">
+                            <ul class="main-contact__list --first js-mobile-menu">
+                                <li class="main-contact__item --phone">
+                                    <a href="tel:80000000000" class="main-contact__link">8 (000) 000-00-00</a>
+                                    <span class="main-contact__subtext">звонок бесплатный</span>
+                                </li>
+                            </ul>
+
+                            <ul class="main-contact__list --secondary js-mobile-menu">
+                                <li class="main-contact__item --phone">
+                                    <a href="tel:70000000000" class="main-contact__link">+7 (000) 000-00-00</a>
+                                    <span class="main-contact__subtext">09:00 - 21:00, по будням</span>
+                                </li>
+
+                                <li class="main-contact__item --email">
+                                    <a href="mailto:info@eatandsave.ru"
+                                        class="main-contact__link">info@eatandsave.ru</a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <div class="header__mobile-menu mobile-menu">
+                            <div class="mobile-menu__wrap">
+                                <span class="mobile-menu__icon">
+                                    <span></span>
+                                </span>
+                                <span class="mobile-menu__text">Меню</span>
+                            </div>
+                        </div>
+
+                        <a href="#" class="header__box assemble-box">
+                            <div class="assemble-box__wrap">
+                                <div class="assemble-box__icon">
+                                    <img src="./img/icon-box-2.png" alt="">
+                                </div>
+                                <span class="assemble-box__text">Собрать коробку</span>
+                            </div>
+                        </a>
+
+                        <div class="header__group-account">
+                            <a href="#" class="header__basket basket-header">
+                                <div class="basket-header__wrap">
+                                    <div class="basket-header__icon">
+                                        <img src="./img/icon-basket-2.png" alt="">
+                                    </div>
+                                    <span class="basket-header__total">10</span>
+                                </div>
+                            </a>
+
+                            <div class="header__account account">
+                                <ul class="account__login js-mobile-menu">
+                                    <li class="account__login-item"><a href="#">С возвращением,
+                                            <span>Виктория</span></a></li>
+
+                                    <!-- <li class="account__login-item"><a href="#"><span>Вход</span> </a></li>
+                  <li class="account__login-item"><a href="#"><span>Регистрация</span> </a></li> -->
+                                </ul>
+
+                                <ul class="account__list-profile js-mobile-menu">
+                                    <li class="account__item-profile">
+                                        <a href="#">
+                                            <img src="./img/icon-profile-1.png" alt="">
+                                            <span>Мои заказы</span>
+                                        </a>
+                                    </li>
+                                    <li class="account__item-profile">
+                                        <a href="#">
+                                            <img src="./img/icon-profile-2.png" alt="">
+                                            <span>Избранное</span>
+                                        </a>
+                                    </li>
+                                    <li class="account__item-profile">
+                                        <a href="#">
+                                            <img src="./img/icon-profile-3.png" alt="">
+                                            <span>Собрать продуктовую коробку</span>
+                                        </a>
+                                    </li>
+                                    <li class="account__item-profile">
+                                        <a href="#">
+                                            <img src="./img/icon-profile-4.png" alt="">
+                                            <span>Персональные данные</span>
+                                        </a>
+                                    </li>
+                                    <li class="account__item-profile">
+                                        <a href="#">
+                                            <img src="./img/icon-profile-5.png" alt="">
+                                            <span>Выйти</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__bottom">
+                <div class="container">
+                    <div class="header__nav">
+                        <ul class="nav-menu js-mobile-menu">
+                            <li class="nav-menu__item nav-menu-item current">
+                                <a href="#"><span>Кто мы</span></a>
+                                <ul class="nav-menu__sub-menu nav-menu-list">
+                                    <li class="nav-menu__sub-item nav-menu-item">
+                                        <a href="#"><span>О компании</span></a>
+                                        <ul class="nav-menu__sub-menu nav-menu-list">
+                                            <li class="nav-menu__sub-item nav-menu-item"><a href="#"><span>Уровень
+                                                        2</span></a></li>
+                                            <li class="nav-menu__sub-item nav-menu-item">
+                                                <a href="#"><span>Уровень 2</span></a>
+                                                <ul class="nav-menu__sub-menu nav-menu-list">
+                                                    <li class="nav-menu__sub-item nav-menu-item"><a
+                                                            href="#"><span>Уровень 3</span></a></li>
+                                                    <li class="nav-menu__sub-item nav-menu-item"><a
+                                                            href="#"><span>Уровень 3</span></a></li>
+                                                    <li class="nav-menu__sub-item nav-menu-item"><a
+                                                            href="#"><span>Уровень 3</span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-menu__sub-item nav-menu-item"><a href="#"><span>Уровень
+                                                        2</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-menu__sub-item nav-menu-item current">
+                                        <a href="#"><span>Отзывы</span></a>
+                                        <ul class="nav-menu__sub-menu nav-menu-list">
+                                            <li class="nav-menu__sub-item nav-menu-item current"><a
+                                                    href="#"><span>Уровень 2</span></a></li>
+                                            <li class="nav-menu__sub-item nav-menu-item"><a href="#"><span>Уровень
+                                                        2</span></a></li>
+                                            <li class="nav-menu__sub-item nav-menu-item">
+                                                <a href="#"><span>Уровень 2</span></a>
+                                                <ul class="nav-menu__sub-menu nav-menu-list">
+                                                    <li class="nav-menu__sub-item nav-menu-item current"><a
+                                                            href="#"><span>Уровень 3</span></a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-menu__sub-item nav-menu-item"><a
+                                            href="#"><span>Предложения</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-menu__item nav-menu-item"><a href="#"><span>Что в моей коробке?</span></a>
+                            </li>
+                            <li class="nav-menu__item nav-menu-item"><a href="#"><span>FAQ</span></a></li>
+                            <li class="nav-menu__item nav-menu-item"><a href="#"><span>Помощь</span></a></li>
+                            <li class="nav-menu__item nav-menu-item"><a href="#"><span>Рецепты</span></a></li>
+                            <li class="nav-menu__item nav-menu-item"><a href="#"><span>Блог</span></a></li>
+                            <li class="nav-menu__item nav-menu-item">
+                                <a href="#"><span>Контакты</span></a>
+                                <ul class="nav-menu__sub-menu nav-menu-list">
+                                    <li class="nav-menu__sub-item nav-menu-item current"><a href="#"><span>Уровень
+                                                2</span></a></li>
+                                    <li class="nav-menu__sub-item nav-menu-item"><a href="#"><span>Уровень 2</span></a>
+                                    </li>
+                                    <li class="nav-menu__sub-item nav-menu-item">
+                                        <a href="#"><span>Уровень 2</span></a>
+                                        <ul class="nav-menu__sub-menu nav-menu-list">
+                                            <li class="nav-menu__sub-item nav-menu-item current"><a
+                                                    href="#"><span>Уровень 3</span></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+<section class="breadcrumbs">
+    <div class="container">
+        <div class="breadcrumbs__wrap">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+                <li class="breadcrumbs__item"><span>Кто мы</span></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<div class="block-title">
+    <div class="container">
+        <div class="block-title__wrap">
+            <div class="block-title__title title-h2">Кто мы</div>
+        </div>
+    </div>
+</div>
+
+<section class="about-us">
+    <div class="container">
+        <div class="about-us__wrap">
+            <div class="about-us__title title-h2 --multi-circle"><span>Eat&Save</span></div>
+            <div class="about-us__row">
+                <div class="about-us__column">
+                    <div class="about-us__text-one">
+                        Доставка натуральных, вкусных<br> и полезных для окружающей среды продуктов
+                    </div>
+
+                    <div class="about-us__text-two">
+                        Мы убеждены, что каждый имеет право на доступные в цене, свежие и
+                        полезные продукты. В России, у многих из нас до сих пор нет доступа к свежим фруктам и овощам
+                        высокого качества. Мы выбрасываем столько же еды сколько и потребляем. Почти половина продукции
+                        выращенной и импортированной так и не будет съедена. В большинстве случаев это связано с
+                        современными «стандартами красоты» нашей еды. Незаурядные фрукты, неправильной формы овощи и
+                        вкуснейшие, но странных размеров и форм, с небольшими повреждениями продукты выбрасываются
+                        впустую на каждом уровне цепочки потребления.
+                    </div>
+
+                    <div class="about-us__text-three">
+                        Это неполезно, это дорого и это проблема огромных масштабов и она идет вразрез<br> с нашими
+                        взглядами на мир.
+                    </div>
+
+                    <div class="about-us__text-four">
+                        Именно поэтому мы основали нашу компанию.
+                    </div>
+                </div>
+
+                <div class="about-us__column">
+                    <div class="about-us__image"><img src="./img/image-about-us-1.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mission">
+    <div class="container">
+        <div class="mission__wrap">
+            <div class="mission__wrap-title">
+                <div class="mission__title title-h2 --circle"><span>Наша миссия</span></div>
+            </div>
+
+            <div class="mission__text-one">
+                Наша миссия доставлять вкусные, свежие и доступные незаурядные продукты людям
+                и тем самым уменьшить количество выброшенной впустую еды в масштабах достаточных для положительного и
+                долгосрочного влияния на жизнь планеты.Мы упаковываем свежие продукты, которые не влезают в рамки
+                совершенства (приемки) торговых сетей, в коробки и доставляем их прямо к вам. Быстрее чем вы могли бы
+                купить в продуктовом. <span>Практически за пол цены.</span>
+            </div>
+            <div class="mission__text-two">
+                Каждая заказанная вами коробка нашей продукции приносит пользу фермерам,
+                помогает избежать лишних пищевых отходов и в конце концов помогает спасти нашу окружающую среду.
+            </div>
+
+            <div class="mission__video-container">
+                <iframe class="mission__video" src="https://www.youtube.com/embed/dl16e_mG6hg" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="advantages --white  --padding">
+    <div class="container">
+        <div class="advantages__wrap">
+            <div class="advantages__lsit">
+                <div class="advantages__card card-advantages anim-items slideTo anim-no-scrollTop">
+                    <div class="card-advantages__image"><img src="./img/icon-advantages-1.png" alt="" /></div>
+                    <div class="card-advantages__group">
+                        <div class="card-advantages__title">Береги кошелек</div>
+                        <div class="card-advantages__text">Наши продукты полезны, но внешне, порой,
+                            необычны! За счет этого, стоимость почти в два раза ниже, чем в супермаркете.</div>
+                    </div>
+                </div>
+
+                <div class="advantages__card card-advantages anim-items slideTo anim-no-scrollTop">
+                    <div class="card-advantages__image"><img src="./img/icon-advantages-2.png" alt="" /></div>
+                    <div class="card-advantages__group">
+                        <div class="card-advantages__title">Выбирай любимое</div>
+                        <div class="card-advantages__text">Выбирайте продукты для себя и своей семьи, создайте список
+                            любимых продуктов и добавляйте к ним что-то новенькое каждую неделю!</div>
+                    </div>
+                </div>
+
+                <div class="advantages__card card-advantages anim-items slideTo anim-no-scrollTop">
+                    <div class="card-advantages__image"><img src="./img/icon-advantages-3.png" alt="" /></div>
+                    <div class="card-advantages__group">
+                        <div class="card-advantages__title">Спасай планету</div>
+                        <div class="card-advantages__text">Пищевые отходы выдеделяют до 3,3 млрд тонн углекислого газа в
+                            год. Это один из самых вредных выбросов для планеты.</div>
+                        <div class="card-advantages__sub-text">Спасая продукты - вы помогаете планете.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="information-block">
+    <div class="container">
+        <div class="information-block__wrap">
+            <div class="information-block__group">
+                <div class="information-block__title title-h2 --circle">
+                    <span>У нас много полезной и интересной информации</span>
+                </div>
+                <div class="information-block__tab-control">
+                    <a href="#tab-news" class="information-block__button js-tab active">Новости</a>
+                    <a href="#tab-recipe" class="information-block__button js-tab">Рецепты</a>
+                </div>
+            </div>
+
+            <div class="information-block__tab-list">
+                <div class="information-block__tab-item js-tab-item active" id="tab-news">
+                    <div class="information-block__list-card">
+                        <a href="#" class="information-block__card-news card-news">
+                            <div class="card-news__image"><img src="./img/image-card-news-2.png" alt=""></div>
+                            <div class="card-news__name">Руководство по хранению свежих продуктов</div>
+                            <div class="card-news__text">Правильное хранение пищевых продуктов позволяет
+                                сберечь их пищевую и биологическую ценность...</div>
+                            <div class="card-news__date">05.02.2021</div>
+                        </a>
+
+                        <a href="#" class="information-block__card-news card-news">
+                            <div class="card-news__image"><img src="./img/image-card-news-2.png" alt=""></div>
+                            <div class="card-news__name">Руководство по хранению свежих продуктов</div>
+                            <div class="card-news__text">Правильное хранение пищевых продуктов позволяет
+                                сберечь их пищевую и биологическую ценность...</div>
+                            <div class="card-news__date">05.02.2021</div>
+                        </a>
+
+                        <a href="#" class="information-block__card-news card-news">
+                            <div class="card-news__image"><img src="./img/image-card-news-3.png" alt=""></div>
+                            <div class="card-news__name">Руководство по хранению свежих продуктов</div>
+                            <div class="card-news__text">Правильное хранение пищевых продуктов позволяет
+                                сберечь их пищевую и биологическую ценность...</div>
+                            <div class="card-news__date">05.02.2021</div>
+                        </a>
+
+                        <a href="#" class="information-block__card-news card-news">
+                            <div class="card-news__image"><img src="./img/image-card-news-4.png" alt=""></div>
+                            <div class="card-news__name">Руководство по хранению свежих продуктов</div>
+                            <div class="card-news__text">Правильное хранение пищевых продуктов позволяет
+                                сберечь их пищевую и биологическую ценность...</div>
+                            <div class="card-news__date">05.02.2021</div>
+                        </a>
+                    </div>
+                    <div class="information-block__button-wrap">
+                        <a href="#" class="information-block__button-all">Посмотреть все</a>
+                    </div>
+                </div>
+
+                <div class="information-block__tab-item js-tab-item" id="tab-recipe">
+                    <div class="information-block__list-card">
+                        <a href="#" class="information-block__card-recipe card-recipe">
+                            <div class="card-recipe__group-image">
+                                <div class="card-recipe__image"><img src="./img/image-card-news-2.png" alt="">
+                                </div>
+                                <div class="card-recipe__banner">
+                                    <div class="card-recipe__banner-item"><span>Легко</span></div>
+                                </div>
+                            </div>
+
+                            <div class="card-recipe__group-info">
+                                <div class="card-recipe__category">Напитки</div>
+
+                                <div class="card-recipe__name">Скандинавский глёг</div>
+
+                                <div class="card-recipe__option-group">
+                                    <div class="card-recipe__option">1 ч 30 мин</div>
+                                    <div class="card-recipe__option">5 ингредиентов</div>
+                                </div>
+
+                                <div class="card-recipe__text">Миндаль, корица, апельсин, звёздочки аниса и
+                                    обжигающее красное вино — сочетание, которое....</div>
+
+                                <div class="card-recipe__date">05.02.2021</div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="information-block__card-recipe card-recipe">
+                            <div class="card-recipe__group-image">
+                                <div class="card-recipe__image"><img src="./img/image-card-recipe-2.png" alt="">
+                                </div>
+                                <div class="card-recipe__banner">
+                                    <div class="card-recipe__banner-item"><span>Сложно</span></div>
+                                </div>
+                            </div>
+
+                            <div class="card-recipe__group-info">
+                                <div class="card-recipe__category">Закуски</div>
+
+                                <div class="card-recipe__name">Запечённый бри</div>
+
+                                <div class="card-recipe__option-group">
+                                    <div class="card-recipe__option">1 ч 30 мин</div>
+                                    <div class="card-recipe__option">5 ингредиентов</div>
+                                </div>
+
+                                <div class="card-recipe__text">Миндаль, корица, апельсин, звёздочки аниса и
+                                    обжигающее красное вино — сочетание, которое....</div>
+
+                                <div class="card-recipe__date">05.02.2021</div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="information-block__card-recipe card-recipe">
+                            <div class="card-recipe__group-image">
+                                <div class="card-recipe__image"><img src="./img/image-card-recipe-3.png" alt="">
+                                </div>
+                                <div class="card-recipe__banner">
+                                    <div class="card-recipe__banner-item"><span>Средняя</span></div>
+                                </div>
+                            </div>
+
+                            <div class="card-recipe__group-info">
+                                <div class="card-recipe__category">Закуски</div>
+
+                                <div class="card-recipe__name">Запечённый бри</div>
+
+                                <div class="card-recipe__option-group">
+                                    <div class="card-recipe__option">1 ч 30 мин</div>
+                                    <div class="card-recipe__option">5 ингредиентов</div>
+                                </div>
+
+                                <div class="card-recipe__text">Миндаль, корица, апельсин, звёздочки аниса и
+                                    обжигающее красное вино — сочетание, которое....</div>
+
+                                <div class="card-recipe__date">05.02.2021</div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="information-block__card-recipe card-recipe">
+                            <div class="card-recipe__group-image">
+                                <div class="card-recipe__image"><img src="./img/image-card-recipe-4.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="card-recipe__group-info">
+                                <div class="card-recipe__category">Закуски</div>
+
+                                <div class="card-recipe__name">Запечённый бри</div>
+
+                                <div class="card-recipe__option-group">
+                                    <div class="card-recipe__option">1 ч 30 мин</div>
+                                    <div class="card-recipe__option">5 ингредиентов</div>
+                                </div>
+
+                                <div class="card-recipe__text">Миндаль, корица, апельсин, звёздочки аниса и
+                                    обжигающее красное вино — сочетание, которое....</div>
+
+                                <div class="card-recipe__date">05.02.2021</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="information-block__button-wrap">
+                        <a href="#" class="information-block__button-all">Посмотреть все</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="subscription">
+    <div class="container">
+        <div class="subscription__wrap">
+            <div class="subscription__row">
+                <div class="subscription__column">
+                    <div class="subscription__group-title">
+                        <div class="subscription__title title-h2"><span>Оставьте свой e-mail, и мы будем сообщать
+                                Вам</span></div>
+                        <div class="subscription__subtitle">об акциях и новинках, рецептах и новостях</div>
+                    </div>
+                </div>
+                <div class="subscription__column">
+                    <form action="#" class="subscription__form form-sub">
+                        <div class="form-sub__group">
+                            <div class="form-sub__wrap-input wrap-input --big">
+                                <input type="text" class="form-sub__input" placeholder="Ваш e-mail: *">
+                            </div>
+                            <button type="submit" class="form-sub__button">Подписаться</button>
+                        </div>
+                        <div class="form-sub__subtext">
+                            Оставляя свои данные, вы соглашаетесь на получение информационных и/или рекламных сообщений
+                            в соответствии <br> с <a href="#">политикой конфиденциальности.</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="instagram-block">
+    <div class="container">
+        <div class="instagram-block__wrap">
+            <div class="instagram-block__title title-h2 --circle"><span>Подписывайтесь на нас в <a href="#"
+                        class="--orange">Instagram</a></span></div>
+
+            <div class="instagram-block__list">
+                <a href="#" class="instagram-block__item card-instagram">
+                    <div class="card-instagram__image"><img src="./img/image-instagram-block-1.png" alt=""></div>
+                </a>
+
+                <a href="#" class="instagram-block__item card-instagram">
+                    <div class="card-instagram__image"><img src="./img/image-instagram-block-2.png" alt=""></div>
+                </a>
+
+                <a href="#" class="instagram-block__item card-instagram">
+                    <div class="card-instagram__image"><img src="./img/image-instagram-block-3.png" alt=""></div>
+                </a>
+
+                <a href="#" class="instagram-block__item card-instagram">
+                    <div class="card-instagram__image"><img src="./img/image-instagram-block-4.png" alt=""></div>
+                </a>
+
+                <a href="#" class="instagram-block__item card-instagram">
+                    <div class="card-instagram__image"><img src="./img/image-instagram-block-5.png" alt=""></div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+  <div class="footer__top top-footer">
+    <div class="container">
+      <div class="top-footer__wrap">
+        <div class="top-footer__logo logo">
+          <div class="logo__image"><img src="./img/logo.svg" alt=""></div>
+          <div class="logo__text">
+            <span class="logo__text-word">СОХРАНИМ</span>
+            <span class="logo__text-word --big">ПЛАНЕТУ</span>
+            <span class="logo__text-word">ВМЕСТЕ!</span>
+          </div>
+        </div>
+
+        <ul class="top-footer__contact">
+          <li class="top-footer__item --whatsapp">
+            <a href="tel:80000000000" class="top-footer__phone">8 (000) 000-00-00</a>
+            <span class="top-footer__subtext">напишите нам в WhatsApp</span>
+          </li>
+
+          <li class="top-footer__item --phone">
+            <a href="tel:70000000000" class="top-footer__phone">+7 (000) 000-00-00</a>
+            <span class="top-footer__subtext">звонок бесплатный</span>
+          </li>
+
+          <li class="top-footer__item --time">
+            <span class="top-footer__time">09:00 - 21:00, по будням</span>
+            <span class="top-footer__time">10:00 - 19:00, по выходным</span>
+          </li>
+        </ul>
+
+        <div class="top-footer__shop">
+          <div class="top-footer__shop-name">Готовы присоединиться?</div>
+          <div class="top-footer__shop-text">Питайся правильно, спасай продукты, помогай планете!</div>
+          <a href="#" class="top-footer__button main-btn">Начать покупки</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__middle middle-footer">
+    <div class="container">
+      <div class="middle-footer__wrap">
+        <div class="middle-footer__row">
+          <div class="middle-footer__column">
+            <div class="middle-footer__map">
+              Москва, Комсомольская площадь, 6
+              <a href="#"><span>мы на карте</span></a>
+            </div>
+            <div class="middle-footer__email"><a href="mailto:info@eatandsave.ru">info@eatandsave.ru</a></div>
+            <div class="middle-footer__social social">
+              <div class="social__text">Мы в соц сетях:</div>
+              <div class="social__lsit">
+                <div class="social__item">
+                  <a href="#" class="social__link"><img src="./img/icon-social-viber.png" alt=""></a>
+                </div>
+
+                <div class="social__item">
+                  <a href="#" class="social__link"><img src="./img/icon-social-instagram.png" alt=""></a>
+                </div>
+
+                <div class="social__item">
+                  <a href="#" class="social__link"><img src="./img/icon-social-facebook.png" alt=""></a>
+                </div>
+
+                <div class="social__item">
+                  <a href="#" class="social__link"><img src="./img/icon-social-vk.png" alt=""></a>
+                </div>
+
+                <div class="social__item">
+                  <a href="#" class="social__link"><img src="./img/icon-social-youtube.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="middle-footer__column">
+            <div class="middle-footer__row-menu footer-menu">
+              <div class="footer-menu__group">
+                <div class="footer-menu__name"><a href="#">О компании</a></div>
+                <div class="footer-menu__list">
+                  <div class="footer-menu__item current"><a href="#">Кто мы</a></div>
+                  <div class="footer-menu__item"><a href="#">Карьера</a></div>
+                  <div class="footer-menu__item"><a href="#">Доставка и оплата</a></div>
+                  <div class="footer-menu__item"><a href="#">Партнерам</a></div>
+                  <div class="footer-menu__item"><a href="#">Поставки</a></div>
+                  <div class="footer-menu__item"><a href="#">Контакты</a></div>
+                  <div class="footer-menu__item"><a href="#">Блог</a></div>
+                </div>
+              </div>
+
+              <div class="footer-menu__group">
+                <div class="footer-menu__name"><a href="#">Покупателям</a></div>
+                <div class="footer-menu__list">
+                  <div class="footer-menu__item"><a href="#">Наши продукты</a></div>
+                  <div class="footer-menu__item"><a href="#">FAQ</a></div>
+                  <div class="footer-menu__item"><a href="#">Поставки</a></div>
+                  <div class="footer-menu__item"><a href="#">Помощь</a></div>
+                  <div class="footer-menu__item"><a href="#">Путешествие продуктов</a></div>
+                  <div class="footer-menu__item"><a href="#">Рецепты</a></div>
+                  <div class="footer-menu__item"><a href="#">Экологичная упаковка</a></div>
+                  <div class="footer-menu__item"><a href="#">Акции</a></div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer__bottom bottom-footer">
+    <div class="container">
+      <div class="bottom-footer__wrap">
+        <div class="bottom-footer__policy">
+          © 2021 «Eat&Save». Все права защищены законом об авторском праве.
+          <a href="#"> <span>Политика конфиденциальности</span> </a>
+        </div>
+
+        <div class="bottom-footer__develop">
+          Разработка сайта -
+          <a href="#">WESMA</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<div class="popup-general modal --entry" id="popup-entry">
+  <div class="popup-general__body">
+
+    <div class="popup-general__group-title">
+      <div class="popup-general__title">Войти в личный кабинет</div>
+      <div class="popup-general__close js-modal-close"></div>
+    </div>
+
+    <div class="popup-general__wrap">
+      <from action="#" class="popup-general__form form-popup-general">
+        <div class="form-popup-general__lsit">
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">E-Mail*</div>
+            <input type="text" placeholder="eatandsave.ru@gmail.com">
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">Пароль*</div>
+            <input type="password">
+          </div>
+        </div>
+
+        <div class="popup-general__error">Заполните все обязательные поля</div>
+        <div class="popup-general__error">Неверный логин или пароль.</div>
+
+        <div class="form-popup-general__wrap-button">
+          <button type="submit" class="form-popup-general__submit main-btn">Войти</button>
+        </div>
+
+        <div class="form-popup-general__group">
+          <a href="#" class="form-popup-general__button">Забыли пароль?</a>
+          <a href="#" class="form-popup-general__button">Зарегистрироваться</a>
+        </div>
+
+      </from>
+    </div>
+
+  </div>
+</div>
+
+<div class="popup-general modal --password-rec" id="popup-password-rec">
+  <div class="popup-general__body">
+
+    <div class="popup-general__group-title">
+      <div class="popup-general__title">Восстановление пароля</div>
+      <div class="popup-general__close js-modal-close"></div>
+    </div>
+
+    <div class="popup-general__wrap">
+
+      <from action="#" class="popup-general__form form-popup-general">
+
+        <div class="form-popup-general__text">
+          Укажите адрес электронной почты.<br>
+          Мы вышлем подробные инструкции по восстановлению пароля.
+        </div>
+
+        <div class="form-popup-general__lsit">
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">E-Mail*</div>
+            <input type="text" placeholder="eatandsave.ru@gmail.com">
+          </div>
+        </div>
+
+        <div class="form-popup-general__wrap-button">
+          <button type="submit" class="form-popup-general__submit main-btn">Восстановить пароль</button>
+        </div>
+
+        <div class="form-popup-general__group">
+          <a href="#" class="form-popup-general__button">Вернуться к авторизации</a>
+        </div>
+
+      </from>
+    </div>
+
+  </div>
+</div>
+
+<div class="popup-general modal --regist" id="popup-regist">
+  <div class="popup-general__body">
+
+    <div class="popup-general__group-title">
+      <div class="popup-general__title">Регистрация</div>
+      <div class="popup-general__close js-modal-close"></div>
+    </div>
+
+    <div class="popup-general__wrap">
+
+      <from action="#" class="popup-general__form form-popup-general">
+
+        <div class="form-popup-general__lsit">
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">ФИО*</div>
+            <input type="text" placeholder="Виктория Иванова">
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">E-Mail*</div>
+            <input type="text" placeholder="eatandsave.ru@gmail.com">
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">Пароль*</div>
+            <input type="password">
+          </div>
+        </div>
+
+        <div class="form-popup-general__subtext">
+          Нажимая кнопку подтверждения заказа я даю своё согласие на обработку
+          моих персональных данных на условиях <a href="#">Соглашения об обработке персональных данных</a></div>
+
+        <div class="form-popup-general__wrap-button">
+          <button type="submit" class="form-popup-general__submit main-btn">зарегистрироваться</button>
+        </div>
+
+        <div class="form-popup-general__group">
+          <span>Уже зарегистрированы?</span>
+          <a href="#" class="form-popup-general__button">Войти</a>
+        </div>
+
+      </from>
+    </div>
+
+  </div>
+</div>
+
+<div class="popup-general modal --review" id="popup-review">
+  <div class="popup-general__body">
+
+    <div class="popup-general__group-title">
+      <div class="popup-general__title">Написать отзыв</div>
+      <div class="popup-general__close js-modal-close"></div>
+    </div>
+
+    <div class="popup-general__wrap">
+
+      <form action="#" class="popup-general__form form-popup-general">
+
+        <div class="form-popup-general__lsit">
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">ФИО*</div>
+            <input type="text" placeholder="Виктория Иванова">
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">E-Mail*</div>
+            <input type="text" placeholder="eatandsave.ru@gmail.com">
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">Какую коробку приобретали?</div>
+            <select>
+              <option value="">Выберите</option>
+              <option value="">Коробка 1</option>
+              <option value="">Коробка 2</option>
+              <option value="">Коробка 3</option>
+              <option value="">Коробка 4</option>
+              <option value="">Коробка 5</option>
+            </select>
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">Ваше мнение о Eat&Save*</div>
+            <textarea placeholder="Оставьте пару слов о нашей компании и продукции."></textarea>
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">Прикрепить файл</div>
+            <label class="wrap-input__file-wrap">
+              <input type="file">
+              <div class="wrap-input__file-text">Добавьте фотографию к вашему отзыву</div>
+              <span class="wrap-input__file-button">Выберите файл</span>
+            </label>
+
+          </div>
+
+        </div>
+
+        <div class="form-popup-general__subtext">
+          Нажимая кнопку подтверждения заказа я даю своё согласие на обработку
+          моих персональных данных на условиях <a href="#">Соглашения об обработке персональных данных</a></div>
+
+        <div class="form-popup-general__wrap-button">
+          <button type="submit" class="form-popup-general__submit main-btn">Отправить</button>
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="popup-general modal --add-basket" id="popup-add-basket">
+  <div class="popup-general__body">
+
+    <div class="popup-general__group-title">
+      <div class="popup-general__title">Товар добавлен в корзину</div>
+      <div class="popup-general__close js-modal-close"></div>
+    </div>
+
+    <div class="popup-general__wrap">
+
+      <div class="popup-general__basket-wrap">
+
+        <div class="popup-general__basket-info-wrap">
+          <div class="popup-general__basket-image"><img src="./img/popup-general-basket-image-1.png" alt=""></div>
+          <div class="popup-general__basket-group">
+            <div class="popup-general__basket-name">Круассаны La Reine с абрикосом
+              замороженные 420 г</div>
+            <div class="popup-general__basket-volume volume">
+              <div class="volume__item">1 л</div>
+            </div>
+            <div class="popup-general__basket-info">
+              <div class="popup-general__basket-quantity">Количество:<span>2</span></div>
+
+              <div class="popup-general__basket-price">
+                <span class="popup-general__basket-price-current">2 000 Р</span>
+                <span class="popup-general__basket-price-old">2 000 Р</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="popup-general__basket-button-wrap">
+          <a href="#" class="popup-general__basket-button --white">Продолжить покупки</a>
+          <a href="#" class="popup-general__basket-button --orange">Перейти в корзину</a>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+</div>
+
+<div class="popup-general modal --notify" id="popup-notify">
+  <div class="popup-general__body">
+
+    <div class="popup-general__group-title">
+      <div class="popup-general__title">Уведомить о поступлении товара</div>
+      <div class="popup-general__close js-modal-close"></div>
+    </div>
+
+    <div class="popup-general__wrap">
+
+      <form action="#" class="popup-general__form form-popup-general">
+
+        <div class="form-popup-general__lsit">
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">E-Mail*</div>
+            <input type="text" placeholder="eatandsave.ru@gmail.com">
+          </div>
+        </div>
+
+        <div class="form-popup-general__subtext">
+          Нажимая кнопку подтверждения заказа я даю своё согласие на обработку
+          моих персональных данных на условиях <a href="#">Соглашения об обработке персональных данных</a></div>
+
+        <div class="form-popup-general__wrap-button">
+          <button type="submit" class="form-popup-general__submit main-btn">Подписаться</button>
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<div class="popup-general modal --review-product" id="popup-review-product">
+  <div class="popup-general__body">
+
+    <div class="popup-general__group-title">
+      <div class="popup-general__title">Написать отзыв</div>
+      <div class="popup-general__close js-modal-close"></div>
+    </div>
+
+    <div class="popup-general__wrap">
+
+      <form action="#" class="popup-general__form form-popup-general">
+
+        <div class="form-popup-general__lsit">
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">Имя*</div>
+            <input type="text" placeholder="Виктория Иванова">
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">Оценка</div>
+
+            <div class="wrap-input__rating rating">
+              <div class="rating__wrap">
+
+                <div class="rating__item added">
+                  <input type="radio" name="rating" checked>
+                  <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                      stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                    </path>
+                  </svg>
+                </div>
+
+                <div class="rating__item added">
+                  <input type="radio" name="rating" checked>
+                  <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                      stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                    </path>
+                  </svg>
+                </div>
+
+                <div class="rating__item added">
+                  <input type="radio" name="rating" checked>
+                  <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                      stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                    </path>
+                  </svg>
+                </div>
+
+                <div class="rating__item added">
+                  <input type="radio" name="rating" checked>
+                  <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                      stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                    </path>
+                  </svg>
+                </div>
+
+                <div class="rating__item added">
+                  <input type="radio" name="rating" checked>
+                  <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                      stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                    </path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">Ваше мнение о Eat&Save*</div>
+            <textarea placeholder="Оставьте пару слов о нашей компании и продукции."></textarea>
+          </div>
+
+        </div>
+
+        <div class="form-popup-general__subtext">
+          Нажимая кнопку подтверждения заказа я даю своё согласие на обработку
+          моих персональных данных на условиях <a href="#">Соглашения об обработке персональных данных</a></div>
+
+        <div class="form-popup-general__wrap-button">
+          <button type="submit" class="form-popup-general__submit main-btn">Отправить</button>
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<div class="popup-general modal --result" id="popup-result-one">
+  <div class="popup-general__body">
+    <div class="popup-general__close js-modal-close"></div>
+
+    <div class="popup-general__wrap">
+      <div class="popup-general__title">Спасибо за Ваш отзыв</div>
+
+      <div class="popup-general__result-text">Отзыв направлен на модерацию.<br>
+        Нам важно Ваше мнение.</div>
+    </div>
+
+  </div>
+</div>
+
+<div class="popup-general modal --result" id="popup-result-two">
+  <div class="popup-general__body">
+    <div class="popup-general__close js-modal-close"></div>
+
+    <div class="popup-general__wrap">
+      <div class="popup-general__title">Вы успешно подписались</div>
+
+      <div class="popup-general__result-text">Когда товар появится в наличии,
+        на электронный адрес придет
+        соответствующие сообщение.</div>
+    </div>
+
+  </div>
+</div>
+
+<div class="popup-general modal --not-register" id="popup-not-register">
+  <div class="popup-general__body">
+    <div class="popup-general__close js-modal-close"></div>
+
+    <div class="popup-general__wrap">
+      <div class="popup-general__title">Для оформления заказа необходимо <a href="#">зарегистрироваться</a></div>
+    </div>
+
+  </div>
+</div>
+
+<div class="popup-overlay"></div>
+
+<!-- // FOOTER -->
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="./js/mmenu.js"></script>
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+<script src="./js/jquery.mCustomScrollbar.js"></script>
+<script src="./js/sticksy.min.js"></script>
+<script src="./js/jquery.nice-select.js"></script>
+<script src="./js/script.js"></script>
+
+
+
+</body>
+
+</html>

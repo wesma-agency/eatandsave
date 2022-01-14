@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/mmenu.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
+    <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="./css/nice-select.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav id="menu" class="mm-menu_offcanvas">
+        <ul>
+
+        </ul>
+    </nav>
+
+    <!-- HEADER -->
+    <div class="wrapper">
+        <!-- authorized -->
+        <header class="header authorized">
+
+            <div class="header__top">
+                <div class="container">
+                    <div class="header__top-wrap">
+                        <div class="header__logo logo">
+                            <div class="logo__image"><img src="./img/logo.svg" alt=""></div>
+                            <div class="logo__text">
+                                <span class="logo__text-word">СОХРАНИМ</span>
+                                <span class="logo__text-word --big">ПЛАНЕТУ</span>
+                                <span class="logo__text-word">ВМЕСТЕ!</span>
+                            </div>
+                        </div>
+
+                        <div class="header__contact main-contact">
+                            <ul class="main-contact__list --first js-mobile-menu">
+                                <li class="main-contact__item --phone">
+                                    <a href="tel:80000000000" class="main-contact__link">8 (000) 000-00-00</a>
+                                    <span class="main-contact__subtext">звонок бесплатный</span>
+                                </li>
+                            </ul>
+
+                            <ul class="main-contact__list --secondary js-mobile-menu">
+                                <li class="main-contact__item --phone">
+                                    <a href="tel:70000000000" class="main-contact__link">+7 (000) 000-00-00</a>
+                                    <span class="main-contact__subtext">09:00 - 21:00, по будням</span>
+                                </li>
+
+                                <li class="main-contact__item --email">
+                                    <a href="mailto:info@eatandsave.ru"
+                                        class="main-contact__link">info@eatandsave.ru</a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <div class="header__mobile-menu mobile-menu">
+                            <div class="mobile-menu__wrap">
+                                <span class="mobile-menu__icon">
+                                    <span></span>
+                                </span>
+                                <span class="mobile-menu__text">Меню</span>
+                            </div>
+                        </div>
+
+                        <a href="#" class="header__box assemble-box">
+                            <div class="assemble-box__wrap">
+                                <div class="assemble-box__icon">
+                                    <img src="./img/icon-box-2.png" alt="">
+                                </div>
+                                <span class="assemble-box__text">Собрать коробку</span>
+                            </div>
+                        </a>
+
+                        <div class="header__group-account">
+                            <a href="#" class="header__basket basket-header">
+                                <div class="basket-header__wrap">
+                                    <div class="basket-header__icon">
+                                        <img src="./img/icon-basket-2.png" alt="">
+                                    </div>
+                                    <span class="basket-header__total">10</span>
+                                </div>
+                            </a>
+
+                            <div class="header__account account">
+                                <ul class="account__login js-mobile-menu">
+                                    <li class="account__login-item"><a href="#">С возвращением,
+                                            <span>Виктория</span></a></li>
+
+                                    <!-- <li class="account__login-item"><a href="#"><span>Вход</span> </a></li>
+                  <li class="account__login-item"><a href="#"><span>Регистрация</span> </a></li> -->
+                                </ul>
+
+                                <ul class="account__list-profile js-mobile-menu">
+                                    <li class="account__item-profile">
+                                        <a href="#">
+                                            <img src="./img/icon-profile-1.png" alt="">
+                                            <span>Мои заказы</span>
+                                        </a>
+                                    </li>
+                                    <li class="account__item-profile">
+                                        <a href="#">
+                                            <img src="./img/icon-profile-2.png" alt="">
+                                            <span>Избранное</span>
+                                        </a>
+                                    </li>
+                                    <li class="account__item-profile">
+                                        <a href="#">
+                                            <img src="./img/icon-profile-3.png" alt="">
+                                            <span>Собрать продуктовую коробку</span>
+                                        </a>
+                                    </li>
+                                    <li class="account__item-profile">
+                                        <a href="#">
+                                            <img src="./img/icon-profile-4.png" alt="">
+                                            <span>Персональные данные</span>
+                                        </a>
+                                    </li>
+                                    <li class="account__item-profile">
+                                        <a href="#">
+                                            <img src="./img/icon-profile-5.png" alt="">
+                                            <span>Выйти</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__bottom">
+                <div class="container">
+                    <div class="header__nav">
+                        <ul class="nav-menu js-mobile-menu">
+                            <li class="nav-menu__item nav-menu-item current">
+                                <a href="#"><span>Кто мы</span></a>
+                                <ul class="nav-menu__sub-menu nav-menu-list">
+                                    <li class="nav-menu__sub-item nav-menu-item">
+                                        <a href="#"><span>О компании</span></a>
+                                        <ul class="nav-menu__sub-menu nav-menu-list">
+                                            <li class="nav-menu__sub-item nav-menu-item"><a href="#"><span>Уровень
+                                                        2</span></a></li>
+                                            <li class="nav-menu__sub-item nav-menu-item">
+                                                <a href="#"><span>Уровень 2</span></a>
+                                                <ul class="nav-menu__sub-menu nav-menu-list">
+                                                    <li class="nav-menu__sub-item nav-menu-item"><a
+                                                            href="#"><span>Уровень 3</span></a></li>
+                                                    <li class="nav-menu__sub-item nav-menu-item"><a
+                                                            href="#"><span>Уровень 3</span></a></li>
+                                                    <li class="nav-menu__sub-item nav-menu-item"><a
+                                                            href="#"><span>Уровень 3</span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-menu__sub-item nav-menu-item"><a href="#"><span>Уровень
+                                                        2</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-menu__sub-item nav-menu-item current">
+                                        <a href="#"><span>Отзывы</span></a>
+                                        <ul class="nav-menu__sub-menu nav-menu-list">
+                                            <li class="nav-menu__sub-item nav-menu-item current"><a
+                                                    href="#"><span>Уровень 2</span></a></li>
+                                            <li class="nav-menu__sub-item nav-menu-item"><a href="#"><span>Уровень
+                                                        2</span></a></li>
+                                            <li class="nav-menu__sub-item nav-menu-item">
+                                                <a href="#"><span>Уровень 2</span></a>
+                                                <ul class="nav-menu__sub-menu nav-menu-list">
+                                                    <li class="nav-menu__sub-item nav-menu-item current"><a
+                                                            href="#"><span>Уровень 3</span></a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-menu__sub-item nav-menu-item"><a
+                                            href="#"><span>Предложения</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-menu__item nav-menu-item"><a href="#"><span>Что в моей коробке?</span></a>
+                            </li>
+                            <li class="nav-menu__item nav-menu-item"><a href="#"><span>FAQ</span></a></li>
+                            <li class="nav-menu__item nav-menu-item"><a href="#"><span>Помощь</span></a></li>
+                            <li class="nav-menu__item nav-menu-item"><a href="#"><span>Рецепты</span></a></li>
+                            <li class="nav-menu__item nav-menu-item"><a href="#"><span>Блог</span></a></li>
+                            <li class="nav-menu__item nav-menu-item">
+                                <a href="#"><span>Контакты</span></a>
+                                <ul class="nav-menu__sub-menu nav-menu-list">
+                                    <li class="nav-menu__sub-item nav-menu-item current"><a href="#"><span>Уровень
+                                                2</span></a></li>
+                                    <li class="nav-menu__sub-item nav-menu-item"><a href="#"><span>Уровень 2</span></a>
+                                    </li>
+                                    <li class="nav-menu__sub-item nav-menu-item">
+                                        <a href="#"><span>Уровень 2</span></a>
+                                        <ul class="nav-menu__sub-menu nav-menu-list">
+                                            <li class="nav-menu__sub-item nav-menu-item current"><a
+                                                    href="#"><span>Уровень 3</span></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+<section class="breadcrumbs">
+    <div class="container">
+        <div class="breadcrumbs__wrap">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+                <li class="breadcrumbs__item"><a href="#">Мои заказы</a></li>
+                <li class="breadcrumbs__item"><span>Информация о заказе №1125005</span></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<div class="block-title">
+    <div class="container">
+        <div class="block-title__wrap">
+            <div class="block-title__title title-h2">Информация о заказе №1125005</div>
+        </div>
+    </div>
+</div>
+
+<section class="profile">
+    <div class="container">
+        <div class="profile__wrap">
+            <div class="profile__row">
+                <div class="profile__column">
+                    <div class="profile__menu menu-profile">
+                        <div class="menu-profile__list">
+                            <a href="#" class="menu-profile__item">
+                                <div class="menu-profile__icon"><img src="./img/icon-profile-1.png" alt=""></div>
+                                <div class="menu-profile__name">Мои заказы</div>
+                            </a>
+
+                            <a href="#" class="menu-profile__item">
+                                <div class="menu-profile__icon"><img src="./img/icon-profile-2.png" alt=""></div>
+                                <div class="menu-profile__name">Избранное</div>
+                            </a>
+
+                            <a href="#" class="menu-profile__item">
+                                <div class="menu-profile__icon"><img src="./img/icon-profile-3.png" alt=""></div>
+                                <div class="menu-profile__name">Собрать продуктовую коробку</div>
+                            </a>
+
+                            <a href="#" class="menu-profile__item active">
+                                <div class="menu-profile__icon"><img src="./img/icon-profile-4.png" alt=""></div>
+                                <div class="menu-profile__name">Персональные данные</div>
+                            </a>
+
+                            <a href="#" class="menu-profile__item">
+                                <div class="menu-profile__icon"><img src="./img/icon-profile-5.png" alt=""></div>
+                                <div class="menu-profile__name">Выйти</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile__column">
+                    <div class="profile__order order-profile">
+
+                        <div class="order-profile__wrap-order">
+                            <div class="order-profile__card card-order-profile --current">
+                                <div class="card-order-profile__number">№ 1</div>
+
+                                <div class="card-order-profile__list">
+                                    <div class="card-order-profile__group">
+                                        <div class="card-order-profile__wrap">
+                                            <div class="card-order-profile__status"><span
+                                                    style="background-color: #5FAD56;"></span> Новый</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-order-profile__group">
+                                        <div class="card-order-profile__wrap">
+                                            <div class="card-order-profile__name">Дата создания</div>
+                                            <div class="card-order-profile__date">26.03.2021</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-order-profile__group">
+                                        <div class="card-order-profile__wrap">
+                                            <div class="card-order-profile__name">Способ доставки</div>
+                                            <div class="card-order-profile__text">Доставка по Московской
+                                                области
+                                            </div>
+                                        </div>
+
+                                        <div class="card-order-profile__delivery-price">
+                                            Стоимость:<span> 600 Р</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-order-profile__group">
+                                        <div class="card-order-profile__wrap">
+                                            <div class="card-order-profile__name">Способ оплаты</div>
+                                            <div class="card-order-profile__text">Наличными при получении
+                                            </div>
+                                        </div>
+
+                                        <div class="card-order-profile__pay">
+                                            <a href="#" class="card-order-profile__button-pay">Оплатить</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-order-profile__group">
+                                        <div class="card-order-profile__wrap">
+                                            <div class="card-order-profile__name">Сумма</div>
+                                            <div class="card-order-profile__price">3 500 Р</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-order-profile__group-button card-order-profile-button">
+                                    <a href="#" class="card-order-profile-button__item --cancel"><span>Отменить
+                                            заказ</span></a>
+                                    <a href="#" class="card-order-profile-button__item --repeat"><span>Повторить
+                                            заказ</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-profile__info-order info-profile-order">
+                            <div class="info-profile-order__caption">
+                                <div class="info-profile-order__title">
+                                    Заказ: №
+                                    <span class="info-profile-order__number">1125005</span>
+
+                                    <span class="info-profile-order__date">от 26.03.21</span>
+                                    на сумму
+                                    <span class="info-profile-order__price">3 500 руб</span>.
+                                </div>
+                            </div>
+
+                            <div class="info-profile-order__table">
+
+                                <div class="info-profile-order__table-column">
+                                    <div class="info-profile-order__item">
+                                        <div class="info-profile-order__name">Информация о покупателе</div>
+                                    </div>
+
+                                    <div class="info-profile-order__item">
+                                        <div class="info-profile-order__name">ФИО: </div>
+                                        <div class="info-profile-order__text">Виктория Иванова</div>
+                                    </div>
+
+                                    <div class="info-profile-order__item">
+                                        <div class="info-profile-order__name">Телефон: </div>
+                                        <div class="info-profile-order__text">+7 (000) 000-00-0</div>
+                                    </div>
+
+                                    <div class="info-profile-order__item">
+                                        <div class="info-profile-order__name">E-mail:</div>
+                                        <div class="info-profile-order__text">eatandsave.ru@gmail.com</div>
+                                    </div>
+
+                                    <div class="info-profile-order__item">
+                                        <div class="info-profile-order__name">Город:</div>
+                                        <div class="info-profile-order__text">Железнодорожный</div>
+                                    </div>
+
+                                    <div class="info-profile-order__item">
+                                        <div class="info-profile-order__name">Улица, дом, квартира:</div>
+                                        <div class="info-profile-order__text">ул. Коптевская, д. 18, кв. 5</div>
+                                    </div>
+                                </div>
+
+                                <div class="info-profile-order__table-column">
+                                    <div class="info-profile-order__item --comment">
+                                        <div class="info-profile-order__name">Комментарий к заказу</div>
+                                        <div class="info-profile-order__text">Прошу доставить заказ 30.03.21 к 12.00
+                                            дня.
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="order-profile__basket order-profile-basket">
+                            <div class="order-profile-basket__caption">
+                                <div class="order-profile-basket__title">Содержимое заказа</div>
+                                <div class="order-profile-basket__title">Цена за ед.</div>
+                                <div class="order-profile-basket__title">Количество</div>
+                                <div class="order-profile-basket__title">Скидка</div>
+                                <div class="order-profile-basket__title">Сумма</div>
+                            </div>
+
+                            <div class="order-profile-basket__lsit">
+                                <div class="order-profile-basket__item">
+                                    <div class="order-profile-basket__row-one">
+                                        <div class="order-profile-basket__group-one">
+                                            <div class="order-profile-basket__image"><img src="./img/image-box-card.png"
+                                                    alt=""></div>
+                                            <div class="order-profile-basket__group-name">
+                                                <div class="order-profile-basket__name">Масло оливковое Borges E.V.Extra
+                                                    Virgin Original</div>
+                                                <div class="order-profile-basket__text js-show-box">Посмотреть состав
+                                                    коробки</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="order-profile-basket__group-two">
+                                            <div class="order-profile-basket__price" data-name="Цена за ед.">
+                                                <span class="order-profile-basket__price-current">1 000 Р</span>
+                                                <span class="order-profile-basket__price-old">2 000 Р</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="order-profile-basket__group-three">
+                                            <div class="order-profile-basket__quantity" data-name="Количество">1 шт
+                                            </div>
+                                        </div>
+
+                                        <div class="order-profile-basket__group-four">
+                                            <div class="order-profile-basket__discount" data-name="Скидка">-10%</div>
+                                        </div>
+
+                                        <div class="order-profile-basket__group-five">
+                                            <div class="order-profile-basket__price-all" data-name="Сумма">1 000 Р</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="order-profile-basket__row-two js-box-list --hidden">
+                                        <div class="order-profile-basket__list">
+                                            <div class="order-profile-basket__box box-color --green">
+                                                <div class="box-color__image"><img
+                                                        src="./img/image-basket-box-card-1.png" alt="">
+                                                </div>
+                                            </div>
+
+                                            <div class="order-profile-basket__box box-color --green">
+                                                <div class="box-color__image"><img
+                                                        src="./img/image-basket-box-card-2.png" alt="">
+                                                </div>
+                                            </div>
+
+                                            <div class="order-profile-basket__box box-color --green">
+                                                <div class="box-color__image"><img
+                                                        src="./img/image-basket-box-card-3.png" alt="">
+                                                </div>
+                                            </div>
+
+                                            <div class="order-profile-basket__box box-color --green">
+                                                <div class="box-color__image"><img
+                                                        src="./img/image-basket-box-card-4.png" alt="">
+                                                </div>
+                                            </div>
+
+                                            <div class="order-profile-basket__box box-color --green">
+                                                <div class="box-color__image"><img
+                                                        src="./img/image-basket-box-card-5.png" alt="">
+                                                </div>
+                                            </div>
+
+                                            <div class="order-profile-basket__box box-color --green">
+                                                <div class="box-color__image"><img
+                                                        src="./img/image-basket-box-card-6.png" alt="">
+                                                </div>
+                                            </div>
+
+                                            <div class="order-profile-basket__box box-color --yellow">
+                                                <div class="box-color__image"><img
+                                                        src="./img/image-basket-box-card-7.png" alt="">
+                                                </div>
+                                            </div>
+
+                                            <div class="order-profile-basket__box box-color --yellow">
+                                                <div class="box-color__image"><img
+                                                        src="./img/image-basket-box-card-8.png" alt="">
+                                                </div>
+                                            </div>
+
+                                            <div class="order-profile-basket__box box-color --orange">
+                                                <div class="box-color__image"><img
+                                                        src="./img/image-basket-box-card-9.png" alt="">
+                                                </div>
+                                            </div>
+
+                                            <div class="order-profile-basket__box box-color --orange">
+                                                <div class="box-color__image"><img
+                                                        src="./img/image-basket-box-card-10.png" alt="">
+                                                </div>
+                                            </div>
+
+                                            <div class="order-profile-basket__box box-color --purple">
+                                                <div class="box-color__image"><img
+                                                        src="./img/image-basket-box-card-11.png" alt="">
+                                                </div>
+                                            </div>
+
+                                            <div class="order-profile-basket__box box-color --purple">
+                                                <div class="box-color__image"><img
+                                                        src="./img/image-basket-box-card-12.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="order-profile-basket__item">
+                                    <div class="order-profile-basket__row-one">
+                                        <div class="order-profile-basket__group-one">
+                                            <div class="order-profile-basket__image"><img
+                                                    src="./img/image-order-profile-basket-1.png" alt=""></div>
+                                            <div class="order-profile-basket__group-name">
+                                                <div class="order-profile-basket__name">Масло оливковое Borges E.V.Extra
+                                                    Virgin Original</div>
+                                                <div class="order-profile-basket__text">Объем: 1 л</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="order-profile-basket__group-two">
+                                            <div class="order-profile-basket__price" data-name="Цена за ед.">
+                                                <span class="order-profile-basket__price-current">1 000 Р</span>
+                                                <span class="order-profile-basket__price-old">2 000 Р</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="order-profile-basket__group-three">
+                                            <div class="order-profile-basket__quantity" data-name="Количество">1 шт
+                                            </div>
+                                        </div>
+
+                                        <div class="order-profile-basket__group-four">
+                                            <div class="order-profile-basket__discount" data-name="Скидка">-10%</div>
+                                        </div>
+
+                                        <div class="order-profile-basket__group-five">
+                                            <div class="order-profile-basket__price-all" data-name="Сумма">1 000 Р</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="order-profile-basket__item">
+                                    <div class="order-profile-basket__row-one">
+                                        <div class="order-profile-basket__group-one">
+                                            <div class="order-profile-basket__image"><img
+                                                    src="./img/image-order-profile-basket-1.png" alt=""></div>
+                                            <div class="order-profile-basket__group-name">
+                                                <div class="order-profile-basket__name">Масло оливковое Borges E.V.Extra
+                                                    Virgin Original</div>
+                                                <div class="order-profile-basket__text">Объем: 1 л</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="order-profile-basket__group-two">
+                                            <div class="order-profile-basket__price" data-name="Цена за ед.">
+                                                <span class="order-profile-basket__price-current">100 000 Р</span>
+                                                <span class="order-profile-basket__price-old">200 000 Р</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="order-profile-basket__group-three">
+                                            <div class="order-profile-basket__quantity" data-name="Количество">1 шт
+                                            </div>
+                                        </div>
+
+                                        <div class="order-profile-basket__group-four">
+
+                                        </div>
+
+                                        <div class="order-profile-basket__group-five">
+                                            <div class="order-profile-basket__price-all" data-name="Сумма">100 000 Р
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-profile__order-button card-order-profile-button">
+                            <a href="#" class="card-order-profile-button__item --back"><span>Вернуться в список
+                                    заказов</span></a>
+
+                            <a href="#" class="card-order-profile-button__item --cancel"><span>Отменить
+                                    заказ</span></a>
+                            <a href="#" class="card-order-profile-button__item --repeat"><span>Повторить
+                                    заказ</span></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="support">
+    <div class="container">
+        <div class="support__wrap">
+            <div class="support__title-wrap">
+                <div class="support__title title-h2 --multi-circle"><span>Нужна помощь?</span></div>
+            </div>
+
+            <div class="support__list">
+                <a href="#" class="support__item card-support">
+                    <div class="card-support__icon"><img src="./img/image-card-support-1.png" alt=""></div>
+                    <div class="card-support__group">
+                        <div class="card-support__name">Отвечаем на популярные
+                            вопросы</div>
+                        <div class="card-support__text">Этот раздел поможет, если вы не нашли нужную информацию или не
+                            смогли выполнить какое-либо действие.</div>
+                    </div>
+                </a>
+
+                <a href="#" class="support__item card-support">
+                    <div class="card-support__icon"><img src="./img/image-card-support-2.png" alt=""></div>
+                    <div class="card-support__group">
+                        <div class="card-support__name">Справочная</div>
+                        <div class="card-support__text">Здесь Вы можете провести поиск по всему сайту и найти ответы на
+                            любые вопросы.</div>
+                    </div>
+                </a>
+
+                <a href="#" class="support__item card-support">
+                    <div class="card-support__icon"><img src="./img/image-card-support-3.png" alt=""></div>
+                    <div class="card-support__group">
+                        <div class="card-support__name">Свяжитесь с нами</div>
+                        <div class="card-support__text">Если вам не хватило он-лайн общения с нашим сайтом, вы всегда
+                            можете получить больше информации у наших менеджеров.</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+  <div class="footer__top top-footer">
+    <div class="container">
+      <div class="top-footer__wrap">
+        <div class="top-footer__logo logo">
+          <div class="logo__image"><img src="./img/logo.svg" alt=""></div>
+          <div class="logo__text">
+            <span class="logo__text-word">СОХРАНИМ</span>
+            <span class="logo__text-word --big">ПЛАНЕТУ</span>
+            <span class="logo__text-word">ВМЕСТЕ!</span>
+          </div>
+        </div>
+
+        <ul class="top-footer__contact">
+          <li class="top-footer__item --whatsapp">
+            <a href="tel:80000000000" class="top-footer__phone">8 (000) 000-00-00</a>
+            <span class="top-footer__subtext">напишите нам в WhatsApp</span>
+          </li>
+
+          <li class="top-footer__item --phone">
+            <a href="tel:70000000000" class="top-footer__phone">+7 (000) 000-00-00</a>
+            <span class="top-footer__subtext">звонок бесплатный</span>
+          </li>
+
+          <li class="top-footer__item --time">
+            <span class="top-footer__time">09:00 - 21:00, по будням</span>
+            <span class="top-footer__time">10:00 - 19:00, по выходным</span>
+          </li>
+        </ul>
+
+        <div class="top-footer__shop">
+          <div class="top-footer__shop-name">Готовы присоединиться?</div>
+          <div class="top-footer__shop-text">Питайся правильно, спасай продукты, помогай планете!</div>
+          <a href="#" class="top-footer__button main-btn">Начать покупки</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__middle middle-footer">
+    <div class="container">
+      <div class="middle-footer__wrap">
+        <div class="middle-footer__row">
+          <div class="middle-footer__column">
+            <div class="middle-footer__map">
+              Москва, Комсомольская площадь, 6
+              <a href="#"><span>мы на карте</span></a>
+            </div>
+            <div class="middle-footer__email"><a href="mailto:info@eatandsave.ru">info@eatandsave.ru</a></div>
+            <div class="middle-footer__social social">
+              <div class="social__text">Мы в соц сетях:</div>
+              <div class="social__lsit">
+                <div class="social__item">
+                  <a href="#" class="social__link"><img src="./img/icon-social-viber.png" alt=""></a>
+                </div>
+
+                <div class="social__item">
+                  <a href="#" class="social__link"><img src="./img/icon-social-instagram.png" alt=""></a>
+                </div>
+
+                <div class="social__item">
+                  <a href="#" class="social__link"><img src="./img/icon-social-facebook.png" alt=""></a>
+                </div>
+
+                <div class="social__item">
+                  <a href="#" class="social__link"><img src="./img/icon-social-vk.png" alt=""></a>
+                </div>
+
+                <div class="social__item">
+                  <a href="#" class="social__link"><img src="./img/icon-social-youtube.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="middle-footer__column">
+            <div class="middle-footer__row-menu footer-menu">
+              <div class="footer-menu__group">
+                <div class="footer-menu__name"><a href="#">О компании</a></div>
+                <div class="footer-menu__list">
+                  <div class="footer-menu__item current"><a href="#">Кто мы</a></div>
+                  <div class="footer-menu__item"><a href="#">Карьера</a></div>
+                  <div class="footer-menu__item"><a href="#">Доставка и оплата</a></div>
+                  <div class="footer-menu__item"><a href="#">Партнерам</a></div>
+                  <div class="footer-menu__item"><a href="#">Поставки</a></div>
+                  <div class="footer-menu__item"><a href="#">Контакты</a></div>
+                  <div class="footer-menu__item"><a href="#">Блог</a></div>
+                </div>
+              </div>
+
+              <div class="footer-menu__group">
+                <div class="footer-menu__name"><a href="#">Покупателям</a></div>
+                <div class="footer-menu__list">
+                  <div class="footer-menu__item"><a href="#">Наши продукты</a></div>
+                  <div class="footer-menu__item"><a href="#">FAQ</a></div>
+                  <div class="footer-menu__item"><a href="#">Поставки</a></div>
+                  <div class="footer-menu__item"><a href="#">Помощь</a></div>
+                  <div class="footer-menu__item"><a href="#">Путешествие продуктов</a></div>
+                  <div class="footer-menu__item"><a href="#">Рецепты</a></div>
+                  <div class="footer-menu__item"><a href="#">Экологичная упаковка</a></div>
+                  <div class="footer-menu__item"><a href="#">Акции</a></div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer__bottom bottom-footer">
+    <div class="container">
+      <div class="bottom-footer__wrap">
+        <div class="bottom-footer__policy">
+          © 2021 «Eat&Save». Все права защищены законом об авторском праве.
+          <a href="#"> <span>Политика конфиденциальности</span> </a>
+        </div>
+
+        <div class="bottom-footer__develop">
+          Разработка сайта -
+          <a href="#">WESMA</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<div class="popup-general modal --entry" id="popup-entry">
+  <div class="popup-general__body">
+
+    <div class="popup-general__group-title">
+      <div class="popup-general__title">Войти в личный кабинет</div>
+      <div class="popup-general__close js-modal-close"></div>
+    </div>
+
+    <div class="popup-general__wrap">
+      <from action="#" class="popup-general__form form-popup-general">
+        <div class="form-popup-general__lsit">
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">E-Mail*</div>
+            <input type="text" placeholder="eatandsave.ru@gmail.com">
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">Пароль*</div>
+            <input type="password">
+          </div>
+        </div>
+
+        <div class="popup-general__error">Заполните все обязательные поля</div>
+        <div class="popup-general__error">Неверный логин или пароль.</div>
+
+        <div class="form-popup-general__wrap-button">
+          <button type="submit" class="form-popup-general__submit main-btn">Войти</button>
+        </div>
+
+        <div class="form-popup-general__group">
+          <a href="#" class="form-popup-general__button">Забыли пароль?</a>
+          <a href="#" class="form-popup-general__button">Зарегистрироваться</a>
+        </div>
+
+      </from>
+    </div>
+
+  </div>
+</div>
+
+<div class="popup-general modal --password-rec" id="popup-password-rec">
+  <div class="popup-general__body">
+
+    <div class="popup-general__group-title">
+      <div class="popup-general__title">Восстановление пароля</div>
+      <div class="popup-general__close js-modal-close"></div>
+    </div>
+
+    <div class="popup-general__wrap">
+
+      <from action="#" class="popup-general__form form-popup-general">
+
+        <div class="form-popup-general__text">
+          Укажите адрес электронной почты.<br>
+          Мы вышлем подробные инструкции по восстановлению пароля.
+        </div>
+
+        <div class="form-popup-general__lsit">
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">E-Mail*</div>
+            <input type="text" placeholder="eatandsave.ru@gmail.com">
+          </div>
+        </div>
+
+        <div class="form-popup-general__wrap-button">
+          <button type="submit" class="form-popup-general__submit main-btn">Восстановить пароль</button>
+        </div>
+
+        <div class="form-popup-general__group">
+          <a href="#" class="form-popup-general__button">Вернуться к авторизации</a>
+        </div>
+
+      </from>
+    </div>
+
+  </div>
+</div>
+
+<div class="popup-general modal --regist" id="popup-regist">
+  <div class="popup-general__body">
+
+    <div class="popup-general__group-title">
+      <div class="popup-general__title">Регистрация</div>
+      <div class="popup-general__close js-modal-close"></div>
+    </div>
+
+    <div class="popup-general__wrap">
+
+      <from action="#" class="popup-general__form form-popup-general">
+
+        <div class="form-popup-general__lsit">
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">ФИО*</div>
+            <input type="text" placeholder="Виктория Иванова">
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">E-Mail*</div>
+            <input type="text" placeholder="eatandsave.ru@gmail.com">
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">Пароль*</div>
+            <input type="password">
+          </div>
+        </div>
+
+        <div class="form-popup-general__subtext">
+          Нажимая кнопку подтверждения заказа я даю своё согласие на обработку
+          моих персональных данных на условиях <a href="#">Соглашения об обработке персональных данных</a></div>
+
+        <div class="form-popup-general__wrap-button">
+          <button type="submit" class="form-popup-general__submit main-btn">зарегистрироваться</button>
+        </div>
+
+        <div class="form-popup-general__group">
+          <span>Уже зарегистрированы?</span>
+          <a href="#" class="form-popup-general__button">Войти</a>
+        </div>
+
+      </from>
+    </div>
+
+  </div>
+</div>
+
+<div class="popup-general modal --review" id="popup-review">
+  <div class="popup-general__body">
+
+    <div class="popup-general__group-title">
+      <div class="popup-general__title">Написать отзыв</div>
+      <div class="popup-general__close js-modal-close"></div>
+    </div>
+
+    <div class="popup-general__wrap">
+
+      <form action="#" class="popup-general__form form-popup-general">
+
+        <div class="form-popup-general__lsit">
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">ФИО*</div>
+            <input type="text" placeholder="Виктория Иванова">
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">E-Mail*</div>
+            <input type="text" placeholder="eatandsave.ru@gmail.com">
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">Какую коробку приобретали?</div>
+            <select>
+              <option value="">Выберите</option>
+              <option value="">Коробка 1</option>
+              <option value="">Коробка 2</option>
+              <option value="">Коробка 3</option>
+              <option value="">Коробка 4</option>
+              <option value="">Коробка 5</option>
+            </select>
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">Ваше мнение о Eat&Save*</div>
+            <textarea placeholder="Оставьте пару слов о нашей компании и продукции."></textarea>
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">Прикрепить файл</div>
+            <label class="wrap-input__file-wrap">
+              <input type="file">
+              <div class="wrap-input__file-text">Добавьте фотографию к вашему отзыву</div>
+              <span class="wrap-input__file-button">Выберите файл</span>
+            </label>
+
+          </div>
+
+        </div>
+
+        <div class="form-popup-general__subtext">
+          Нажимая кнопку подтверждения заказа я даю своё согласие на обработку
+          моих персональных данных на условиях <a href="#">Соглашения об обработке персональных данных</a></div>
+
+        <div class="form-popup-general__wrap-button">
+          <button type="submit" class="form-popup-general__submit main-btn">Отправить</button>
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="popup-general modal --add-basket" id="popup-add-basket">
+  <div class="popup-general__body">
+
+    <div class="popup-general__group-title">
+      <div class="popup-general__title">Товар добавлен в корзину</div>
+      <div class="popup-general__close js-modal-close"></div>
+    </div>
+
+    <div class="popup-general__wrap">
+
+      <div class="popup-general__basket-wrap">
+
+        <div class="popup-general__basket-info-wrap">
+          <div class="popup-general__basket-image"><img src="./img/popup-general-basket-image-1.png" alt=""></div>
+          <div class="popup-general__basket-group">
+            <div class="popup-general__basket-name">Круассаны La Reine с абрикосом
+              замороженные 420 г</div>
+            <div class="popup-general__basket-volume volume">
+              <div class="volume__item">1 л</div>
+            </div>
+            <div class="popup-general__basket-info">
+              <div class="popup-general__basket-quantity">Количество:<span>2</span></div>
+
+              <div class="popup-general__basket-price">
+                <span class="popup-general__basket-price-current">2 000 Р</span>
+                <span class="popup-general__basket-price-old">2 000 Р</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="popup-general__basket-button-wrap">
+          <a href="#" class="popup-general__basket-button --white">Продолжить покупки</a>
+          <a href="#" class="popup-general__basket-button --orange">Перейти в корзину</a>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+</div>
+
+<div class="popup-general modal --notify" id="popup-notify">
+  <div class="popup-general__body">
+
+    <div class="popup-general__group-title">
+      <div class="popup-general__title">Уведомить о поступлении товара</div>
+      <div class="popup-general__close js-modal-close"></div>
+    </div>
+
+    <div class="popup-general__wrap">
+
+      <form action="#" class="popup-general__form form-popup-general">
+
+        <div class="form-popup-general__lsit">
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">E-Mail*</div>
+            <input type="text" placeholder="eatandsave.ru@gmail.com">
+          </div>
+        </div>
+
+        <div class="form-popup-general__subtext">
+          Нажимая кнопку подтверждения заказа я даю своё согласие на обработку
+          моих персональных данных на условиях <a href="#">Соглашения об обработке персональных данных</a></div>
+
+        <div class="form-popup-general__wrap-button">
+          <button type="submit" class="form-popup-general__submit main-btn">Подписаться</button>
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<div class="popup-general modal --review-product" id="popup-review-product">
+  <div class="popup-general__body">
+
+    <div class="popup-general__group-title">
+      <div class="popup-general__title">Написать отзыв</div>
+      <div class="popup-general__close js-modal-close"></div>
+    </div>
+
+    <div class="popup-general__wrap">
+
+      <form action="#" class="popup-general__form form-popup-general">
+
+        <div class="form-popup-general__lsit">
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">Имя*</div>
+            <input type="text" placeholder="Виктория Иванова">
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">Оценка</div>
+
+            <div class="wrap-input__rating rating">
+              <div class="rating__wrap">
+
+                <div class="rating__item added">
+                  <input type="radio" name="rating" checked>
+                  <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                      stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                    </path>
+                  </svg>
+                </div>
+
+                <div class="rating__item added">
+                  <input type="radio" name="rating" checked>
+                  <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                      stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                    </path>
+                  </svg>
+                </div>
+
+                <div class="rating__item added">
+                  <input type="radio" name="rating" checked>
+                  <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                      stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                    </path>
+                  </svg>
+                </div>
+
+                <div class="rating__item added">
+                  <input type="radio" name="rating" checked>
+                  <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                      stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                    </path>
+                  </svg>
+                </div>
+
+                <div class="rating__item added">
+                  <input type="radio" name="rating" checked>
+                  <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                      stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                    </path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">Ваше мнение о Eat&Save*</div>
+            <textarea placeholder="Оставьте пару слов о нашей компании и продукции."></textarea>
+          </div>
+
+        </div>
+
+        <div class="form-popup-general__subtext">
+          Нажимая кнопку подтверждения заказа я даю своё согласие на обработку
+          моих персональных данных на условиях <a href="#">Соглашения об обработке персональных данных</a></div>
+
+        <div class="form-popup-general__wrap-button">
+          <button type="submit" class="form-popup-general__submit main-btn">Отправить</button>
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<div class="popup-general modal --result" id="popup-result-one">
+  <div class="popup-general__body">
+    <div class="popup-general__close js-modal-close"></div>
+
+    <div class="popup-general__wrap">
+      <div class="popup-general__title">Спасибо за Ваш отзыв</div>
+
+      <div class="popup-general__result-text">Отзыв направлен на модерацию.<br>
+        Нам важно Ваше мнение.</div>
+    </div>
+
+  </div>
+</div>
+
+<div class="popup-general modal --result" id="popup-result-two">
+  <div class="popup-general__body">
+    <div class="popup-general__close js-modal-close"></div>
+
+    <div class="popup-general__wrap">
+      <div class="popup-general__title">Вы успешно подписались</div>
+
+      <div class="popup-general__result-text">Когда товар появится в наличии,
+        на электронный адрес придет
+        соответствующие сообщение.</div>
+    </div>
+
+  </div>
+</div>
+
+<div class="popup-general modal --not-register" id="popup-not-register">
+  <div class="popup-general__body">
+    <div class="popup-general__close js-modal-close"></div>
+
+    <div class="popup-general__wrap">
+      <div class="popup-general__title">Для оформления заказа необходимо <a href="#">зарегистрироваться</a></div>
+    </div>
+
+  </div>
+</div>
+
+<div class="popup-overlay"></div>
+
+<!-- // FOOTER -->
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="./js/mmenu.js"></script>
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+<script src="./js/jquery.mCustomScrollbar.js"></script>
+<script src="./js/sticksy.min.js"></script>
+<script src="./js/jquery.nice-select.js"></script>
+<script src="./js/script.js"></script>
+
+
+
+</body>
+
+</html>

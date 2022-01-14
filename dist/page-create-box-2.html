@@ -1,0 +1,1531 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/mmenu.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
+    <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="./css/nice-select.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav id="menu" class="mm-menu_offcanvas">
+        <ul>
+
+        </ul>
+    </nav>
+
+    <!-- HEADER -->
+    <div class="wrapper">
+        <!-- authorized -->
+        <header class="header authorized">
+
+            <div class="header__top">
+                <div class="container">
+                    <div class="header__top-wrap">
+                        <div class="header__logo logo">
+                            <div class="logo__image"><img src="./img/logo.svg" alt=""></div>
+                            <div class="logo__text">
+                                <span class="logo__text-word">СОХРАНИМ</span>
+                                <span class="logo__text-word --big">ПЛАНЕТУ</span>
+                                <span class="logo__text-word">ВМЕСТЕ!</span>
+                            </div>
+                        </div>
+
+                        <div class="header__contact main-contact">
+                            <ul class="main-contact__list --first js-mobile-menu">
+                                <li class="main-contact__item --phone">
+                                    <a href="tel:80000000000" class="main-contact__link">8 (000) 000-00-00</a>
+                                    <span class="main-contact__subtext">звонок бесплатный</span>
+                                </li>
+                            </ul>
+
+                            <ul class="main-contact__list --secondary js-mobile-menu">
+                                <li class="main-contact__item --phone">
+                                    <a href="tel:70000000000" class="main-contact__link">+7 (000) 000-00-00</a>
+                                    <span class="main-contact__subtext">09:00 - 21:00, по будням</span>
+                                </li>
+
+                                <li class="main-contact__item --email">
+                                    <a href="mailto:info@eatandsave.ru"
+                                        class="main-contact__link">info@eatandsave.ru</a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <div class="header__mobile-menu mobile-menu">
+                            <div class="mobile-menu__wrap">
+                                <span class="mobile-menu__icon">
+                                    <span></span>
+                                </span>
+                                <span class="mobile-menu__text">Меню</span>
+                            </div>
+                        </div>
+
+                        <a href="#" class="header__box assemble-box">
+                            <div class="assemble-box__wrap">
+                                <div class="assemble-box__icon">
+                                    <img src="./img/icon-box-2.png" alt="">
+                                </div>
+                                <span class="assemble-box__text">Собрать коробку</span>
+                            </div>
+                        </a>
+
+                        <div class="header__group-account">
+                            <a href="#" class="header__basket basket-header">
+                                <div class="basket-header__wrap">
+                                    <div class="basket-header__icon">
+                                        <img src="./img/icon-basket-2.png" alt="">
+                                    </div>
+                                    <span class="basket-header__total">10</span>
+                                </div>
+                            </a>
+
+                            <div class="header__account account">
+                                <ul class="account__login js-mobile-menu">
+                                    <li class="account__login-item"><a href="#">С возвращением,
+                                            <span>Виктория</span></a></li>
+
+                                    <!-- <li class="account__login-item"><a href="#"><span>Вход</span> </a></li>
+                  <li class="account__login-item"><a href="#"><span>Регистрация</span> </a></li> -->
+                                </ul>
+
+                                <ul class="account__list-profile js-mobile-menu">
+                                    <li class="account__item-profile">
+                                        <a href="#">
+                                            <img src="./img/icon-profile-1.png" alt="">
+                                            <span>Мои заказы</span>
+                                        </a>
+                                    </li>
+                                    <li class="account__item-profile">
+                                        <a href="#">
+                                            <img src="./img/icon-profile-2.png" alt="">
+                                            <span>Избранное</span>
+                                        </a>
+                                    </li>
+                                    <li class="account__item-profile">
+                                        <a href="#">
+                                            <img src="./img/icon-profile-3.png" alt="">
+                                            <span>Собрать продуктовую коробку</span>
+                                        </a>
+                                    </li>
+                                    <li class="account__item-profile">
+                                        <a href="#">
+                                            <img src="./img/icon-profile-4.png" alt="">
+                                            <span>Персональные данные</span>
+                                        </a>
+                                    </li>
+                                    <li class="account__item-profile">
+                                        <a href="#">
+                                            <img src="./img/icon-profile-5.png" alt="">
+                                            <span>Выйти</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__bottom">
+                <div class="container">
+                    <div class="header__nav">
+                        <ul class="nav-menu js-mobile-menu">
+                            <li class="nav-menu__item nav-menu-item current">
+                                <a href="#"><span>Кто мы</span></a>
+                                <ul class="nav-menu__sub-menu nav-menu-list">
+                                    <li class="nav-menu__sub-item nav-menu-item">
+                                        <a href="#"><span>О компании</span></a>
+                                        <ul class="nav-menu__sub-menu nav-menu-list">
+                                            <li class="nav-menu__sub-item nav-menu-item"><a href="#"><span>Уровень
+                                                        2</span></a></li>
+                                            <li class="nav-menu__sub-item nav-menu-item">
+                                                <a href="#"><span>Уровень 2</span></a>
+                                                <ul class="nav-menu__sub-menu nav-menu-list">
+                                                    <li class="nav-menu__sub-item nav-menu-item"><a
+                                                            href="#"><span>Уровень 3</span></a></li>
+                                                    <li class="nav-menu__sub-item nav-menu-item"><a
+                                                            href="#"><span>Уровень 3</span></a></li>
+                                                    <li class="nav-menu__sub-item nav-menu-item"><a
+                                                            href="#"><span>Уровень 3</span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-menu__sub-item nav-menu-item"><a href="#"><span>Уровень
+                                                        2</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-menu__sub-item nav-menu-item current">
+                                        <a href="#"><span>Отзывы</span></a>
+                                        <ul class="nav-menu__sub-menu nav-menu-list">
+                                            <li class="nav-menu__sub-item nav-menu-item current"><a
+                                                    href="#"><span>Уровень 2</span></a></li>
+                                            <li class="nav-menu__sub-item nav-menu-item"><a href="#"><span>Уровень
+                                                        2</span></a></li>
+                                            <li class="nav-menu__sub-item nav-menu-item">
+                                                <a href="#"><span>Уровень 2</span></a>
+                                                <ul class="nav-menu__sub-menu nav-menu-list">
+                                                    <li class="nav-menu__sub-item nav-menu-item current"><a
+                                                            href="#"><span>Уровень 3</span></a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-menu__sub-item nav-menu-item"><a
+                                            href="#"><span>Предложения</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-menu__item nav-menu-item"><a href="#"><span>Что в моей коробке?</span></a>
+                            </li>
+                            <li class="nav-menu__item nav-menu-item"><a href="#"><span>FAQ</span></a></li>
+                            <li class="nav-menu__item nav-menu-item"><a href="#"><span>Помощь</span></a></li>
+                            <li class="nav-menu__item nav-menu-item"><a href="#"><span>Рецепты</span></a></li>
+                            <li class="nav-menu__item nav-menu-item"><a href="#"><span>Блог</span></a></li>
+                            <li class="nav-menu__item nav-menu-item">
+                                <a href="#"><span>Контакты</span></a>
+                                <ul class="nav-menu__sub-menu nav-menu-list">
+                                    <li class="nav-menu__sub-item nav-menu-item current"><a href="#"><span>Уровень
+                                                2</span></a></li>
+                                    <li class="nav-menu__sub-item nav-menu-item"><a href="#"><span>Уровень 2</span></a>
+                                    </li>
+                                    <li class="nav-menu__sub-item nav-menu-item">
+                                        <a href="#"><span>Уровень 2</span></a>
+                                        <ul class="nav-menu__sub-menu nav-menu-list">
+                                            <li class="nav-menu__sub-item nav-menu-item current"><a
+                                                    href="#"><span>Уровень 3</span></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+<section class="breadcrumbs">
+	<div class="container">
+		<div class="breadcrumbs__wrap">
+			<ul class="breadcrumbs__list">
+				<li class="breadcrumbs__item"><a href="#">Главная</a></li>
+				<li class="breadcrumbs__item"><a href="#">Личный кабинет</a></li>
+				<li class="breadcrumbs__item"><span>Собрать коробку</span></li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+<div class="block-title">
+	<div class="container">
+		<div class="block-title__wrap">
+			<div class="block-title__title title-h2">Собрать свою коробку</div>
+		</div>
+	</div>
+</div>
+
+<section class="create-box-two">
+	<div class="container">
+		<div class="create-box-two__wrap">
+			<div class="create-box-two__row-step">
+				<div class="create-box-two__column">
+					<div class="create-box-two__group-step">
+						<div class="create-box-two__step step-box">
+							<span>1 шаг</span>
+						</div>
+
+						<div class="create-box-two__text title-h2 --green"><span>Вы выбрали</span></div>
+					</div>
+
+					<div class="create-box-two__box card-box-create">
+						<div class="card-box-create__image"><img src="./img/image-box-card.png" alt="" /></div>
+						<div class="card-box-create__group">
+							<div class="card-box-create__title">Коробка "Шалость"</div>
+
+							<div class="card-box-create__list">
+								<div class="card-box-create__item">
+									<div class="card-box-create__option-name">12 видов</div>
+									<div class="card-box-create__text">фруктов и овощей</div>
+								</div>
+
+								<div class="card-box-create__item">
+									<div class="card-box-create__option-name">1-2 порции</div>
+									<div class="card-box-create__text">каждого вида</div>
+								</div>
+
+								<div class="card-box-create__item">
+									<div class="card-box-create__option-name">7-9 кг</div>
+									<div class="card-box-create__text">вес коробки</div>
+								</div>
+							</div>
+
+							<div class="card-box-create__group-price">
+								<div class="card-box-create__price">
+									<span class="card-box-create__price-current">3 500 Р</span>
+								</div>
+
+								<a href="#" class="card-box-create__button-change">Изменить</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="create-box-two__column">
+					<div class="create-box-two__group-step">
+						<div class="create-box-two__step step-box">
+							<span>2 шаг</span>
+						</div>
+
+						<div class="create-box-two__text title-h2 --arrow"><span>Добавьте любимые продукты</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="add-product --green" data-max-added="6" data-current-added="0">
+	<div class="container">
+		<div class="add-product__wrap">
+			<div class="add-product__group">
+				<div class="add-product__group-title">
+					<div class="add-product__title title-h2 --circle"><span>Зеленая группа</span></div>
+					<div class="add-product__quantity">Выбрано <span class="add-product__quantity-current">6</span> из
+						<span class="add-product__quantity-max">6</span> продуктов
+					</div>
+				</div>
+
+				<div class="add-product__text">
+					<p>Привет, мы зеленая группа! Нас очень много, поэтому мы нуждаемся в вашем спасении больше всех.
+						Добавь в коробку <span>любые 6 продуктов.</span></p>
+				</div>
+			</div>
+
+			<div class="add-product__list">
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-1.png" alt="" /></div>
+					<div class="card-add-product__name">КАРТОФЕЛЬ</div>
+					<div class="card-add-product__text">Картофель для любых блюд от супов до салатов и пирожков! В меру
+						рассыпчатый и мягкий.</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-2.png" alt="" /></div>
+					<div class="card-add-product__name">МОРКОВЬ</div>
+					<div class="card-add-product__text">Картофель для любых блюд от супов до салатов и пирожков! В меру
+						рассыпчатый и мягкий.</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-3.png" alt="" /></div>
+					<div class="card-add-product__name">ШАМПИНЬОНЫ</div>
+					<div class="card-add-product__text">Королевские шампиньоны - крупные, с большими округлыми шляпками.
+						Эти грибы имеют насыщенный вкус и узнаваемый аромат.</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-4.png" alt="" /></div>
+					<div class="card-add-product__name">КРАСНЫЙ ЛУК</div>
+					<div class="card-add-product__text">Ялтинский лук - это ровные плоские фиолетово-красные луковицы с
+						белой мякотью. На вкус ялтинский лук сладкий, с мягкой остротой...</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-5.png" alt="" /></div>
+					<div class="card-add-product__name">ТОМАТЫ</div>
+					<div class="card-add-product__text">Розовые томаты порадуют вас не только привлекательным внешним
+						видом, но и сочной мякотью с насыщенным сладковатым вкусом.</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-6.png" alt="" /></div>
+					<div class="card-add-product__name">ОГУРЦЫ</div>
+					<div class="card-add-product__text">Имеют тонкую темно-зеленую кожуру, которая обладает колючей
+						неровной поверхностью. Мякоть сладкая и хрустящая.</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-1.png" alt="" /></div>
+					<div class="card-add-product__name">КАРТОФЕЛЬ</div>
+					<div class="card-add-product__text">Картофель для любых блюд от супов до салатов и пирожков! В меру
+						рассыпчатый и мягкий.</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-2.png" alt="" /></div>
+					<div class="card-add-product__name">МОРКОВЬ</div>
+					<div class="card-add-product__text">Картофель для любых блюд от супов до салатов и пирожков! В меру
+						рассыпчатый и мягкий.</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-3.png" alt="" /></div>
+					<div class="card-add-product__name">ШАМПИНЬОНЫ</div>
+					<div class="card-add-product__text">Королевские шампиньоны - крупные, с большими округлыми шляпками.
+						Эти грибы имеют насыщенный вкус и узнаваемый аромат.</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-4.png" alt="" /></div>
+					<div class="card-add-product__name">КРАСНЫЙ ЛУК</div>
+					<div class="card-add-product__text">Ялтинский лук - это ровные плоские фиолетово-красные луковицы с
+						белой мякотью. На вкус ялтинский лук сладкий, с мягкой остротой...</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-5.png" alt="" /></div>
+					<div class="card-add-product__name">ТОМАТЫ</div>
+					<div class="card-add-product__text"></div>
+				</div>
+				<!-- disabled -->
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-6.png" alt="" /></div>
+					<div class="card-add-product__name">ОГУРЦЫ</div>
+					<div class="card-add-product__text">Мякоть сладкая и хрустящая.</div>
+				</div>
+
+				<div class="add-product__item card-add-product sold-out">
+					<span class="card-add-product__check"></span>
+					<span class="card-add-product__sold-out">Распродано</span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-3.png" alt="" /></div>
+					<div class="card-add-product__name">ШАМПИНЬОНЫ</div>
+					<div class="card-add-product__text">Королевские шампиньоны - крупные, с большими округлыми шляпками.
+						Эти грибы имеют насыщенный вкус и узнаваемый аромат.</div>
+				</div>
+
+				<div class="add-product__item card-add-product sold-out">
+					<span class="card-add-product__check"></span>
+					<span class="card-add-product__sold-out">Распродано</span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-3.png" alt="" /></div>
+					<div class="card-add-product__name">ШАМПИНЬОНЫ</div>
+					<div class="card-add-product__text">Королевские шампиньоны - крупные, с большими округлыми шляпками.
+						Эти грибы имеют насыщенный вкус и узнаваемый аромат.</div>
+				</div>
+
+				<div class="add-product__item card-add-product sold-out">
+					<span class="card-add-product__check"></span>
+					<span class="card-add-product__sold-out">Распродано</span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-3.png" alt="" /></div>
+					<div class="card-add-product__name">ШАМПИНЬОНЫ</div>
+					<div class="card-add-product__text">Королевские шампиньоны - крупные, с большими округлыми шляпками.
+						Эти грибы имеют насыщенный вкус и узнаваемый аромат.</div>
+				</div>
+			</div>
+
+			<div class="add-product__bitton-wrap">
+				<a href="#" class="add-product__button-all main-btn">Проданные продукты</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="add-product --yellow" data-max-added="4" data-current-added="0">
+	<div class="container">
+		<div class="add-product__wrap">
+			<div class="add-product__group">
+				<div class="add-product__group-title">
+					<div class="add-product__title title-h2 --circle"><span>Желтая группа</span></div>
+					<div class="add-product__quantity">Выбрано <span class="add-product__quantity-current">0</span> из
+						<span class="add-product__quantity-max">4</span> продуктов
+					</div>
+				</div>
+
+				<div class="add-product__text">
+					<p>Привет, мы желтая группа! Нас было много, но мы стремительно заканчиваемся. Добавь в коробку
+						<span>любые 4 продукта.</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="add-product__list">
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-1.png" alt="" /></div>
+					<div class="card-add-product__name">КАРТОФЕЛЬ</div>
+					<div class="card-add-product__text">Картофель для любых блюд от супов до салатов и пирожков! В меру
+						рассыпчатый и мягкий.</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-2.png" alt="" /></div>
+					<div class="card-add-product__name">МОРКОВЬ</div>
+					<div class="card-add-product__text">Картофель для любых блюд от супов до салатов и пирожков! В меру
+						рассыпчатый и мягкий.</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-3.png" alt="" /></div>
+					<div class="card-add-product__name">ШАМПИНЬОНЫ</div>
+					<div class="card-add-product__text">Королевские шампиньоны - крупные, с большими округлыми шляпками.
+						Эти грибы имеют насыщенный вкус и узнаваемый аромат.</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-4.png" alt="" /></div>
+					<div class="card-add-product__name">КРАСНЫЙ ЛУК</div>
+					<div class="card-add-product__text">Ялтинский лук - это ровные плоские фиолетово-красные луковицы с
+						белой мякотью. На вкус ялтинский лук сладкий, с мягкой остротой...</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-5.png" alt="" /></div>
+					<div class="card-add-product__name">ТОМАТЫ</div>
+					<div class="card-add-product__text">Розовые томаты порадуют вас не только привлекательным внешним
+						видом, но и сочной мякотью с насыщенным сладковатым вкусом.</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-6.png" alt="" /></div>
+					<div class="card-add-product__name">ОГУРЦЫ</div>
+					<div class="card-add-product__text">Имеют тонкую темно-зеленую кожуру, которая обладает колючей
+						неровной поверхностью. Мякоть сладкая и хрустящая.</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-1.png" alt="" /></div>
+					<div class="card-add-product__name">КАРТОФЕЛЬ</div>
+					<div class="card-add-product__text">Картофель для любых блюд от супов до салатов и пирожков! В меру
+						рассыпчатый и мягкий.</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-2.png" alt="" /></div>
+					<div class="card-add-product__name">МОРКОВЬ</div>
+					<div class="card-add-product__text">Картофель для любых блюд от супов до салатов и пирожков! В меру
+						рассыпчатый и мягкий.</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-3.png" alt="" /></div>
+					<div class="card-add-product__name">ШАМПИНЬОНЫ</div>
+					<div class="card-add-product__text">Королевские шампиньоны - крупные, с большими округлыми шляпками.
+						Эти грибы имеют насыщенный вкус и узнаваемый аромат.</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-4.png" alt="" /></div>
+					<div class="card-add-product__name">КРАСНЫЙ ЛУК</div>
+					<div class="card-add-product__text">Ялтинский лук - это ровные плоские фиолетово-красные луковицы с
+						белой мякотью. На вкус ялтинский лук сладкий, с мягкой остротой...</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-5.png" alt="" /></div>
+					<div class="card-add-product__name">ТОМАТЫ</div>
+					<div class="card-add-product__text"></div>
+				</div>
+				<!-- disabled -->
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-6.png" alt="" /></div>
+					<div class="card-add-product__name">ОГУРЦЫ</div>
+					<div class="card-add-product__text">Мякоть сладкая и хрустящая.</div>
+				</div>
+
+				<div class="add-product__item card-add-product sold-out">
+					<span class="card-add-product__check"></span>
+					<span class="card-add-product__sold-out">Распродано</span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-3.png" alt="" /></div>
+					<div class="card-add-product__name">ШАМПИНЬОНЫ</div>
+					<div class="card-add-product__text">Королевские шампиньоны - крупные, с большими округлыми шляпками.
+						Эти грибы имеют насыщенный вкус и узнаваемый аромат.</div>
+				</div>
+
+				<div class="add-product__item card-add-product sold-out">
+					<span class="card-add-product__check"></span>
+					<span class="card-add-product__sold-out">Распродано</span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-3.png" alt="" /></div>
+					<div class="card-add-product__name">ШАМПИНЬОНЫ</div>
+					<div class="card-add-product__text">Королевские шампиньоны - крупные, с большими округлыми шляпками.
+						Эти грибы имеют насыщенный вкус и узнаваемый аромат.</div>
+				</div>
+
+				<div class="add-product__item card-add-product sold-out">
+					<span class="card-add-product__check"></span>
+					<span class="card-add-product__sold-out">Распродано</span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-3.png" alt="" /></div>
+					<div class="card-add-product__name">ШАМПИНЬОНЫ</div>
+					<div class="card-add-product__text">Королевские шампиньоны - крупные, с большими округлыми шляпками.
+						Эти грибы имеют насыщенный вкус и узнаваемый аромат.</div>
+				</div>
+			</div>
+
+			<div class="add-product__bitton-wrap">
+				<a href="#" class="add-product__button-all main-btn">Проданные продукты</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="add-product --orange" data-max-added="2" data-current-added="0">
+	<div class="container">
+		<div class="add-product__wrap">
+			<div class="add-product__group">
+				<div class="add-product__group-title">
+					<div class="add-product__title title-h2 --circle"><span>Оранжевая группа</span></div>
+					<div class="add-product__quantity">Выбрано <span class="add-product__quantity-current">0</span> из
+						<span class="add-product__quantity-max">2</span> продуктов
+					</div>
+				</div>
+
+				<div class="add-product__text">
+					<p>Привет, мы оранжевая группа! С нами ты разнообразишь свою кухню. Что бы нас хватило на всех
+						добавь в коробку <span> любые 2 продуктов.</span></p>
+				</div>
+			</div>
+
+			<div class="add-product__list">
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-1.png" alt="" /></div>
+					<div class="card-add-product__name">КАРТОФЕЛЬ</div>
+					<div class="card-add-product__text">Картофель для любых блюд от супов до салатов и пирожков! В меру
+						рассыпчатый и мягкий.</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-2.png" alt="" /></div>
+					<div class="card-add-product__name">МОРКОВЬ</div>
+					<div class="card-add-product__text">Картофель для любых блюд от супов до салатов и пирожков! В меру
+						рассыпчатый и мягкий.</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-3.png" alt="" /></div>
+					<div class="card-add-product__name">ШАМПИНЬОНЫ</div>
+					<div class="card-add-product__text">Королевские шампиньоны - крупные, с большими округлыми шляпками.
+						Эти грибы имеют насыщенный вкус и узнаваемый аромат.</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-4.png" alt="" /></div>
+					<div class="card-add-product__name">КРАСНЫЙ ЛУК</div>
+					<div class="card-add-product__text">Ялтинский лук - это ровные плоские фиолетово-красные луковицы с
+						белой мякотью. На вкус ялтинский лук сладкий, с мягкой остротой...</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-5.png" alt="" /></div>
+					<div class="card-add-product__name">ТОМАТЫ</div>
+					<div class="card-add-product__text">Розовые томаты порадуют вас не только привлекательным внешним
+						видом, но и сочной мякотью с насыщенным сладковатым вкусом.</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-6.png" alt="" /></div>
+					<div class="card-add-product__name">ОГУРЦЫ</div>
+					<div class="card-add-product__text">Имеют тонкую темно-зеленую кожуру, которая обладает колючей
+						неровной поверхностью. Мякоть сладкая и хрустящая.</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-1.png" alt="" /></div>
+					<div class="card-add-product__name">КАРТОФЕЛЬ</div>
+					<div class="card-add-product__text">Картофель для любых блюд от супов до салатов и пирожков! В меру
+						рассыпчатый и мягкий.</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-2.png" alt="" /></div>
+					<div class="card-add-product__name">МОРКОВЬ</div>
+					<div class="card-add-product__text">Картофель для любых блюд от супов до салатов и пирожков! В меру
+						рассыпчатый и мягкий.</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-3.png" alt="" /></div>
+					<div class="card-add-product__name">ШАМПИНЬОНЫ</div>
+					<div class="card-add-product__text">Королевские шампиньоны - крупные, с большими округлыми шляпками.
+						Эти грибы имеют насыщенный вкус и узнаваемый аромат.</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-4.png" alt="" /></div>
+					<div class="card-add-product__name">КРАСНЫЙ ЛУК</div>
+					<div class="card-add-product__text">Ялтинский лук - это ровные плоские фиолетово-красные луковицы с
+						белой мякотью. На вкус ялтинский лук сладкий, с мягкой остротой...</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-5.png" alt="" /></div>
+					<div class="card-add-product__name">ТОМАТЫ</div>
+					<div class="card-add-product__text"></div>
+				</div>
+				<!-- disabled -->
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-6.png" alt="" /></div>
+					<div class="card-add-product__name">ОГУРЦЫ</div>
+					<div class="card-add-product__text">Мякоть сладкая и хрустящая.</div>
+				</div>
+
+				<div class="add-product__item card-add-product sold-out">
+					<span class="card-add-product__check"></span>
+					<span class="card-add-product__sold-out">Распродано</span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-3.png" alt="" /></div>
+					<div class="card-add-product__name">ШАМПИНЬОНЫ</div>
+					<div class="card-add-product__text">Королевские шампиньоны - крупные, с большими округлыми шляпками.
+						Эти грибы имеют насыщенный вкус и узнаваемый аромат.</div>
+				</div>
+
+				<div class="add-product__item card-add-product sold-out">
+					<span class="card-add-product__check"></span>
+					<span class="card-add-product__sold-out">Распродано</span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-3.png" alt="" /></div>
+					<div class="card-add-product__name">ШАМПИНЬОНЫ</div>
+					<div class="card-add-product__text">Королевские шампиньоны - крупные, с большими округлыми шляпками.
+						Эти грибы имеют насыщенный вкус и узнаваемый аромат.</div>
+				</div>
+
+				<div class="add-product__item card-add-product sold-out">
+					<span class="card-add-product__check"></span>
+					<span class="card-add-product__sold-out">Распродано</span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-3.png" alt="" /></div>
+					<div class="card-add-product__name">ШАМПИНЬОНЫ</div>
+					<div class="card-add-product__text">Королевские шампиньоны - крупные, с большими округлыми шляпками.
+						Эти грибы имеют насыщенный вкус и узнаваемый аромат.</div>
+				</div>
+			</div>
+
+			<div class="add-product__bitton-wrap">
+				<a href="#" class="add-product__button-all main-btn">Проданные продукты</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="add-product --purple" data-max-added="2" data-current-added="0">
+	<div class="container">
+		<div class="add-product__wrap">
+			<div class="add-product__group">
+				<div class="add-product__group-title">
+					<div class="add-product__title title-h2 --circle"><span>Фиолетовая группа</span></div>
+					<div class="add-product__quantity">Выбрано <span class="add-product__quantity-current">0</span> из
+						<span class="add-product__quantity-max">2</span> продуктов
+					</div>
+				</div>
+
+				<div class="add-product__text">
+					<p>Привет, мы фиолетовая группа! Мы редкий вид, поэтому нас мало.
+						<span>Выбери любые 2 продукта</span>, пока они в наличии.</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="add-product__list">
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-1.png" alt="" /></div>
+					<div class="card-add-product__name">КАРТОФЕЛЬ</div>
+					<div class="card-add-product__text">Картофель для любых блюд от супов до салатов и пирожков! В меру
+						рассыпчатый и мягкий.</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-2.png" alt="" /></div>
+					<div class="card-add-product__name">МОРКОВЬ</div>
+					<div class="card-add-product__text">Картофель для любых блюд от супов до салатов и пирожков! В меру
+						рассыпчатый и мягкий.</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-3.png" alt="" /></div>
+					<div class="card-add-product__name">ШАМПИНЬОНЫ</div>
+					<div class="card-add-product__text">Королевские шампиньоны - крупные, с большими округлыми шляпками.
+						Эти грибы имеют насыщенный вкус и узнаваемый аромат.</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-4.png" alt="" /></div>
+					<div class="card-add-product__name">КРАСНЫЙ ЛУК</div>
+					<div class="card-add-product__text">Ялтинский лук - это ровные плоские фиолетово-красные луковицы с
+						белой мякотью. На вкус ялтинский лук сладкий, с мягкой остротой...</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-5.png" alt="" /></div>
+					<div class="card-add-product__name">ТОМАТЫ</div>
+					<div class="card-add-product__text">Розовые томаты порадуют вас не только привлекательным внешним
+						видом, но и сочной мякотью с насыщенным сладковатым вкусом.</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-6.png" alt="" /></div>
+					<div class="card-add-product__name">ОГУРЦЫ</div>
+					<div class="card-add-product__text">Имеют тонкую темно-зеленую кожуру, которая обладает колючей
+						неровной поверхностью. Мякоть сладкая и хрустящая.</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-1.png" alt="" /></div>
+					<div class="card-add-product__name">КАРТОФЕЛЬ</div>
+					<div class="card-add-product__text">Картофель для любых блюд от супов до салатов и пирожков! В меру
+						рассыпчатый и мягкий.</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-2.png" alt="" /></div>
+					<div class="card-add-product__name">МОРКОВЬ</div>
+					<div class="card-add-product__text">Картофель для любых блюд от супов до салатов и пирожков! В меру
+						рассыпчатый и мягкий.</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-3.png" alt="" /></div>
+					<div class="card-add-product__name">ШАМПИНЬОНЫ</div>
+					<div class="card-add-product__text">Королевские шампиньоны - крупные, с большими округлыми шляпками.
+						Эти грибы имеют насыщенный вкус и узнаваемый аромат.</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-4.png" alt="" /></div>
+					<div class="card-add-product__name">КРАСНЫЙ ЛУК</div>
+					<div class="card-add-product__text">Ялтинский лук - это ровные плоские фиолетово-красные луковицы с
+						белой мякотью. На вкус ялтинский лук сладкий, с мягкой остротой...</div>
+				</div>
+
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-5.png" alt="" /></div>
+					<div class="card-add-product__name">ТОМАТЫ</div>
+					<div class="card-add-product__text"></div>
+				</div>
+				<!-- disabled -->
+				<div class="add-product__item card-add-product js-add-product">
+					<span class="card-add-product__check"></span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-6.png" alt="" /></div>
+					<div class="card-add-product__name">ОГУРЦЫ</div>
+					<div class="card-add-product__text">Мякоть сладкая и хрустящая.</div>
+				</div>
+
+				<div class="add-product__item card-add-product sold-out">
+					<span class="card-add-product__check"></span>
+					<span class="card-add-product__sold-out">Распродано</span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-3.png" alt="" /></div>
+					<div class="card-add-product__name">ШАМПИНЬОНЫ</div>
+					<div class="card-add-product__text">Королевские шампиньоны - крупные, с большими округлыми шляпками.
+						Эти грибы имеют насыщенный вкус и узнаваемый аромат.</div>
+				</div>
+
+				<div class="add-product__item card-add-product sold-out">
+					<span class="card-add-product__check"></span>
+					<span class="card-add-product__sold-out">Распродано</span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-3.png" alt="" /></div>
+					<div class="card-add-product__name">ШАМПИНЬОНЫ</div>
+					<div class="card-add-product__text">Королевские шампиньоны - крупные, с большими округлыми шляпками.
+						Эти грибы имеют насыщенный вкус и узнаваемый аромат.</div>
+				</div>
+
+				<div class="add-product__item card-add-product sold-out">
+					<span class="card-add-product__check"></span>
+					<span class="card-add-product__sold-out">Распродано</span>
+					<div class="card-add-product__image"><img src="./img/image-card-add-product-3.png" alt="" /></div>
+					<div class="card-add-product__name">ШАМПИНЬОНЫ</div>
+					<div class="card-add-product__text">Королевские шампиньоны - крупные, с большими округлыми шляпками.
+						Эти грибы имеют насыщенный вкус и узнаваемый аромат.</div>
+				</div>
+			</div>
+
+			<div class="add-product__bitton-wrap">
+				<a href="#" class="add-product__button-all main-btn">Проданные продукты</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="add-product --purple --not-available" data-max-added="2" data-current-added="0">
+	<div class="container">
+		<div class="add-product__wrap">
+			<div class="add-product__group">
+				<div class="add-product__group-title">
+					<div class="add-product__title title-h2 --circle"><span>Фиолетовая группа</span></div>
+					<div class="add-product__quantity">Выбрано <span class="add-product__quantity-current">0</span> из
+						<span class="add-product__quantity-max">2</span> продуктов
+					</div>
+				</div>
+
+				<div class="add-product__text">
+					<p>Привет, мы фиолетовая группа! Мы редкий вид, поэтому нас мало.
+						Мы доступны только для <span> коробки "Феерия"</span>, закажи ее чтобы добавить больше
+						продуктов.</p>
+				</div>
+			</div>
+
+			<div class="add-product__change-box"><a href="#" class="add-product__change-box-button">Изменить коробку</a>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<div class="end-create-box">
+	<a href="#" class="end-create-box__button main-btn">Готово</a>
+</div>
+
+<section class="questions">
+	<div class="container">
+		<div class="questions__wrap">
+			<div class="questions__title title-h2"><span>Отвечаем на популярные вопросы</span></div>
+
+			<div class="questions__list">
+				<div class="questions__item card-questions">
+					<div class="card-questions__left">
+						<div class="card-questions__title title-h2 --circle"><span>Как это работает?</span></div>
+					</div>
+
+					<div class="card-questions__right">
+						<div class="card-questions__text">Очень просто. Вы выбираете маленькую коробку «Шалость» или же
+							большую коробку «Феерия». Дальше программа вам дает возможность выбрать из существующих на
+							складе фруктов и овощей. Мы заполняем вашу коробку свежими фруктами и овощами на 30-40%
+							дешевле чем в вашем местном продуктовом магазине. Вы выбираете когда хотите получить коробку
+							прямо у вашего порога.</div>
+					</div>
+				</div>
+
+				<div class="questions__item card-questions">
+					<div class="card-questions__left">
+						<div class="card-questions__title title-h2 --circle"><span>На какую экономию я могу
+								рассчитывать</span></div>
+					</div>
+
+					<div class="card-questions__right">
+						<div class="card-questions__text">Вы можете рассчитывать на экономию 30-40% от розничной цены, а
+							также на 100% экономию вашего времени.</div>
+					</div>
+				</div>
+
+				<div class="questions__item card-questions">
+					<div class="card-questions__left">
+						<div class="card-questions__title title-h2 --circle"><span>Чем вы отличаетесь от других служб
+								доставки продовольственной продукции</span></div>
+					</div>
+
+					<div class="card-questions__right">
+						<div class="card-questions__text">В отличие от других служб доставки продуктов, мы поставляем
+							продукты по ценам намного ниже чем в обычных продуктовых магазинах прямо к вашему порогу.
+							Наша главная миссия обеспечить вас фруктами и овощами и спасти планету от неоправданных
+							отходов. Присоединяясь к нам, вы обеспечиваете себя недельной нормой фруктов и овощей и
+							помогаете восстановить экологию планеты без удара по вашему кошельку.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="questions__button-wrap">
+				<a href="#" class="questions__button-all">Хочу больше ответов</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- FOOTER -->
+
+<footer class="footer">
+  <div class="footer__top top-footer">
+    <div class="container">
+      <div class="top-footer__wrap">
+        <div class="top-footer__logo logo">
+          <div class="logo__image"><img src="./img/logo.svg" alt=""></div>
+          <div class="logo__text">
+            <span class="logo__text-word">СОХРАНИМ</span>
+            <span class="logo__text-word --big">ПЛАНЕТУ</span>
+            <span class="logo__text-word">ВМЕСТЕ!</span>
+          </div>
+        </div>
+
+        <ul class="top-footer__contact">
+          <li class="top-footer__item --whatsapp">
+            <a href="tel:80000000000" class="top-footer__phone">8 (000) 000-00-00</a>
+            <span class="top-footer__subtext">напишите нам в WhatsApp</span>
+          </li>
+
+          <li class="top-footer__item --phone">
+            <a href="tel:70000000000" class="top-footer__phone">+7 (000) 000-00-00</a>
+            <span class="top-footer__subtext">звонок бесплатный</span>
+          </li>
+
+          <li class="top-footer__item --time">
+            <span class="top-footer__time">09:00 - 21:00, по будням</span>
+            <span class="top-footer__time">10:00 - 19:00, по выходным</span>
+          </li>
+        </ul>
+
+        <div class="top-footer__shop">
+          <div class="top-footer__shop-name">Готовы присоединиться?</div>
+          <div class="top-footer__shop-text">Питайся правильно, спасай продукты, помогай планете!</div>
+          <a href="#" class="top-footer__button main-btn">Начать покупки</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__middle middle-footer">
+    <div class="container">
+      <div class="middle-footer__wrap">
+        <div class="middle-footer__row">
+          <div class="middle-footer__column">
+            <div class="middle-footer__map">
+              Москва, Комсомольская площадь, 6
+              <a href="#"><span>мы на карте</span></a>
+            </div>
+            <div class="middle-footer__email"><a href="mailto:info@eatandsave.ru">info@eatandsave.ru</a></div>
+            <div class="middle-footer__social social">
+              <div class="social__text">Мы в соц сетях:</div>
+              <div class="social__lsit">
+                <div class="social__item">
+                  <a href="#" class="social__link"><img src="./img/icon-social-viber.png" alt=""></a>
+                </div>
+
+                <div class="social__item">
+                  <a href="#" class="social__link"><img src="./img/icon-social-instagram.png" alt=""></a>
+                </div>
+
+                <div class="social__item">
+                  <a href="#" class="social__link"><img src="./img/icon-social-facebook.png" alt=""></a>
+                </div>
+
+                <div class="social__item">
+                  <a href="#" class="social__link"><img src="./img/icon-social-vk.png" alt=""></a>
+                </div>
+
+                <div class="social__item">
+                  <a href="#" class="social__link"><img src="./img/icon-social-youtube.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="middle-footer__column">
+            <div class="middle-footer__row-menu footer-menu">
+              <div class="footer-menu__group">
+                <div class="footer-menu__name"><a href="#">О компании</a></div>
+                <div class="footer-menu__list">
+                  <div class="footer-menu__item current"><a href="#">Кто мы</a></div>
+                  <div class="footer-menu__item"><a href="#">Карьера</a></div>
+                  <div class="footer-menu__item"><a href="#">Доставка и оплата</a></div>
+                  <div class="footer-menu__item"><a href="#">Партнерам</a></div>
+                  <div class="footer-menu__item"><a href="#">Поставки</a></div>
+                  <div class="footer-menu__item"><a href="#">Контакты</a></div>
+                  <div class="footer-menu__item"><a href="#">Блог</a></div>
+                </div>
+              </div>
+
+              <div class="footer-menu__group">
+                <div class="footer-menu__name"><a href="#">Покупателям</a></div>
+                <div class="footer-menu__list">
+                  <div class="footer-menu__item"><a href="#">Наши продукты</a></div>
+                  <div class="footer-menu__item"><a href="#">FAQ</a></div>
+                  <div class="footer-menu__item"><a href="#">Поставки</a></div>
+                  <div class="footer-menu__item"><a href="#">Помощь</a></div>
+                  <div class="footer-menu__item"><a href="#">Путешествие продуктов</a></div>
+                  <div class="footer-menu__item"><a href="#">Рецепты</a></div>
+                  <div class="footer-menu__item"><a href="#">Экологичная упаковка</a></div>
+                  <div class="footer-menu__item"><a href="#">Акции</a></div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer__bottom bottom-footer">
+    <div class="container">
+      <div class="bottom-footer__wrap">
+        <div class="bottom-footer__policy">
+          © 2021 «Eat&Save». Все права защищены законом об авторском праве.
+          <a href="#"> <span>Политика конфиденциальности</span> </a>
+        </div>
+
+        <div class="bottom-footer__develop">
+          Разработка сайта -
+          <a href="#">WESMA</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<div class="popup-general modal --entry" id="popup-entry">
+  <div class="popup-general__body">
+
+    <div class="popup-general__group-title">
+      <div class="popup-general__title">Войти в личный кабинет</div>
+      <div class="popup-general__close js-modal-close"></div>
+    </div>
+
+    <div class="popup-general__wrap">
+      <from action="#" class="popup-general__form form-popup-general">
+        <div class="form-popup-general__lsit">
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">E-Mail*</div>
+            <input type="text" placeholder="eatandsave.ru@gmail.com">
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">Пароль*</div>
+            <input type="password">
+          </div>
+        </div>
+
+        <div class="popup-general__error">Заполните все обязательные поля</div>
+        <div class="popup-general__error">Неверный логин или пароль.</div>
+
+        <div class="form-popup-general__wrap-button">
+          <button type="submit" class="form-popup-general__submit main-btn">Войти</button>
+        </div>
+
+        <div class="form-popup-general__group">
+          <a href="#" class="form-popup-general__button">Забыли пароль?</a>
+          <a href="#" class="form-popup-general__button">Зарегистрироваться</a>
+        </div>
+
+      </from>
+    </div>
+
+  </div>
+</div>
+
+<div class="popup-general modal --password-rec" id="popup-password-rec">
+  <div class="popup-general__body">
+
+    <div class="popup-general__group-title">
+      <div class="popup-general__title">Восстановление пароля</div>
+      <div class="popup-general__close js-modal-close"></div>
+    </div>
+
+    <div class="popup-general__wrap">
+
+      <from action="#" class="popup-general__form form-popup-general">
+
+        <div class="form-popup-general__text">
+          Укажите адрес электронной почты.<br>
+          Мы вышлем подробные инструкции по восстановлению пароля.
+        </div>
+
+        <div class="form-popup-general__lsit">
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">E-Mail*</div>
+            <input type="text" placeholder="eatandsave.ru@gmail.com">
+          </div>
+        </div>
+
+        <div class="form-popup-general__wrap-button">
+          <button type="submit" class="form-popup-general__submit main-btn">Восстановить пароль</button>
+        </div>
+
+        <div class="form-popup-general__group">
+          <a href="#" class="form-popup-general__button">Вернуться к авторизации</a>
+        </div>
+
+      </from>
+    </div>
+
+  </div>
+</div>
+
+<div class="popup-general modal --regist" id="popup-regist">
+  <div class="popup-general__body">
+
+    <div class="popup-general__group-title">
+      <div class="popup-general__title">Регистрация</div>
+      <div class="popup-general__close js-modal-close"></div>
+    </div>
+
+    <div class="popup-general__wrap">
+
+      <from action="#" class="popup-general__form form-popup-general">
+
+        <div class="form-popup-general__lsit">
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">ФИО*</div>
+            <input type="text" placeholder="Виктория Иванова">
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">E-Mail*</div>
+            <input type="text" placeholder="eatandsave.ru@gmail.com">
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">Пароль*</div>
+            <input type="password">
+          </div>
+        </div>
+
+        <div class="form-popup-general__subtext">
+          Нажимая кнопку подтверждения заказа я даю своё согласие на обработку
+          моих персональных данных на условиях <a href="#">Соглашения об обработке персональных данных</a></div>
+
+        <div class="form-popup-general__wrap-button">
+          <button type="submit" class="form-popup-general__submit main-btn">зарегистрироваться</button>
+        </div>
+
+        <div class="form-popup-general__group">
+          <span>Уже зарегистрированы?</span>
+          <a href="#" class="form-popup-general__button">Войти</a>
+        </div>
+
+      </from>
+    </div>
+
+  </div>
+</div>
+
+<div class="popup-general modal --review" id="popup-review">
+  <div class="popup-general__body">
+
+    <div class="popup-general__group-title">
+      <div class="popup-general__title">Написать отзыв</div>
+      <div class="popup-general__close js-modal-close"></div>
+    </div>
+
+    <div class="popup-general__wrap">
+
+      <form action="#" class="popup-general__form form-popup-general">
+
+        <div class="form-popup-general__lsit">
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">ФИО*</div>
+            <input type="text" placeholder="Виктория Иванова">
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">E-Mail*</div>
+            <input type="text" placeholder="eatandsave.ru@gmail.com">
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">Какую коробку приобретали?</div>
+            <select>
+              <option value="">Выберите</option>
+              <option value="">Коробка 1</option>
+              <option value="">Коробка 2</option>
+              <option value="">Коробка 3</option>
+              <option value="">Коробка 4</option>
+              <option value="">Коробка 5</option>
+            </select>
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">Ваше мнение о Eat&Save*</div>
+            <textarea placeholder="Оставьте пару слов о нашей компании и продукции."></textarea>
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">Прикрепить файл</div>
+            <label class="wrap-input__file-wrap">
+              <input type="file">
+              <div class="wrap-input__file-text">Добавьте фотографию к вашему отзыву</div>
+              <span class="wrap-input__file-button">Выберите файл</span>
+            </label>
+
+          </div>
+
+        </div>
+
+        <div class="form-popup-general__subtext">
+          Нажимая кнопку подтверждения заказа я даю своё согласие на обработку
+          моих персональных данных на условиях <a href="#">Соглашения об обработке персональных данных</a></div>
+
+        <div class="form-popup-general__wrap-button">
+          <button type="submit" class="form-popup-general__submit main-btn">Отправить</button>
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="popup-general modal --add-basket" id="popup-add-basket">
+  <div class="popup-general__body">
+
+    <div class="popup-general__group-title">
+      <div class="popup-general__title">Товар добавлен в корзину</div>
+      <div class="popup-general__close js-modal-close"></div>
+    </div>
+
+    <div class="popup-general__wrap">
+
+      <div class="popup-general__basket-wrap">
+
+        <div class="popup-general__basket-info-wrap">
+          <div class="popup-general__basket-image"><img src="./img/popup-general-basket-image-1.png" alt=""></div>
+          <div class="popup-general__basket-group">
+            <div class="popup-general__basket-name">Круассаны La Reine с абрикосом
+              замороженные 420 г</div>
+            <div class="popup-general__basket-volume volume">
+              <div class="volume__item">1 л</div>
+            </div>
+            <div class="popup-general__basket-info">
+              <div class="popup-general__basket-quantity">Количество:<span>2</span></div>
+
+              <div class="popup-general__basket-price">
+                <span class="popup-general__basket-price-current">2 000 Р</span>
+                <span class="popup-general__basket-price-old">2 000 Р</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="popup-general__basket-button-wrap">
+          <a href="#" class="popup-general__basket-button --white">Продолжить покупки</a>
+          <a href="#" class="popup-general__basket-button --orange">Перейти в корзину</a>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+</div>
+
+<div class="popup-general modal --notify" id="popup-notify">
+  <div class="popup-general__body">
+
+    <div class="popup-general__group-title">
+      <div class="popup-general__title">Уведомить о поступлении товара</div>
+      <div class="popup-general__close js-modal-close"></div>
+    </div>
+
+    <div class="popup-general__wrap">
+
+      <form action="#" class="popup-general__form form-popup-general">
+
+        <div class="form-popup-general__lsit">
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">E-Mail*</div>
+            <input type="text" placeholder="eatandsave.ru@gmail.com">
+          </div>
+        </div>
+
+        <div class="form-popup-general__subtext">
+          Нажимая кнопку подтверждения заказа я даю своё согласие на обработку
+          моих персональных данных на условиях <a href="#">Соглашения об обработке персональных данных</a></div>
+
+        <div class="form-popup-general__wrap-button">
+          <button type="submit" class="form-popup-general__submit main-btn">Подписаться</button>
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<div class="popup-general modal --review-product" id="popup-review-product">
+  <div class="popup-general__body">
+
+    <div class="popup-general__group-title">
+      <div class="popup-general__title">Написать отзыв</div>
+      <div class="popup-general__close js-modal-close"></div>
+    </div>
+
+    <div class="popup-general__wrap">
+
+      <form action="#" class="popup-general__form form-popup-general">
+
+        <div class="form-popup-general__lsit">
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">Имя*</div>
+            <input type="text" placeholder="Виктория Иванова">
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">Оценка</div>
+
+            <div class="wrap-input__rating rating">
+              <div class="rating__wrap">
+
+                <div class="rating__item added">
+                  <input type="radio" name="rating" checked>
+                  <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                      stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                    </path>
+                  </svg>
+                </div>
+
+                <div class="rating__item added">
+                  <input type="radio" name="rating" checked>
+                  <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                      stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                    </path>
+                  </svg>
+                </div>
+
+                <div class="rating__item added">
+                  <input type="radio" name="rating" checked>
+                  <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                      stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                    </path>
+                  </svg>
+                </div>
+
+                <div class="rating__item added">
+                  <input type="radio" name="rating" checked>
+                  <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                      stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                    </path>
+                  </svg>
+                </div>
+
+                <div class="rating__item added">
+                  <input type="radio" name="rating" checked>
+                  <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M6.50046 9.40904L2.86499 11.1929L3.5593 7.41462L0.618146 4.73883L4.68272 4.18759L6.50046 0.75L8.31819 4.18759L12.3828 4.73883L9.44161 7.41462L10.1359 11.1929L6.50046 9.40904Z"
+                      stroke="#FAA53C" stroke-linecap="round" stroke-linejoin="round">
+                    </path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="form-popup-general__wrap-input wrap-input --small">
+            <div class="wrap-input__name">Ваше мнение о Eat&Save*</div>
+            <textarea placeholder="Оставьте пару слов о нашей компании и продукции."></textarea>
+          </div>
+
+        </div>
+
+        <div class="form-popup-general__subtext">
+          Нажимая кнопку подтверждения заказа я даю своё согласие на обработку
+          моих персональных данных на условиях <a href="#">Соглашения об обработке персональных данных</a></div>
+
+        <div class="form-popup-general__wrap-button">
+          <button type="submit" class="form-popup-general__submit main-btn">Отправить</button>
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<div class="popup-general modal --result" id="popup-result-one">
+  <div class="popup-general__body">
+    <div class="popup-general__close js-modal-close"></div>
+
+    <div class="popup-general__wrap">
+      <div class="popup-general__title">Спасибо за Ваш отзыв</div>
+
+      <div class="popup-general__result-text">Отзыв направлен на модерацию.<br>
+        Нам важно Ваше мнение.</div>
+    </div>
+
+  </div>
+</div>
+
+<div class="popup-general modal --result" id="popup-result-two">
+  <div class="popup-general__body">
+    <div class="popup-general__close js-modal-close"></div>
+
+    <div class="popup-general__wrap">
+      <div class="popup-general__title">Вы успешно подписались</div>
+
+      <div class="popup-general__result-text">Когда товар появится в наличии,
+        на электронный адрес придет
+        соответствующие сообщение.</div>
+    </div>
+
+  </div>
+</div>
+
+<div class="popup-general modal --not-register" id="popup-not-register">
+  <div class="popup-general__body">
+    <div class="popup-general__close js-modal-close"></div>
+
+    <div class="popup-general__wrap">
+      <div class="popup-general__title">Для оформления заказа необходимо <a href="#">зарегистрироваться</a></div>
+    </div>
+
+  </div>
+</div>
+
+<div class="popup-overlay"></div>
+
+<!-- // FOOTER -->
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="./js/mmenu.js"></script>
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+<script src="./js/jquery.mCustomScrollbar.js"></script>
+<script src="./js/sticksy.min.js"></script>
+<script src="./js/jquery.nice-select.js"></script>
+<script src="./js/script.js"></script>
+
+
+
+</body>
+
+</html>

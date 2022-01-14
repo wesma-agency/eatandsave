@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/mmenu.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
+    <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="./css/nice-select.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav id="menu" class="mm-menu_offcanvas">
+        <ul>
+
+        </ul>
+    </nav>
+
+    <!-- HEADER -->
+    <div class="wrapper">
+        <!-- authorized -->
+        <header class="header authorized">
+
+            <div class="header__top">
+                <div class="container">
+                    <div class="header__top-wrap">
+                        <div class="header__logo logo">
+                            <div class="logo__image"><img src="./img/logo.svg" alt=""></div>
+                            <div class="logo__text">
+                                <span class="logo__text-word">СОХРАНИМ</span>
+                                <span class="logo__text-word --big">ПЛАНЕТУ</span>
+                                <span class="logo__text-word">ВМЕСТЕ!</span>
+                            </div>
+                        </div>
+
+                        <div class="header__contact main-contact">
+                            <ul class="main-contact__list --first js-mobile-menu">
+                                <li class="main-contact__item --phone">
+                                    <a href="tel:80000000000" class="main-contact__link">8 (000) 000-00-00</a>
+                                    <span class="main-contact__subtext">звонок бесплатный</span>
+                                </li>
+                            </ul>
+
+                            <ul class="main-contact__list --secondary js-mobile-menu">
+                                <li class="main-contact__item --phone">
+                                    <a href="tel:70000000000" class="main-contact__link">+7 (000) 000-00-00</a>
+                                    <span class="main-contact__subtext">09:00 - 21:00, по будням</span>
+                                </li>
+
+                                <li class="main-contact__item --email">
+                                    <a href="mailto:info@eatandsave.ru"
+                                        class="main-contact__link">info@eatandsave.ru</a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <div class="header__mobile-menu mobile-menu">
+                            <div class="mobile-menu__wrap">
+                                <span class="mobile-menu__icon">
+                                    <span></span>
+                                </span>
+                                <span class="mobile-menu__text">Меню</span>
+                            </div>
+                        </div>
+
+                        <a href="#" class="header__box assemble-box">
+                            <div class="assemble-box__wrap">
+                                <div class="assemble-box__icon">
+                                    <img src="./img/icon-box-2.png" alt="">
+                                </div>
+                                <span class="assemble-box__text">Собрать коробку</span>
+                            </div>
+                        </a>
+
+                        <div class="header__group-account">
+                            <a href="#" class="header__basket basket-header">
+                                <div class="basket-header__wrap">
+                                    <div class="basket-header__icon">
+                                        <img src="./img/icon-basket-2.png" alt="">
+                                    </div>
+                                    <span class="basket-header__total">10</span>
+                                </div>
+                            </a>
+
+                            <div class="header__account account">
+                                <ul class="account__login js-mobile-menu">
+                                    <li class="account__login-item"><a href="#">С возвращением,
+                                            <span>Виктория</span></a></li>
+
+                                    <!-- <li class="account__login-item"><a href="#"><span>Вход</span> </a></li>
+                  <li class="account__login-item"><a href="#"><span>Регистрация</span> </a></li> -->
+                                </ul>
+
+                                <ul class="account__list-profile js-mobile-menu">
+                                    <li class="account__item-profile">
+                                        <a href="#">
+                                            <img src="./img/icon-profile-1.png" alt="">
+                                            <span>Мои заказы</span>
+                                        </a>
+                                    </li>
+                                    <li class="account__item-profile">
+                                        <a href="#">
+                                            <img src="./img/icon-profile-2.png" alt="">
+                                            <span>Избранное</span>
+                                        </a>
+                                    </li>
+                                    <li class="account__item-profile">
+                                        <a href="#">
+                                            <img src="./img/icon-profile-3.png" alt="">
+                                            <span>Собрать продуктовую коробку</span>
+                                        </a>
+                                    </li>
+                                    <li class="account__item-profile">
+                                        <a href="#">
+                                            <img src="./img/icon-profile-4.png" alt="">
+                                            <span>Персональные данные</span>
+                                        </a>
+                                    </li>
+                                    <li class="account__item-profile">
+                                        <a href="#">
+                                            <img src="./img/icon-profile-5.png" alt="">
+                                            <span>Выйти</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__bottom">
+                <div class="container">
+                    <div class="header__nav">
+                        <ul class="nav-menu js-mobile-menu">
+                            <li class="nav-menu__item nav-menu-item current">
+                                <a href="#"><span>Кто мы</span></a>
+                                <ul class="nav-menu__sub-menu nav-menu-list">
+                                    <li class="nav-menu__sub-item nav-menu-item">
+                                        <a href="#"><span>О компании</span></a>
+                                        <ul class="nav-menu__sub-menu nav-menu-list">
+                                            <li class="nav-menu__sub-item nav-menu-item"><a href="#"><span>Уровень
+                                                        2</span></a></li>
+                                            <li class="nav-menu__sub-item nav-menu-item">
+                                                <a href="#"><span>Уровень 2</span></a>
+                                                <ul class="nav-menu__sub-menu nav-menu-list">
+                                                    <li class="nav-menu__sub-item nav-menu-item"><a
+                                                            href="#"><span>Уровень 3</span></a></li>
+                                                    <li class="nav-menu__sub-item nav-menu-item"><a
+                                                            href="#"><span>Уровень 3</span></a></li>
+                                                    <li class="nav-menu__sub-item nav-menu-item"><a
+                                                            href="#"><span>Уровень 3</span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-menu__sub-item nav-menu-item"><a href="#"><span>Уровень
+                                                        2</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-menu__sub-item nav-menu-item current">
+                                        <a href="#"><span>Отзывы</span></a>
+                                        <ul class="nav-menu__sub-menu nav-menu-list">
+                                            <li class="nav-menu__sub-item nav-menu-item current"><a
+                                                    href="#"><span>Уровень 2</span></a></li>
+                                            <li class="nav-menu__sub-item nav-menu-item"><a href="#"><span>Уровень
+                                                        2</span></a></li>
+                                            <li class="nav-menu__sub-item nav-menu-item">
+                                                <a href="#"><span>Уровень 2</span></a>
+                                                <ul class="nav-menu__sub-menu nav-menu-list">
+                                                    <li class="nav-menu__sub-item nav-menu-item current"><a
+                                                            href="#"><span>Уровень 3</span></a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-menu__sub-item nav-menu-item"><a
+                                            href="#"><span>Предложения</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-menu__item nav-menu-item"><a href="#"><span>Что в моей коробке?</span></a>
+                            </li>
+                            <li class="nav-menu__item nav-menu-item"><a href="#"><span>FAQ</span></a></li>
+                            <li class="nav-menu__item nav-menu-item"><a href="#"><span>Помощь</span></a></li>
+                            <li class="nav-menu__item nav-menu-item"><a href="#"><span>Рецепты</span></a></li>
+                            <li class="nav-menu__item nav-menu-item"><a href="#"><span>Блог</span></a></li>
+                            <li class="nav-menu__item nav-menu-item">
+                                <a href="#"><span>Контакты</span></a>
+                                <ul class="nav-menu__sub-menu nav-menu-list">
+                                    <li class="nav-menu__sub-item nav-menu-item current"><a href="#"><span>Уровень
+                                                2</span></a></li>
+                                    <li class="nav-menu__sub-item nav-menu-item"><a href="#"><span>Уровень 2</span></a>
+                                    </li>
+                                    <li class="nav-menu__sub-item nav-menu-item">
+                                        <a href="#"><span>Уровень 2</span></a>
+                                        <ul class="nav-menu__sub-menu nav-menu-list">
+                                            <li class="nav-menu__sub-item nav-menu-item current"><a
+                                                    href="#"><span>Уровень 3</span></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+<section class="breadcrumbs">
+    <div class="container">
+        <div class="breadcrumbs__wrap">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+                <li class="breadcrumbs__item"><span>Оформление заказа </span></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<div class="block-title">
+    <div class="container">
+        <div class="block-title__wrap">
+            <div class="block-title__title title-h2">Оформление заказа</div>
+        </div>
+    </div>
+</div>
+
+<section class="order">
+    <div class="container">
+        <div class="order__wrap">
+            <div class="order__title title-h4">Выберите способ доставки</div>
+            <div class="order__row">
+                <div class="order__column">
+
+                    <div class="order__group-one">
+
+
+                        <div class="order__delivery delivery-order">
+                            <div class="delivery-order__list">
+                                <div class="delivery-order__item delivery-order-card">
+                                    <input type="radio" name="delivery">
+                                    <div class="delivery-order-card__row">
+                                        <div class="delivery-order-card__check">
+                                            <div class="delivery-order-card__checkmarck"></div>
+                                        </div>
+
+                                        <div class="delivery-order-card__group">
+                                            <div class="delivery-order-card__icon">
+                                                <img src="./img/icon-order-delivery-1.png" alt="">
+                                            </div>
+
+                                            <div class="delivery-order-card__group-name">
+                                                <div class="delivery-order-card__name">Самовывоз</div>
+
+                                                <div class="delivery-order-card__select">
+                                                    <select name="">
+                                                        <option value="Выберите точку самовывоза">Выберите точку
+                                                            самовывоза</option>
+
+                                                        <option value="Выберите точку самовывоза">Склад 1</option>
+
+                                                        <option value="Выберите точку самовывоза">Склад 2</option>
+
+                                                        <option value="Выберите точку самовывоза">Склад 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="delivery-order-card__vaule">Бесплатно</div>
+                                    </div>
+                                </div>
+
+                                <div class="delivery-order__item delivery-order-card">
+                                    <input type="radio" name="delivery">
+
+                                    <div class="delivery-order-card__row">
+                                        <div class="delivery-order-card__check">
+                                            <div class="delivery-order-card__checkmarck"></div>
+                                        </div>
+
+                                        <div class="delivery-order-card__group">
+                                            <div class="delivery-order-card__icon">
+                                                <img src="./img/icon-order-delivery-2.png" alt="">
+                                            </div>
+
+                                            <div class="delivery-order-card__group-name">
+                                                <div class="delivery-order-card__name">Доставка по Москве</div>
+
+                                                <div class="delivery-order-card__text">Заказ доставляется до адреса
+                                                    покупателя в Москве, в пределах МКАД.</div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="delivery-order-card__vaule">600 Р</div>
+                                    </div>
+                                </div>
+
+                                <div class="delivery-order__item delivery-order-card">
+                                    <input type="radio" name="delivery">
+
+                                    <div class="delivery-order-card__row">
+                                        <div class="delivery-order-card__check">
+                                            <div class="delivery-order-card__checkmarck"></div>
+                                        </div>
+
+                                        <div class="delivery-order-card__group">
+                                            <div class="delivery-order-card__icon">
+                                                <img src="./img/icon-order-delivery-3.png" alt="">
+                                            </div>
+
+                                            <div class="delivery-order-card__group-name">
+                                                <div class="delivery-order-card__name">Доставка по Московской области
+                                                </div>
+
+                                                <div class="delivery-order-card__text">Заказ доставляется до адреса
+                                                    покупателя в МО, не более .... км от МКАД.</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="delivery-order-card__vaule">1 200 Р</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order__group-two">
+                        <div class="order__title title-h4">Выберите способ оплаты</div>
+                        <div class="order__payment payment-order">
+                            <div class="payment-order__list">
+                                <label class="payment-order__item payment-order-card">
+                                    <input type="radio" name="payment">
+                                    <div class="payment-order-card__row">
+                                        <div class="payment-order-card__icon"><img src="./img/icon-payment-1.png"
+                                                alt=""></div>
+                                        <div class="payment-order-card__group">
+                                            <div class="payment-order-card__name">Наличными при получении</div>
+                                            <div class="payment-order-card__text">При получении, после проверки
+                                                товара.</div>
+                                        </div>
+                                    </div>
+                                </label>
+
+                                <label class="payment-order__item payment-order-card">
+                                    <input type="radio" name="payment">
+                                    <div class="payment-order-card__row">
+                                        <div class="payment-order-card__icon"><img src="./img/icon-payment-2.png"
+                                                alt=""></div>
+                                        <div class="payment-order-card__group">
+                                            <div class="payment-order-card__name">Банковской картой при получении
+                                            </div>
+                                            <div class="payment-order-card__text">Принимаем любые карты: VISA,
+                                                MasterCard, МИР</div>
+                                        </div>
+                                    </div>
+                                </label>
+
+                                <label class="payment-order__item payment-order-card">
+                                    <input type="radio" name="payment">
+                                    <div class="payment-order-card__row">
+                                        <div class="payment-order-card__icon"><img src="./img/icon-payment-3.png"
+                                                alt=""></div>
+                                        <div class="payment-order-card__group">
+                                            <div class="payment-order-card__name">Онлайн через сайт</div>
+                                            <div class="payment-order-card__text">Оплата онлайн через платёжный
+                                                шлюзкрупнейшего банка России</div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order__group-three">
+                        <div class="order__title title-h4">Контактные данные</div>
+
+                        <div class="order__contact-details contact-details">
+                            <form action="#" class="contact-details__from">
+                                <div class="contact-details__list">
+                                    <div class="contact-details__wrap-input wrap-input --small --w-33">
+                                        <div class="wrap-input__name">ФИО*</div>
+                                        <input type="text" placeholder="Виктория Иванова">
+                                    </div>
+
+                                    <div class="contact-details__wrap-input wrap-input --small --w-33">
+                                        <div class="wrap-input__name">Телефон*</div>
+                                        <input type="text" placeholder="+7 (000) 000-00-00">
+                                    </div>
+
+                                    <div class="contact-details__wrap-input wrap-input --small --w-33">
+                                        <div class="wrap-input__name">E-mail*</div>
+                                        <input type="text" placeholder="eatandsave.ru@gmail.com">
+                                    </div>
+
+                                    <div class="contact-details__wrap-input wrap-input --small --w-50">
+                                        <div class="wrap-input__name">Город*</div>
+                                        <input type="text" placeholder="Москва">
+                                    </div>
+
+                                    <div class="contact-details__wrap-input wrap-input --small --w-50">
+                                        <div class="wrap-input__name">Улица, дом, квартира*</div>
+                                        <input type="text" placeholder="ул. Коптевская, д. 18, кв. 44">
+                                    </div>
+
+                                    <div class="contact-details__wrap-input wrap-input --small">
+                                        <div class="wrap-input__name">Комментарий к заказу</div>
+                                        <textarea placeholder="Прошу доставить заказ 30.03.21 к 12.00 дня."></textarea>
+                                    </div>
+                                </div>
+
+                                <label class="main-check">
+                                    <input type="checkbox" class="main-check__checkbox" checked>
+                                    <span class="main-check__checkmark"></span>
+                                    <span class="main-check__text">Хочу получать <a href="#">новости и
+                                            спецпредложения</a></span>
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order__column">
+                    <div class="order__result order-result">
+                        <div class="order-result__group-one">
+                            <div class="order-result__title">Ваш заказ</div>
+                            <a href="#" class="order-result__change">Изменить заказ</a>
+                        </div>
+
+                        <div class="order-result__group-two">
+                            <div class="order-result__item">
+                                <div class="order-result__group-name">
+                                    <div class="order-result__name">Товары</div>
+                                    <div class="order-result__value">11 шт</div>
+                                </div>
+
+                                <div class="order-result__price-delivery">100 000 Р</div>
+                            </div>
+
+                            <div class="order-result__item">
+                                <div class="order-result__group-name">
+                                    <div class="order-result__name">Доставка по Москве</div>
+                                </div>
+
+                                <div class="order-result__price-delivery">600 Р</div>
+                            </div>
+
+                            <div class="order-result__item">
+                                <div class="order-result__group-name">
+                                    <div class="order-result__name">Оплата при получении</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-result__group-three">
+                            <div class="order-result__group-price">
+                                <div class="order-result__text">Итого к оплате:</div>
+                                <div class="order-result__price">100 000 Р</div>
+                            </div>
+
+                            <a href="#" class="order-result__button-add">Заказ подтверждаю</a>
+
+                            <div class="order-result__subtext">Нажимая кнопку подтверждения заказа я даю своё согласие
+                                на обработку моих персональных
+                                данных на условиях <a href="#">Соглашения об обработке персональных данных</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+  <div class="footer__bottom bottom-footer">
+    <div class="container">
+      <div class="bottom-footer__wrap">
+        <div class="bottom-footer__policy">
+          © 2021 «Eat&Save». Все права защищены законом об авторском праве.
+          <a href="#"> <span>Политика конфиденциальности</span> </a>
+        </div>
+
+        <div class="bottom-footer__develop">
+          Разработка сайта -
+          <a href="#">WESMA</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- // FOOTER -->
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="./js/mmenu.js"></script>
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+<script src="./js/jquery.mCustomScrollbar.js"></script>
+<script src="./js/sticksy.min.js"></script>
+<script src="./js/jquery.nice-select.js"></script>
+<script src="./js/arrows.js"></script>
+<script src="./js/script.js"></script>
+
+
+
+</body>
+
+</html>
